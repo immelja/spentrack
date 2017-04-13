@@ -79,7 +79,8 @@ body { padding-top: 70px; }
                });
 
                console.log(sum)
-              $("#a1").text(yyyymm + '   (' + data.type + ')             $' + Math.round(sum * 100)/100)
+              $("#a1").text(yyyymm + '   (' + data.type + ')    ' )
+              $("#navP").text('$' + Math.round(sum * 100)/100)
               $('#table').bootstrapTable({
                 //Assigning data to table
                 data: current

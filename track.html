@@ -16,10 +16,13 @@ body { padding-top: 70px; }
 .table-condensed{
   font-size: 10px;
 }
+
+
+
 </style>
   <body>
    <!-- Fixed navbar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -29,12 +32,12 @@ body { padding-top: 70px; }
             <span class="icon-bar"></span>
           </button>
           <a id="a1" class="navbar-brand" href="#">spendTrack</a>
+          <p id="navP" class="navbar-text">Logged in as</p> 
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#jaco">Jaco</a></li>
+            <li><a href="#hemla">Hemla</a></li>
            
           </ul>
         </div><!--/.nav-collapse -->
@@ -76,7 +79,7 @@ body { padding-top: 70px; }
                });
 
                console.log(sum)
-              $("#a1").text(yyyymm + '   (' + data.type + ')             ' + Math.round(sum * 100)/100)
+              $("#a1").text(yyyymm + '   (' + data.type + ')             $' + Math.round(sum * 100)/100)
               $('#table').bootstrapTable({
                 //Assigning data to table
                 data: current

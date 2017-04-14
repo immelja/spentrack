@@ -5,9 +5,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.0/bootstrap-table.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
     <!-- <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script> -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.0/bootstrap-table.min.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.css" rel="stylesheet" type="text/css" />
 
   
 </head>
@@ -51,7 +51,7 @@ body { padding-top: 70px; }
                 <thead>
                     <tr>
                         <th data-field="date" data-sortable="true">date</th>
-                        <th data-field="amount" data-sortable="true">amount</th>                        
+                        <th data-field="amount" data-formatter="priceFormatter" data-sortable="true">amount</th>                
                         <th data-field="description">description</th>
                     </tr>
                 </thead>
@@ -59,6 +59,14 @@ body { padding-top: 70px; }
     </div>
 
     <script type="text/javascript">
+         function priceFormatter(value) {
+        // 16777215 == ffffff in decimal
+        var color = '#'+Math.floor(Math.random() * 6777215).toString(16);
+        return '<div  style="color: ' + color + '">' +
+                '<i class="glyphicon glyphicon-usd"></i>' +
+                value +
+                '</div>';
+        }
         function load(src) {
              console.log(src);
              $.getJSON( src )

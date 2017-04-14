@@ -127,6 +127,8 @@ public class App {
 	private static void doTerm2() throws Exception {
 		Map<String, Transaction> jaco = new HashMap<String, Transaction>();
 		Map<String, Transaction> hemla = new HashMap<String, Transaction>();
+		Map<String, Transaction> fixed = new HashMap<String, Transaction>();
+
         Map<String, Transaction> current = new HashMap<String, Transaction>();
 
         current = loadJson(archiveFolder + transactionFile + json);
@@ -163,11 +165,14 @@ public class App {
 				jaco.put(tran.getKey(), tran.getValue());
 			} else if (tran.getValue().getTerm2() != null && tran.getValue().getTerm2().equals("HEMLA")) {
 				hemla.put(tran.getKey(), tran.getValue());
+			} else {
+				fixed.put(tran.getKey(), tran.getValue());
 			}
 
 		}
 		writeJson(jaco, "./json/jaco", "JACO");
 		writeJson(hemla, "./json/hemla", "HEMLA");
+		writeJson(hemla, "./json/fixed", "FIXED");
 
 	}
 

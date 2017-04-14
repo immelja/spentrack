@@ -36,8 +36,8 @@ body { padding-top: 70px; }
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#jaco">Jaco</a></li>
-            <li><a href="#hemla">Hemla</a></li>
+            <li><a id="jaco" href="#jaco">Jaco</a></li>
+            <li><a id="hemla" href="#hemla">Hemla</a></li>
            
           </ul>
         </div><!--/.nav-collapse -->
@@ -59,9 +59,40 @@ body { padding-top: 70px; }
     </div>
 
     <script type="text/javascript">
+        function load(src) {
+             console.log(src);
+             $.getJSON( src )
+            .done(function( data ) {
+            	console.log(data.type)
+             var today = new Date();
+             var yyyy = today.getFullYear();
+             var mm = today.getMonth() + 1;
+             if(mm<10){
+                mm='0'+mm;
+             } 
+             var yyyymm = yyyy + '' + mm;
+             var sum = 0
+              current = $.grep(data.transactions, function(n,i) {
+                   return n.date.substring(0,6) == yyyymm;
+              });
+               $.each( current, function( i, item ) {
+                  sum = sum + item.amount
+               });
+
+               console.log(sum)
+              $("#a1").text(yyyymm + '   (' + data.type + ')    ' )
+              $("#navP").text('$' + Math.round(sum * 100)/100)
+              $('#table').bootstrapTable('load',{
+                //Assigning data to table
+                data: current
+               });               
+            });
+        }
+
         $(document).ready(function () {
             $.getJSON( "https://immelja.github.io/spentrack/json/hemlaFormatted.json" )
             .done(function( data ) {
+            	console.log('INIT......')
             	console.log(data.type)
              var today = new Date();
              var yyyy = today.getFullYear();
@@ -85,7 +116,15 @@ body { padding-top: 70px; }
                 //Assigning data to table
                 data: current
                });               
-              });
+            });
+
+            $("#jaco").on("click", function () {
+                load('https://immelja.github.io/spentrack/json/jacoFormatted.json');
+             });
+
+            $("#hemla").on("click", function () {
+                load('https://immelja.github.io/spentrack/json/hemlaFormatted.json');
+             });
             
 
         });

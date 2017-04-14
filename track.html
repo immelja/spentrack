@@ -59,7 +59,8 @@ body { padding-top: 70px; }
     </div>
 
     <script type="text/javascript">
-         function priceFormatter(value) {
+        var who = "jaco"
+        function priceFormatter(value) {
         // 16777215 == ffffff in decimal
         var color = '#'+Math.floor(Math.random() * 6777215).toString(16);
         //var color = '#4286f4';
@@ -89,6 +90,7 @@ body { padding-top: 70px; }
                });
 
                console.log(sum)
+               who = data.type.toLowerCase();
               $("#a1").text(data.type.toLowerCase());
               $("#navBal").text('$' + Math.round(sum * 100)/100)
               $('#table').bootstrapTable('load',{
@@ -119,6 +121,7 @@ body { padding-top: 70px; }
                });
 
                console.log(sum)
+              who = data.type.toLowerCase();
               $("#a1").text(data.type.toLowerCase());
               $("#navBal").text('$' + Math.round(sum * 100)/100)
               $('#table').bootstrapTable({
@@ -133,6 +136,15 @@ body { padding-top: 70px; }
 
             $("#hemla").on("click", function () {
                 load('https://immelja.github.io/spentrack/json/hemlaFormatted.json');
+             });
+
+            $("#a1").on("click", function () {
+            	console.log(who);
+            	if(who === "jaco")
+                   load('https://immelja.github.io/spentrack/json/hemlaFormatted.json');
+                else
+                   load('https://immelja.github.io/spentrack/json/jacoFormatted.json');
+
              });
             
 

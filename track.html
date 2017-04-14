@@ -32,7 +32,7 @@ body { padding-top: 70px; }
             <span class="icon-bar"></span>
           </button>
           <a id="a1" class="navbar-brand" href="#">spendTrack</a>
-          <p id="navP" class="navbar-text">Logged in as</p> 
+          <p style="color:#03c12d" id="navBal" class="navbar-text"></p> 
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -62,6 +62,7 @@ body { padding-top: 70px; }
          function priceFormatter(value) {
         // 16777215 == ffffff in decimal
         var color = '#'+Math.floor(Math.random() * 6777215).toString(16);
+        //var color = '#4286f4';
         return '<div  style="font-size: 11px; color: ' + color + ' ">' +
                 '<i class="glyphicon glyphicon-usd"></i>' +
                 value.toFixed(2) +
@@ -88,8 +89,8 @@ body { padding-top: 70px; }
                });
 
                console.log(sum)
-              $("#a1").text(yyyymm + '   (' + data.type + ')    ' )
-              $("#navP").text('$' + Math.round(sum * 100)/100)
+              $("#a1").text(data.type.toLowerCase());
+              $("#navBal").text('$' + Math.round(sum * 100)/100)
               $('#table').bootstrapTable('load',{
                 //Assigning data to table
                 data: current
@@ -118,8 +119,8 @@ body { padding-top: 70px; }
                });
 
                console.log(sum)
-              $("#a1").text(yyyymm + '   (' + data.type + ')    ' )
-              $("#navP").text('$' + Math.round(sum * 100)/100)
+              $("#a1").text(data.type.toLowerCase());
+              $("#navBal").text('$' + Math.round(sum * 100)/100)
               $('#table').bootstrapTable({
                 //Assigning data to table
                 data: current

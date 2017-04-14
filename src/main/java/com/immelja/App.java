@@ -56,8 +56,10 @@ public class App {
 	 * @throws ParseException
 	 */
 	private static void scanDownloads() throws IOException, ParseException {
-		System.out.println(System.getProperty("user.home"));
-		File directory = new File("./in/");
+		System.out.println("user home " + System.getProperty("user.home"));
+		int count = 0;
+		String applicationFolder = "./in/";
+		File directory = new File(applicationFolder);
 		if (!directory.exists()) {
 			directory.mkdir();
 		}
@@ -65,10 +67,11 @@ public class App {
 
 		try (DirectoryStream<Path> stream = Files.newDirectoryStream(movefrom, "*.csv")) {
 			for (Path file : stream) {
-				System.out.println(fileName(file.toFile()));
+				System.out.println(file.toFile() + " -> " + applicationFolder + fileName(file.toFile()));
 				try {
-					Files.move(file, FileSystems.getDefault().getPath("./in/" + fileName(file.toFile())),
+					Files.copy(file, FileSystems.getDefault().getPath(applicationFolder + fileName(file.toFile())),
 							StandardCopyOption.REPLACE_EXISTING);
+					count++;
 				} catch (IOException e) {
 					System.err.println(e);
 				}
@@ -76,6 +79,8 @@ public class App {
 		} catch (IOException | DirectoryIteratorException x) {
 			System.err.println(x);
 		}
+		
+		System.out.println(count + " files moved from Downloads -> application folder");
 
 	}
 }

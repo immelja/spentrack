@@ -172,7 +172,7 @@ public class App {
 		}
 		writeJson(jaco, "./json/jaco", "JACO");
 		writeJson(hemla, "./json/hemla", "HEMLA");
-		writeJson(hemla, "./json/fixed", "FIXED");
+		writeJson(fixed, "./json/fixed", "FIXED");
 
 	}
 

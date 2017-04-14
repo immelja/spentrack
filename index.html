@@ -132,9 +132,10 @@
            		console.log(who);
            		if(who === "jaco")
            			load('https://immelja.github.io/spentrack/json/hemla.json');
-           		else
-           			load('https://immelja.github.io/spentrack/json/jaco.json');
-
+           		else if (who === "hemla")
+           			load('https://immelja.github.io/spentrack/json/fixed.json');
+              else
+                load('https://immelja.github.io/spentrack/json/jaco.json');
            	});
            	
 

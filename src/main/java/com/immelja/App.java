@@ -33,6 +33,7 @@ import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 
 import au.com.bytecode.opencsv.CSVReader;
 
@@ -241,7 +242,10 @@ public class App {
 		}
 		ObjectMapper mapper = new ObjectMapper();
 		try {
-			mapper.writeValue(new File(fileName), acc);
+            mapper.configure(SerializationFeature.INDENT_OUTPUT, true);
+            DateFormat df = new SimpleDateFormat("yyyyMMdd");
+            mapper.setDateFormat(df);
+            mapper.writeValue(new File(fileName), acc);
 		} catch (JsonGenerationException e) {
 			e.printStackTrace();
 		} catch (JsonMappingException e) {

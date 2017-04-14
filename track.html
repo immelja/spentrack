@@ -62,9 +62,9 @@ body { padding-top: 70px; }
          function priceFormatter(value) {
         // 16777215 == ffffff in decimal
         var color = '#'+Math.floor(Math.random() * 6777215).toString(16);
-        return '<div  style="color: ' + color + '">' +
+        return '<div  style="font-size: 11px; color: ' + color + ' ">' +
                 '<i class="glyphicon glyphicon-usd"></i>' +
-                value +
+                value.toFixed(2) +
                 '</div>';
         }
         function load(src) {

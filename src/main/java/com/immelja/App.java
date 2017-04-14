@@ -46,7 +46,9 @@ public class App {
 
 	private static String applicationFolder = "./in/";
 	private static String archiveFolder = "./archive/";
-	private static String transactionFile = "standard.json";
+	private static String transactionFile = "standard";
+	private static String json = ".json";
+
 
 	public static void main(String[] args) throws Exception {
 		System.out.println("spentrack");
@@ -62,9 +64,9 @@ public class App {
 		if (!directory.exists()) {
 			directory.mkdir();
 		}
-		File tnFileExist = new File(archiveFolder + transactionFile);
+		File tnFileExist = new File(archiveFolder + transactionFile + json);
 		if (tnFileExist.exists()) {
-			currentMap = loadJson(archiveFolder + transactionFile);
+			currentMap = loadJson(archiveFolder + transactionFile + json);
 			System.out.println("json size " + currentMap.size());
 		}
 
@@ -75,34 +77,39 @@ public class App {
 		System.out.println("merged size " + newMap.size());
 
 		doTerm(newMap);
-		doTerm2(newMap);
+		doTerm2();
 
 		System.out.println("after mapping size " + newMap.size());
 
 		writeJson(newMap, archiveFolder + transactionFile, "CURRENT");
+		
+		//term2ToDo(newMap);
 
 	}
 
-	private static void term2() throws IOException {
-		Map<String, Transaction> current = new HashMap<String, Transaction>();
+	private static void term2ToDo(Map<String, Transaction> map) throws IOException {
 
 		DateFormat df = new SimpleDateFormat("yyyyMM");
 
-		current = loadJson(archiveFolder + transactionFile);
-		System.out.println(current.size());
-		Iterator<Entry<String, Transaction>> iter = current.entrySet().iterator();
+		map = loadJson(archiveFolder + transactionFile + json);
+		System.out.println(map.size());
+		//Iterator<Entry<String, Transaction>> iter = map.entrySet().iterator();
 		float bal = 0;
 		Path file = Paths.get("term2ToDo.csv");
 		List<String> lines = new ArrayList<String>();
-		List<Transaction> transactions = new ArrayList<Transaction>(current.values());
+		List<Transaction> transactions = new ArrayList<Transaction>(map.values());
+		
 		Collections.sort(transactions, new Comparator<Transaction>() {
 
 			public int compare(Transaction t1, Transaction t2) {
 				return (int) (t1.getAmount() - t2.getAmount());
 			}
 		});
+		
 		for (Transaction transaction : transactions) {
-			if (transaction.getReportingPeriod() == 201704 && transaction.getTerm2() == null
+			System.out.println(transaction);
+			if (transaction.getReportingPeriod() == 201704 
+					//&& transaction.getTerm2() == null
 			// &&transaction.getAmount() < 0
 			) {
 				bal = bal + transaction.getAmount();
@@ -112,48 +119,45 @@ public class App {
 
 			}
 		}
-		// while (iter.hasNext()) {
-		// Entry<String, Transaction> tran = iter.next();
-		// if (df.format(tran.getValue().getDate()).equals("201703")
-		// && tran.getValue().getTerm2() == null
-		// && tran.getValue().getAmount() < 0
-		// ) {
-		// bal = bal + tran.getValue().getAmount();
-		// System.out.println(tran.getKey() + "," + tran.getValue().getTerm2());
-		// lines.add(tran.getKey() + ",SPLIT" );
-		// }
-		// }
+		
 		Files.write(file, lines, Charset.forName("UTF-8"));
 		System.out.println(bal);
 	}
 
-	private static void doTerm2(Map<String, Transaction> map) throws Exception {
+	private static void doTerm2() throws Exception {
 		Map<String, Transaction> jaco = new HashMap<String, Transaction>();
 		Map<String, Transaction> hemla = new HashMap<String, Transaction>();
+        Map<String, Transaction> current = new HashMap<String, Transaction>();
 
-		System.out.println("json size before doTerm2" + map.size());
+        current = loadJson(archiveFolder + transactionFile + json);
+		System.out.println("json size before doTerm2  " + current.size());
 
 		String term2ToDoFile = "./term2ToDo.csv";
 		term2ToDoLst = readFile(term2ToDoFile);
 		System.out.println(term2ToDoLst);
 		for (String prop : term2ToDoLst) {
 			String[] parts = prop.split("\\|");
-			map.get(parts[0]).setTerm2(parts[1]);
+			current.get(parts[0]).setTerm2(parts[1]);
 		}
 
-		//writeJson(newMap, archiveFolder + transactionFile, "CURRENT");
+		writeJson(newMap, archiveFolder + transactionFile, "CURRENT");
 
-		Iterator<Entry<String, Transaction>> iter = map.entrySet().iterator();
+		Iterator<Entry<String, Transaction>> iter = current.entrySet().iterator();
 		while (iter.hasNext()) {
 			Entry<String, Transaction> tran = iter.next();
 
 			if (tran.getValue().getTerm2() != null && tran.getValue().getTerm2().equals("SPLIT")) {
-				// System.out.println(tran.getValue().getTerm2());
+			    System.out.println(tran.getValue().getDescription() + " " + tran.getValue().getAmount());
 				float splitAmount = tran.getValue().getAmount() / 2;
-				jaco.put(tran.getKey(), tran.getValue());
-				jaco.get(tran.getKey()).setAmount(splitAmount);
-				hemla.put(tran.getKey(), tran.getValue());
-				hemla.get(tran.getKey()).setAmount(splitAmount);
+				String key = tran.getKey();
+				Transaction t = tran.getValue();
+			    System.out.println(tran.getValue().getDescription() + " " + tran.getValue().getAmount());
+				jaco.put(key, t);
+			    System.out.println(tran.getValue().getDescription() + " " + tran.getValue().getAmount());
+				jaco.get(key).setAmount(splitAmount);
+			    System.out.println(tran.getValue().getDescription() + " " + tran.getValue().getAmount());
+				hemla.put(key, t);
+				hemla.get(key).setAmount(splitAmount);
 
 			} else if (tran.getValue().getTerm2() != null && tran.getValue().getTerm2().equals("JACO")) {
 				jaco.put(tran.getKey(), tran.getValue());
@@ -162,8 +166,8 @@ public class App {
 			}
 
 		}
-		writeJson(jaco, "./json/jaco.json", "JACO");
-		writeJson(hemla, "./json/hemla.json", "HEMLA");
+		writeJson(jaco, "./json/jaco", "JACO");
+		writeJson(hemla, "./json/hemla", "HEMLA");
 
 	}
 
@@ -242,10 +246,12 @@ public class App {
 		}
 		ObjectMapper mapper = new ObjectMapper();
 		try {
+            mapper.writeValue(new File(fileName + json), acc);
+            //DateFormat df = new SimpleDateFormat("yyyyMMdd");
+            //mapper.setDateFormat(df);
+            //mapper.writeValue(new File(fileName + "Date" + json), acc);
             mapper.configure(SerializationFeature.INDENT_OUTPUT, true);
-            DateFormat df = new SimpleDateFormat("yyyyMMdd");
-            mapper.setDateFormat(df);
-            mapper.writeValue(new File(fileName), acc);
+            mapper.writeValue(new File(fileName + "Formatted" + json), acc);
 		} catch (JsonGenerationException e) {
 			e.printStackTrace();
 		} catch (JsonMappingException e) {

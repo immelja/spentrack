@@ -1,5 +1,6 @@
 package com.immelja;
 
+import java.text.DateFormat;
 import java.text.Format;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -7,7 +8,7 @@ import java.util.Date;
 
 public class Transaction {
 	private String dateString;
-	private Date date;
+	private String date;
 	private int finYear;
 	private int reportingPeriod;
 	private float amount;
@@ -16,7 +17,7 @@ public class Transaction {
 	private String category;
 	private String income;
 	private String term;
-	   private String term2;
+	private String term2;
 
 	private String key;
 	public Transaction(){}
@@ -30,37 +31,37 @@ public class Transaction {
 		
 		this.income = amount>0?"INCOME":"EXPENSE";
 		SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
+		Date d = null;
 		try {
-			date = format.parse(dateString);
+			d = format.parse(dateString);
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
+        DateFormat df = new SimpleDateFormat("yyyyMMdd");
+        this.date = df.format(d);
+        Format mmFormat = new SimpleDateFormat("MM"); 
+	    int mm = Integer.valueOf(mmFormat.format(d));
 		Format formatter = new SimpleDateFormat("yyyy"); 
-		this.finYear = Integer.valueOf(formatter.format(date));
-		this.reportingPeriod = date.getMonth();
+		this.finYear = Integer.valueOf(formatter.format(d))+((mm>6)?1:0);
+		Format yyyyMM = new SimpleDateFormat("yyyyMM"); 
+		this.reportingPeriod = Integer.valueOf(yyyyMM.format(d));
 		this.term = term;
-	      this.term = term2;
+	    this.term = term2;
 
 	}
 	public void setAmount(float amount) {
         this.amount = amount;
     }
-    public Date getDate() {
+    public String getDate() {
 		return date;
 	}
 	public int getFinYear() {
-	    Format mmFormat = new SimpleDateFormat("MM"); 
-	    int mm = Integer.valueOf(mmFormat.format(date));
-	    Format yyyyFormat = new SimpleDateFormat("yyyy"); 
-	    finYear = Integer.valueOf(yyyyFormat.format(date))+((mm>6)?1:0);
         return finYear;
     }
     public void setFinYear(int finYear) {
         this.finYear = finYear;
     }
     public int getReportingPeriod() {
-        Format formatter = new SimpleDateFormat("yyyyMM"); 
-        reportingPeriod = Integer.valueOf(formatter.format(date));
         return reportingPeriod;
     }
     public void setReportingPeriod(int reportingPeriod) {
@@ -96,11 +97,11 @@ public class Transaction {
         this.term2 = term2;
     }
     public String getKey() {
-		return date.getTime() + "_" + amount + "_" + description.replace(" ", "");
+		return date + "_" + amount + "_" + description.replace(" ", "");
 	}
 	@Override
 	public String toString() {
-		return date.toString() + " " + amount + " " + description + " " + category + " " + income;
+		return date + " " + amount + " " + description + " " + category + " " + income;
 	}
     @Override
     public int hashCode() {

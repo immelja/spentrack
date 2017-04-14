@@ -1,6 +1,6 @@
 {
   "type" : "JACO",
-  "balance" : -7307.416,
+  "balance" : -7407.4165,
   "transactions" : [ {
     "date" : "20170206",
     "finYear" : 2017,
@@ -485,14 +485,14 @@
     "date" : "20170403",
     "finYear" : 2017,
     "reportingPeriod" : 201704,
-    "amount" : -100.0,
+    "amount" : -200.0,
     "description" : "Wdl ATM CBA ATM  99 KING ST A   VIC 302001   AUS",
     "balance" : 5927.7,
     "category" : "Cash out",
     "income" : "EXPENSE",
     "term" : "CASH",
-    "term2" : "SPLIT",
-    "key" : "20170403_-100.0_WdlATMCBAATM99KINGSTAVIC302001AUS"
+    "term2" : "JACO",
+    "key" : "20170403_-200.0_WdlATMCBAATM99KINGSTAVIC302001AUS"
   }, {
     "date" : "20170212",
     "finYear" : 2017,

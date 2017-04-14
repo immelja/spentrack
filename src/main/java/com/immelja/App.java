@@ -83,7 +83,7 @@ public class App {
 
 		writeJson(newMap, archiveFolder + transactionFile, "CURRENT");
 		
-		//term2ToDo(newMap);
+		term2ToDo(newMap);
 
 	}
 
@@ -115,7 +115,7 @@ public class App {
 				bal = bal + transaction.getAmount();
 
 				System.out.println(transaction.toString());
-				lines.add(transaction.getKey() + "|CURRENT");
+				lines.add(transaction.getKey() + "|" + transaction.getTerm2() );
 
 			}
 		}

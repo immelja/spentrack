@@ -1,144 +1,144 @@
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
-    <!-- <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script> -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.css" rel="stylesheet" type="text/css" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
+	<!-- <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script> -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.css" rel="stylesheet" type="text/css" />
 
-  
+	
 </head>
 <style>
-body { padding-top: 70px; }
-.table-condensed{
-  font-size: 10px;
-}
+	body { padding-top: 70px; }
+	.table-condensed{
+		font-size: 10px;
+	}
 
 
 
 </style>
-  <body>
-   <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          
-          <a id="a1" class="navbar-brand" href="#" ><span class="glyphicon glyphicon-sort"></span><span id = "a2"></span></a>
-          <p style="color:#03c12d" id="navBal" class="navbar-text"></p> 
-        </div>
-        
-      </div>
-    </nav>
+<body>
+	<!-- Fixed navbar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				
+				<a id="a1" class="navbar-brand" href="#" ><span class="glyphicon glyphicon-sort"></span><span id = "a2"></span></a>
+				<p style="color:#03c12d" id="navBal" class="navbar-text"></p> 
+			</div>
+			
+		</div>
+	</nav>
 
-  
+	
 
-    <div class="container-fluid theme-showcase" role="main">
-            <table class="table table-striped table-condensed" id="table">
-                <thead>
-                    <tr>
-                        <th data-field="date" data-sortable="true">date</th>
-                        <th data-field="amount" data-formatter="priceFormatter" data-sortable="true">amount</th>                
-                        <th data-field="description">description</th>
-                    </tr>
-                </thead>
-            </table>
-    </div>
+	<div class="container-fluid theme-showcase" role="main">
+		<table class="table table-striped table-condensed" id="table">
+			<thead>
+				<tr>
+					<th data-field="date" data-sortable="true">date</th>
+					<th data-field="amount" data-formatter="priceFormatter" data-sortable="true">amount</th>                
+					<th data-field="description">description</th>
+				</tr>
+			</thead>
+		</table>
+	</div>
 
-    <script type="text/javascript">
-        var who = "jaco"
-        function priceFormatter(value) {
+	<script type="text/javascript">
+		var who = "jaco"
+		function priceFormatter(value) {
         // 16777215 == ffffff in decimal
         //var color = '#'+Math.floor(Math.random() * 6777215).toString(16);
         //var color = '#4286f4';
         return '<div  style="font-size: 11px;  ">' +
                // '<i class="glyphicon glyphicon-usd"></i>' +
                '$' +
-                value.toFixed(2) +
-                '</div>';
-        }
-        function load(src) {
-             console.log(src);
-             $.getJSON( src )
-            .done(function( data ) {
-            	console.log(data.type)
-             var today = new Date();
-             var yyyy = today.getFullYear();
-             var mm = today.getMonth() + 1;
-             if(mm<10){
-                mm='0'+mm;
-             } 
-             var yyyymm = yyyy + '' + mm;
-             var sum = 0
-              current = $.grep(data.transactions, function(n,i) {
-                   return n.date.substring(0,6) == yyyymm;
-              });
-               $.each( current, function( i, item ) {
-                  sum = sum + item.amount
-               });
+               value.toFixed(2) +
+               '</div>';
+           }
+           function load(src) {
+           	console.log(src);
+           	$.getJSON( src )
+           	.done(function( data ) {
+           		console.log(data.type)
+           		var today = new Date();
+           		var yyyy = today.getFullYear();
+           		var mm = today.getMonth() + 1;
+           		if(mm<10){
+           			mm='0'+mm;
+           		} 
+           		var yyyymm = yyyy + '' + mm;
+           		var sum = 0
+           		current = $.grep(data.transactions, function(n,i) {
+           			return n.date.substring(0,6) == yyyymm;
+           		});
+           		$.each( current, function( i, item ) {
+           			sum = sum + item.amount
+           		});
 
-               console.log(sum)
-               who = data.type.toLowerCase();
-              $("#a2").text('  ' + data.type.toLowerCase());
-              $("#navBal").text('$' + Math.round(sum * 100)/100)
-              $('#table').bootstrapTable('load',{
+           		console.log(sum)
+           		who = data.type.toLowerCase();
+           		$("#a2").text('  ' + data.type.toLowerCase());
+           		$("#navBal").text('$' + Math.round(sum * 100)/100)
+           		$('#table').bootstrapTable('load',{
                 //Assigning data to table
                 data: current
-               });               
-            });
-        }
+            });               
+           	});
+           }
 
-        $(document).ready(function () {
-            $.getJSON( "https://immelja.github.io/spentrack/json/hemlaFormatted.json" )
-            .done(function( data ) {
-            	console.log('INIT......')
-            	console.log(data.type)
-             var today = new Date();
-             var yyyy = today.getFullYear();
-             var mm = today.getMonth() + 1;
-             if(mm<10){
-                mm='0'+mm;
-             } 
-             var yyyymm = yyyy + '' + mm;
-             var sum = 0
-              current = $.grep(data.transactions, function(n,i) {
-                   return n.date.substring(0,6) == yyyymm;
-              });
-               $.each( current, function( i, item ) {
-                  sum = sum + item.amount
-               });
+           $(document).ready(function () {
+           	$.getJSON( "https://immelja.github.io/spentrack/json/hemlaFormatted.json" )
+           	.done(function( data ) {
+           		console.log('INIT......')
+           		console.log(data.type)
+           		var today = new Date();
+           		var yyyy = today.getFullYear();
+           		var mm = today.getMonth() + 1;
+           		if(mm<10){
+           			mm='0'+mm;
+           		} 
+           		var yyyymm = yyyy + '' + mm;
+           		var sum = 0
+           		current = $.grep(data.transactions, function(n,i) {
+           			return n.date.substring(0,6) == yyyymm;
+           		});
+           		$.each( current, function( i, item ) {
+           			sum = sum + item.amount
+           		});
 
-               console.log(sum)
-              who = data.type.toLowerCase();
-              $("#a2").text('  ' + data.type.toLowerCase());
-              $("#navBal").text('$' + Math.round(sum * 100)/100)
-              $('#table').bootstrapTable({
+           		console.log(sum)
+           		who = data.type.toLowerCase();
+           		$("#a2").text('  ' + data.type.toLowerCase());
+           		$("#navBal").text('$' + Math.round(sum * 100)/100)
+           		$('#table').bootstrapTable({
                 //Assigning data to table
                 data: current
-               });               
-            });
+            });               
+           	});
 
-            $("#jaco").on("click", function () {
-                load('https://immelja.github.io/spentrack/json/jacoFormatted.json');
-             });
+           	$("#jaco").on("click", function () {
+           		load('https://immelja.github.io/spentrack/json/jacoFormatted.json');
+           	});
 
-            $("#hemla").on("click", function () {
-                load('https://immelja.github.io/spentrack/json/hemlaFormatted.json');
-             });
+           	$("#hemla").on("click", function () {
+           		load('https://immelja.github.io/spentrack/json/hemlaFormatted.json');
+           	});
 
-            $("#a1").on("click", function () {
-            	console.log(who);
-            	if(who === "jaco")
-                   load('https://immelja.github.io/spentrack/json/hemlaFormatted.json');
-                else
-                   load('https://immelja.github.io/spentrack/json/jacoFormatted.json');
+           	$("#a1").on("click", function () {
+           		console.log(who);
+           		if(who === "jaco")
+           			load('https://immelja.github.io/spentrack/json/hemlaFormatted.json');
+           		else
+           			load('https://immelja.github.io/spentrack/json/jacoFormatted.json');
 
-             });
-            
+           	});
+           	
 
-        });
-    </script>   
-</body>
-</html>
+           });
+       </script>   
+   </body>
+   </html>

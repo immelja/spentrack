@@ -1,13 +1,81 @@
 package com.immelja;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
-    }
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.nio.file.DirectoryIteratorException;
+import java.nio.file.DirectoryStream;
+import java.nio.file.FileSystems;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardCopyOption;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
+import java.util.TreeSet;
+
+import au.com.bytecode.opencsv.CSVReader;
+
+public class App {
+	public static void main(String[] args) throws IOException, ParseException {
+		System.out.println("spentrack");
+		scanDownloads();
+	}
+
+	private static String fileName(File f) throws IOException, ParseException {
+		SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+		SimpleDateFormat formatter2 = new SimpleDateFormat("yyyyMMdd");
+		CSVReader reader = new CSVReader(new FileReader(f));
+		List<String[]> entryList = reader.readAll();
+		String[] first = (String[]) entryList.get(0);
+		try {
+			Date date = formatter.parse(entryList.get(0)[0]);
+		} catch (Exception e) {
+			reader.close();
+			return null;
+		}
+		boolean credit = !first[3].equals("");
+
+		String[] last = (String[]) entryList.get(entryList.size() - 1);
+		TreeSet<Date> dateSet = new TreeSet<Date>();
+		for (String[] entry : entryList) {
+			dateSet.add(formatter.parse(entry[0]));
+		}
+
+		reader.close();
+		return formatter2.format(dateSet.first()) + "_" + formatter2.format(dateSet.last())
+				+ (!credit ? "credit" : "savings") + entryList.size() + ".csv";
+	}
+
+	/**
+	 * Search through Downloads folder for CBA statement files. Move to ./in
+	 * folder
+	 * 
+	 * @throws IOException
+	 * @throws ParseException
+	 */
+	private static void scanDownloads() throws IOException, ParseException {
+		System.out.println(System.getProperty("user.home"));
+		File directory = new File("./in/");
+		if (!directory.exists()) {
+			directory.mkdir();
+		}
+		Path movefrom = FileSystems.getDefault().getPath(System.getProperty("user.home") + "/Downloads");
+
+		try (DirectoryStream<Path> stream = Files.newDirectoryStream(movefrom, "*.csv")) {
+			for (Path file : stream) {
+				System.out.println(fileName(file.toFile()));
+				try {
+					Files.move(file, FileSystems.getDefault().getPath("./in/" + fileName(file.toFile())),
+							StandardCopyOption.REPLACE_EXISTING);
+				} catch (IOException e) {
+					System.err.println(e);
+				}
+			}
+		} catch (IOException | DirectoryIteratorException x) {
+			System.err.println(x);
+		}
+
+	}
 }

@@ -26,7 +26,7 @@ body { padding-top: 70px; }
       <div class="container">
         <div class="navbar-header">
           
-          <a id="a1" class="navbar-brand" href="#"></a>
+          <a id="a1" class="navbar-brand" href="#" ><span class="glyphicon glyphicon-sort"></span><span id = "a2"></span></a>
           <p style="color:#03c12d" id="navBal" class="navbar-text"></p> 
         </div>
         
@@ -51,9 +51,9 @@ body { padding-top: 70px; }
         var who = "jaco"
         function priceFormatter(value) {
         // 16777215 == ffffff in decimal
-        var color = '#'+Math.floor(Math.random() * 6777215).toString(16);
+        //var color = '#'+Math.floor(Math.random() * 6777215).toString(16);
         //var color = '#4286f4';
-        return '<div  style="font-size: 11px; color: ' + color + ' ">' +
+        return '<div  style="font-size: 11px;  ">' +
                 '<i class="glyphicon glyphicon-usd"></i>' +
                 value.toFixed(2) +
                 '</div>';
@@ -80,7 +80,7 @@ body { padding-top: 70px; }
 
                console.log(sum)
                who = data.type.toLowerCase();
-              $("#a1").text(data.type.toLowerCase());
+              $("#a2").text('  ' + data.type.toLowerCase());
               $("#navBal").text('$' + Math.round(sum * 100)/100)
               $('#table').bootstrapTable('load',{
                 //Assigning data to table
@@ -111,7 +111,7 @@ body { padding-top: 70px; }
 
                console.log(sum)
               who = data.type.toLowerCase();
-              $("#a1").text(data.type.toLowerCase());
+              $("#a2").text('  ' + data.type.toLowerCase());
               $("#navBal").text('$' + Math.round(sum * 100)/100)
               $('#table').bootstrapTable({
                 //Assigning data to table

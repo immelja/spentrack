@@ -91,7 +91,7 @@
            }
 
            $(document).ready(function () {
-           	$.getJSON( "https://immelja.github.io/spentrack/json/hemlaFormatted.json" )
+           	$.getJSON( "https://immelja.github.io/spentrack/json/hemla.json" )
            	.done(function( data ) {
            		console.log('INIT......')
            		console.log(data.type)
@@ -121,19 +121,19 @@
            	});
 
            	$("#jaco").on("click", function () {
-           		load('https://immelja.github.io/spentrack/json/jacoFormatted.json');
+           		load('https://immelja.github.io/spentrack/json/jaco.json');
            	});
 
            	$("#hemla").on("click", function () {
-           		load('https://immelja.github.io/spentrack/json/hemlaFormatted.json');
+           		load('https://immelja.github.io/spentrack/json/hemla.json');
            	});
 
            	$("#a1").on("click", function () {
            		console.log(who);
            		if(who === "jaco")
-           			load('https://immelja.github.io/spentrack/json/hemlaFormatted.json');
+           			load('https://immelja.github.io/spentrack/json/hemla.json');
            		else
-           			load('https://immelja.github.io/spentrack/json/jacoFormatted.json');
+           			load('https://immelja.github.io/spentrack/json/jaco.json');
 
            	});
            	

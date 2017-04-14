@@ -1,30 +1,38 @@
 package com.immelja;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.charset.Charset;
 import java.nio.file.DirectoryIteratorException;
 import java.nio.file.DirectoryStream;
 import java.nio.file.FileSystems;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
 import java.util.TreeSet;
 
 import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.SerializationFeature;
 
 import au.com.bytecode.opencsv.CSVReader;
 
@@ -32,18 +40,23 @@ public class App {
 	private static Map<String, Transaction> currentMap = new HashMap<String, Transaction>();
 	private static Map<String, Transaction> newMap = new HashMap<String, Transaction>();
 	private static List<Transaction> transactions = new ArrayList<Transaction>();
+	private static List<String> mappingProperties = new ArrayList<String>();
+	private static List<String> term2ToDoLst = new ArrayList<String>();
 
 	private static String applicationFolder = "./in/";
 	private static String archiveFolder = "./archive/";
 	private static String transactionFile = "standard.json";
 
-	public static void main(String[] args) throws IOException, ParseException {
+	public static void main(String[] args) throws Exception {
 		System.out.println("spentrack");
 		scanDownloads();
 		process();
 	}
 
-	private static void process() {
+	private static void process() throws Exception {
+		String mappingFileName = "./conf/mapping.properties";
+		mappingProperties = readFile(mappingFileName);
+
 		File directory = new File(archiveFolder);
 		if (!directory.exists()) {
 			directory.mkdir();
@@ -51,43 +64,192 @@ public class App {
 		File tnFileExist = new File(archiveFolder + transactionFile);
 		if (tnFileExist.exists()) {
 			currentMap = loadJson(archiveFolder + transactionFile);
-	        System.out.println("json size " + currentMap.size());
+			System.out.println("json size " + currentMap.size());
 		}
-		
-        newMap = loadCsv();
-        System.out.println("csv size " + newMap.size());
 
+		newMap = loadCsv();
+		System.out.println("csv size " + newMap.size());
 
-        newMap.putAll(currentMap);
-        System.out.println("merged size " + newMap.size());
-        
-        writeJson(newMap, archiveFolder + transactionFile, "CURRENT");
+		newMap.putAll(currentMap);
+		System.out.println("merged size " + newMap.size());
 
+		doTerm(newMap);
+		doTerm2(newMap);
+
+		System.out.println("after mapping size " + newMap.size());
+
+		writeJson(newMap, archiveFolder + transactionFile, "CURRENT");
 
 	}
-	
-    private static void writeJson(Map<String, Transaction> map, String fileName, String account) {
-        Account acc = new Account();
-        acc.setType(account);
-        acc.setTransactions(new ArrayList<Transaction>(map.values()));
-        for (Transaction tran : acc.getTransactions()) {
-            acc.setBalance(acc.getBalance() + tran.getAmount());
-        }
-        ObjectMapper mapper = new ObjectMapper();
-        try {
-            mapper.writeValue(new File(fileName), acc);
-//            mapper.configure(SerializationFeature.INDENT_OUTPUT, true);
-//            DateFormat df = new SimpleDateFormat("yyyyMMdd");
-//            mapper.setDateFormat(df);
-//            mapper.writeValue(new File(fileName + "Formatted.json"), acc);
-        } catch (JsonGenerationException e) {
-            e.printStackTrace();
-        } catch (JsonMappingException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+
+	private static void term2() throws IOException {
+		Map<String, Transaction> current = new HashMap<String, Transaction>();
+
+		DateFormat df = new SimpleDateFormat("yyyyMM");
+
+		current = loadJson(archiveFolder + transactionFile);
+		System.out.println(current.size());
+		Iterator<Entry<String, Transaction>> iter = current.entrySet().iterator();
+		float bal = 0;
+		Path file = Paths.get("term2ToDo.csv");
+		List<String> lines = new ArrayList<String>();
+		List<Transaction> transactions = new ArrayList<Transaction>(current.values());
+		Collections.sort(transactions, new Comparator<Transaction>() {
+
+			public int compare(Transaction t1, Transaction t2) {
+				return (int) (t1.getAmount() - t2.getAmount());
+			}
+		});
+		for (Transaction transaction : transactions) {
+			if (transaction.getReportingPeriod() == 201704 && transaction.getTerm2() == null
+			// &&transaction.getAmount() < 0
+			) {
+				bal = bal + transaction.getAmount();
+
+				System.out.println(transaction.toString());
+				lines.add(transaction.getKey() + "|CURRENT");
+
+			}
+		}
+		// while (iter.hasNext()) {
+		// Entry<String, Transaction> tran = iter.next();
+		// if (df.format(tran.getValue().getDate()).equals("201703")
+		// && tran.getValue().getTerm2() == null
+		// && tran.getValue().getAmount() < 0
+		// ) {
+		// bal = bal + tran.getValue().getAmount();
+		// System.out.println(tran.getKey() + "," + tran.getValue().getTerm2());
+		// lines.add(tran.getKey() + ",SPLIT" );
+		// }
+		// }
+		Files.write(file, lines, Charset.forName("UTF-8"));
+		System.out.println(bal);
+	}
+
+	private static void doTerm2(Map<String, Transaction> map) throws Exception {
+		Map<String, Transaction> jaco = new HashMap<String, Transaction>();
+		Map<String, Transaction> hemla = new HashMap<String, Transaction>();
+
+		System.out.println("json size before doTerm2" + map.size());
+
+		String term2ToDoFile = "./term2ToDo.csv";
+		term2ToDoLst = readFile(term2ToDoFile);
+		System.out.println(term2ToDoLst);
+		for (String prop : term2ToDoLst) {
+			String[] parts = prop.split("\\|");
+			map.get(parts[0]).setTerm2(parts[1]);
+		}
+
+		//writeJson(newMap, archiveFolder + transactionFile, "CURRENT");
+
+		Iterator<Entry<String, Transaction>> iter = map.entrySet().iterator();
+		while (iter.hasNext()) {
+			Entry<String, Transaction> tran = iter.next();
+
+			if (tran.getValue().getTerm2() != null && tran.getValue().getTerm2().equals("SPLIT")) {
+				// System.out.println(tran.getValue().getTerm2());
+				float splitAmount = tran.getValue().getAmount() / 2;
+				jaco.put(tran.getKey(), tran.getValue());
+				jaco.get(tran.getKey()).setAmount(splitAmount);
+				hemla.put(tran.getKey(), tran.getValue());
+				hemla.get(tran.getKey()).setAmount(splitAmount);
+
+			} else if (tran.getValue().getTerm2() != null && tran.getValue().getTerm2().equals("JACO")) {
+				jaco.put(tran.getKey(), tran.getValue());
+			} else if (tran.getValue().getTerm2() != null && tran.getValue().getTerm2().equals("HEMLA")) {
+				hemla.put(tran.getKey(), tran.getValue());
+			}
+
+		}
+		writeJson(jaco, "./json/jaco.json", "JACO");
+		writeJson(hemla, "./json/hemla.json", "HEMLA");
+
+	}
+
+	private static List<String> readFile(String filename) throws Exception {
+		String line = null;
+		List<String> records = new ArrayList<String>();
+
+		File file = new File(filename);
+		if (file.exists()) {
+
+			BufferedReader bufferedReader = new BufferedReader(new FileReader(filename));
+			while ((line = bufferedReader.readLine()) != null) {
+				records.add(line);
+			}
+
+			// close the BufferedReader when we're done
+			bufferedReader.close();
+		}
+		return records;
+	}
+
+	private static String getMatch(String description) {
+		// System.out.println(description);
+
+		for (String prop : mappingProperties) {
+			// System.out.println(prop);
+			String[] parts = prop.split(",");
+			// System.out.println(parts[0] + " " + parts[1]);
+			if (description.matches(".*" + parts[0] + ".*")) {
+				// System.out.println(parts[1]+"******************
+				// "+description);
+				return parts[1];
+			}
+		}
+		return null;
+	}
+
+	private static void doTerm(Map<String, Transaction> map) {
+		map.remove("1477400400000_-8100.0_HomeLoanPymtCommBankapp");
+		map.remove("1479906000000_-670.0_HomeLoanPymtCommBankapp");
+
+		Iterator<Entry<String, Transaction>> iter = map.entrySet().iterator();
+		Set<String> set = new HashSet();
+		while (iter.hasNext()) {
+			Entry<String, Transaction> tran = iter.next();
+			if ("Exclude".equalsIgnoreCase(tran.getValue().getCategory())) {
+				iter.remove();
+			}
+
+			if ("EXCLUDE".equalsIgnoreCase(tran.getValue().getTerm())) {
+				iter.remove();
+			}
+
+			if ("Home Loan Pymt CommBank app".equalsIgnoreCase(tran.getValue().getDescription())) {
+				System.out.println(tran.getKey());
+			}
+
+			tran.getValue().setTerm(getMatch(tran.getValue().getDescription()));
+
+			if (tran.getValue().getTerm() == null)
+				set.add(tran.getValue().getDescription());
+		}
+
+		for (String setItem : set) {
+			System.out.println(setItem + ",UNMATCHED");
+		}
+		System.out.println("UNMATCHED:: " + set.size());
+	}
+
+	private static void writeJson(Map<String, Transaction> map, String fileName, String account) {
+		Account acc = new Account();
+		acc.setType(account);
+		acc.setTransactions(new ArrayList<Transaction>(map.values()));
+		for (Transaction tran : acc.getTransactions()) {
+			acc.setBalance(acc.getBalance() + tran.getAmount());
+		}
+		ObjectMapper mapper = new ObjectMapper();
+		try {
+			mapper.writeValue(new File(fileName), acc);
+		} catch (JsonGenerationException e) {
+			e.printStackTrace();
+		} catch (JsonMappingException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 
 	private static List<String[]> load(File file) {
 		List<String[]> myEntries = null;
@@ -194,7 +356,7 @@ public class App {
 			for (Path file : stream) {
 				System.out.println(file.toFile() + " -> " + applicationFolder + fileName(file.toFile()));
 				try {
-					Files.copy(file, FileSystems.getDefault().getPath(applicationFolder + fileName(file.toFile())),
+					Files.move(file, FileSystems.getDefault().getPath(applicationFolder + fileName(file.toFile())),
 							StandardCopyOption.REPLACE_EXISTING);
 					count++;
 				} catch (IOException e) {

@@ -165,7 +165,7 @@ public class App {
 				jaco.put(tran.getKey(), tran.getValue());
 			} else if (tran.getValue().getTerm2() != null && tran.getValue().getTerm2().equals("HEMLA")) {
 				hemla.put(tran.getKey(), tran.getValue());
-			} else {
+			} else if (tran.getValue().getTerm2() != null && tran.getValue().getTerm2().equals("CURRENT") && tran.getValue().getAmount() < 0) {
 				fixed.put(tran.getKey(), tran.getValue());
 			}
 

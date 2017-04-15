@@ -20,14 +20,16 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
+import java.util.TreeMap;
 import java.util.TreeSet;
+
+import org.joda.time.LocalDate;
 
 import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.core.JsonParseException;
@@ -38,8 +40,8 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import au.com.bytecode.opencsv.CSVReader;
 
 public class App {
-	private static Map<String, Transaction> currentMap = new HashMap<String, Transaction>();
-	private static Map<String, Transaction> newMap = new HashMap<String, Transaction>();
+	private static Map<String, Transaction> currentMap = new TreeMap<String, Transaction>();
+	private static Map<String, Transaction> newMap = new TreeMap<String, Transaction>();
 	private static List<Transaction> transactions = new ArrayList<Transaction>();
 	private static List<String> mappingProperties = new ArrayList<String>();
 	private static List<String> term2ToDoLst = new ArrayList<String>();
@@ -49,11 +51,91 @@ public class App {
 	private static String transactionFile = "standard";
 	private static String json = ".json";
 
-
 	public static void main(String[] args) throws Exception {
 		System.out.println("spentrack");
-		scanDownloads();
-		process();
+	    scanDownloads();
+	    process();
+		//analyse();
+	}
+	
+	private static void avgToDate(Map<String, Transaction> map) {
+		System.out.println("******* to date *******");
+		Map<Integer, Float> periodBalances = new TreeMap<Integer, Float>();
+		TreeSet<String> days = new TreeSet<String>();
+		for (Transaction trn : map.values()) {
+			days.add(trn.getDate());
+		}
+		int day = Integer.valueOf(days.last().substring(6, 8));
+		System.out.println("latest day " + day);
+		//LocalDate ld = new LocalDate();
+		//System.out.println(ld);
+		float bal = 0;
+		for (Transaction trn : map.values()) {
+			if (!periodBalances.containsKey(trn.getReportingPeriod())) {
+				bal = 0;
+			} else {
+				bal = periodBalances.get(trn.getReportingPeriod()).longValue();
+			}
+			if (Integer.valueOf(trn.getDate().substring(6, 8)) <= day && trn.getAmount() < 0) {
+				periodBalances.put(trn.getReportingPeriod(), bal + trn.getAmount());
+			}
+		}
+		
+		float sum = 0;
+		int count = 0;
+
+		for (Map.Entry<Integer, Float> entry : periodBalances.entrySet()) {
+			count++;
+			sum = sum + entry.getValue();
+			System.out.println(entry);
+		}
+		System.out.println("Avg for day of month(" + day + ") " + sum/count);
+	}
+
+	private static void avgReportingPeriod(Map<String, Transaction> map) {
+		Map<Integer, Float> periodBalances = new TreeMap<Integer, Float>();
+		System.out.println("avgToDate map size " + map.size());
+		LocalDate ld = new LocalDate();
+		System.out.println(ld);
+		float bal = 0;
+		for (Transaction trn : map.values()) {
+			if (!periodBalances.containsKey(trn.getReportingPeriod())) {
+				bal = 0;
+			} else {
+				bal = periodBalances.get(trn.getReportingPeriod()).longValue();
+			}
+			periodBalances.put(trn.getReportingPeriod(), bal + trn.getAmount());
+		}
+
+		for (Map.Entry<Integer, Float> entry : periodBalances.entrySet()) {
+			System.out.println(entry);
+		}
+	}
+
+	private static void avgFinYear(Map<String, Transaction> map) {
+		System.out.println("******* finyear *******");
+		Map<Integer, Float> finYearBalances = new TreeMap<Integer, Float>();
+		float bal = 0;
+		for (Transaction trn : map.values()) {
+			if (!finYearBalances.containsKey(trn.getFinYear())) {
+				bal = 0;
+			} else {
+				bal = finYearBalances.get(trn.getFinYear()).longValue();
+			}
+			finYearBalances.put(trn.getFinYear(), bal + trn.getAmount());
+		}
+
+		for (Map.Entry<Integer, Float> entry : finYearBalances.entrySet()) {
+			System.out.println(entry);
+		}
+	}
+	private static void analyse() {
+		Map<String, Transaction> map = new TreeMap<String, Transaction>();
+		map = loadJson(archiveFolder + transactionFile + json);
+		//avgReportingPeriod(map);
+		//avgFinYear(map);
+		avgToDate(map);
+
 	}
 
 	private static void process() throws Exception {
@@ -82,7 +164,7 @@ public class App {
 		System.out.println("after mapping size " + newMap.size());
 
 		writeJson(newMap, archiveFolder + transactionFile, "CURRENT");
-		
+
 		term2ToDo(newMap);
 
 	}
@@ -92,51 +174,52 @@ public class App {
 		DateFormat df = new SimpleDateFormat("yyyyMM");
 
 		map = loadJson(archiveFolder + transactionFile + json);
-		System.out.println(map.size());
-		//Iterator<Entry<String, Transaction>> iter = map.entrySet().iterator();
+		//System.out.println(map.size());
+		// Iterator<Entry<String, Transaction>> iter =
+		// map.entrySet().iterator();
 		float bal = 0;
 		Path file = Paths.get("term2ToDo.csv");
 		List<String> lines = new ArrayList<String>();
 		List<Transaction> transactions = new ArrayList<Transaction>(map.values());
-		
+
 		Collections.sort(transactions, new Comparator<Transaction>() {
 
 			public int compare(Transaction t1, Transaction t2) {
 				return (int) (t1.getAmount() - t2.getAmount());
 			}
 		});
-		
+
 		for (Transaction transaction : transactions) {
-			System.out.println(transaction);
-			if (transaction.getReportingPeriod() == 201704 
-					//&& transaction.getTerm2() == null
+			//System.out.println(transaction);
+			if (transaction.getReportingPeriod() == 201704
+			// && transaction.getTerm2() == null
 			// &&transaction.getAmount() < 0
 			) {
 				bal = bal + transaction.getAmount();
 
-				System.out.println(transaction.toString());
-				lines.add(transaction.getKey() + "|" + transaction.getTerm2() );
+				//System.out.println(transaction.toString());
+				lines.add(transaction.getKey() + "|" + transaction.getTerm2());
 
 			}
 		}
-		
+
 		Files.write(file, lines, Charset.forName("UTF-8"));
-		System.out.println(bal);
+		//System.out.println(bal);
 	}
 
 	private static void doTerm2() throws Exception {
-		Map<String, Transaction> jaco = new HashMap<String, Transaction>();
-		Map<String, Transaction> hemla = new HashMap<String, Transaction>();
-		Map<String, Transaction> fixed = new HashMap<String, Transaction>();
+		Map<String, Transaction> jaco = new TreeMap<String, Transaction>();
+		Map<String, Transaction> hemla = new TreeMap<String, Transaction>();
+		Map<String, Transaction> fixed = new TreeMap<String, Transaction>();
 
-        Map<String, Transaction> current = new HashMap<String, Transaction>();
+		Map<String, Transaction> current = new TreeMap<String, Transaction>();
 
-        current = loadJson(archiveFolder + transactionFile + json);
+		current = loadJson(archiveFolder + transactionFile + json);
 		System.out.println("json size before doTerm2  " + current.size());
 
 		String term2ToDoFile = "./term2ToDo.csv";
 		term2ToDoLst = readFile(term2ToDoFile);
-		System.out.println(term2ToDoLst);
+		//System.out.println(term2ToDoLst);
 		for (String prop : term2ToDoLst) {
 			String[] parts = prop.split("\\|");
 			current.get(parts[0]).setTerm2(parts[1]);
@@ -149,15 +232,11 @@ public class App {
 			Entry<String, Transaction> tran = iter.next();
 
 			if (tran.getValue().getTerm2() != null && tran.getValue().getTerm2().equals("SPLIT")) {
-			    System.out.println(tran.getValue().getDescription() + " " + tran.getValue().getAmount());
 				float splitAmount = tran.getValue().getAmount() / 2;
 				String key = tran.getKey();
 				Transaction t = tran.getValue();
-			    System.out.println(tran.getValue().getDescription() + " " + tran.getValue().getAmount());
 				jaco.put(key, t);
-			    System.out.println(tran.getValue().getDescription() + " " + tran.getValue().getAmount());
 				jaco.get(key).setAmount(splitAmount);
-			    System.out.println(tran.getValue().getDescription() + " " + tran.getValue().getAmount());
 				hemla.put(key, t);
 				hemla.get(key).setAmount(splitAmount);
 
@@ -165,7 +244,8 @@ public class App {
 				jaco.put(tran.getKey(), tran.getValue());
 			} else if (tran.getValue().getTerm2() != null && tran.getValue().getTerm2().equals("HEMLA")) {
 				hemla.put(tran.getKey(), tran.getValue());
-			} else if (tran.getValue().getTerm2() != null && tran.getValue().getTerm2().equals("CURRENT") && tran.getValue().getAmount() < 0) {
+			} else if (tran.getValue().getTerm2() != null && tran.getValue().getTerm2().equals("CURRENT")
+					&& tran.getValue().getAmount() < 0) {
 				fixed.put(tran.getKey(), tran.getValue());
 			}
 
@@ -195,15 +275,9 @@ public class App {
 	}
 
 	private static String getMatch(String description) {
-		// System.out.println(description);
-
 		for (String prop : mappingProperties) {
-			// System.out.println(prop);
 			String[] parts = prop.split(",");
-			// System.out.println(parts[0] + " " + parts[1]);
 			if (description.matches(".*" + parts[0] + ".*")) {
-				// System.out.println(parts[1]+"******************
-				// "+description);
 				return parts[1];
 			}
 		}
@@ -251,12 +325,9 @@ public class App {
 		}
 		ObjectMapper mapper = new ObjectMapper();
 		try {
-            mapper.writeValue(new File(fileName + json), acc);
-            //DateFormat df = new SimpleDateFormat("yyyyMMdd");
-            //mapper.setDateFormat(df);
-            //mapper.writeValue(new File(fileName + "Date" + json), acc);
-            mapper.configure(SerializationFeature.INDENT_OUTPUT, true);
-            mapper.writeValue(new File(fileName + "Formatted" + json), acc);
+			//mapper.writeValue(new File(fileName + json), acc);
+			mapper.configure(SerializationFeature.INDENT_OUTPUT, true);
+			mapper.writeValue(new File(fileName + json), acc);
 		} catch (JsonGenerationException e) {
 			e.printStackTrace();
 		} catch (JsonMappingException e) {
@@ -272,10 +343,8 @@ public class App {
 			CSVReader reader = new CSVReader(new FileReader(file));
 			myEntries = reader.readAll();
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return myEntries;
@@ -287,13 +356,12 @@ public class App {
 					tran[3].isEmpty() ? 0 : Float.valueOf(tran[3]), tran[4], null, null);
 			transactions.add(newTran);
 		}
-		System.out.println(transactions.size());
+		//System.out.println(transactions.size());
 	}
 
 	// read cnv
 	private static Map<String, Transaction> loadCsv() {
-		Map<String, Transaction> map = new HashMap();
-		// File f = new File("C:\\Users\\immeljac\\Downloads\\in");
+		Map<String, Transaction> map = new TreeMap();
 		File f = new File(applicationFolder);
 		for (File file : f.listFiles()) {
 			addTransactions(file);
@@ -306,20 +374,17 @@ public class App {
 
 	static Map<String, Transaction> loadJson(String fileName) {
 		ObjectMapper mapper = new ObjectMapper();
-		Map<String, Transaction> map = new HashMap();
+		Map<String, Transaction> map = new TreeMap();
 		try {
 			Account account = mapper.readValue(new File(fileName), Account.class);
 			for (Transaction tran : account.getTransactions()) {
 				map.put(tran.getKey(), tran);
 			}
 		} catch (JsonParseException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (JsonMappingException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return map;

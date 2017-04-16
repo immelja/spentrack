@@ -38,7 +38,7 @@
     "income" : "EXPENSE",
     "term" : "PRIVATEHEALTH",
     "term2" : "CURRENT",
-    "term3" : "null",
+    "term3" : "HEALTHCOMAU",
     "key" : "20170403_-346.45_HEALTHCOMAUPLABBOTSFORDVIC"
   }, {
     "date" : "20170403",
@@ -90,7 +90,7 @@
     "income" : "EXPENSE",
     "term" : "CHILDCARE",
     "term2" : "CURRENT",
-    "term3" : "null",
+    "term3" : "STFAITHS",
     "key" : "20170407_-840.0_DirectDebit397339STFAITHSCCARESTFAITHSFEES"
   }, {
     "date" : "20170409",
@@ -142,7 +142,7 @@
     "income" : "EXPENSE",
     "term" : "CHILDCARE",
     "term2" : "CURRENT",
-    "term3" : "null",
+    "term3" : "STFAITHS",
     "key" : "20170413_-840.0_DirectDebit397339STFAITHSCCARESTFAITHSFEES"
   } ]
 }

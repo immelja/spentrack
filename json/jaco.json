@@ -12,6 +12,7 @@
     "income" : "EXPENSE",
     "term" : "CASH",
     "term2" : "SPLIT",
+    "term3" : "ATM",
     "key" : "20170401_-100.0_WdlATMCBAATMPRESTONSHOPSVIC316396AUS"
   }, {
     "date" : "20170401",
@@ -24,6 +25,7 @@
     "income" : "EXPENSE",
     "term" : "GROCERIES",
     "term2" : "SPLIT",
+    "term3" : "null",
     "key" : "20170401_-13.0_AEGEANDELICATESSENPRESTON"
   }, {
     "date" : "20170401",
@@ -36,6 +38,7 @@
     "income" : "EXPENSE",
     "term" : "HAIR",
     "term2" : "JACO",
+    "term3" : "null",
     "key" : "20170401_-32.0_THEBARBERSHAKGREENSBOROUG"
   }, {
     "date" : "20170401",
@@ -48,6 +51,7 @@
     "income" : "EXPENSE",
     "term" : "GROCERIES",
     "term2" : "SPLIT",
+    "term3" : "WOOLWORTHS",
     "key" : "20170401_-2.5_AMEXWOOLWORTHS3183STHELENASTHELENA019"
   }, {
     "date" : "20170402",
@@ -60,6 +64,7 @@
     "income" : "EXPENSE",
     "term" : "ENTERTAINMENT",
     "term2" : "SPLIT",
+    "term3" : "null",
     "key" : "20170402_-6.75_BillboardTheVenueMelbourneVIC"
   }, {
     "date" : "20170402",
@@ -72,6 +77,7 @@
     "income" : "EXPENSE",
     "term" : "ENTERTAINMENT",
     "term2" : "SPLIT",
+    "term3" : "null",
     "key" : "20170402_-7.75_BillboardTheVenueMelbourneVIC"
   }, {
     "date" : "20170402",
@@ -84,6 +90,7 @@
     "income" : "EXPENSE",
     "term" : "TOLL",
     "term2" : "SPLIT",
+    "term3" : "null",
     "key" : "20170402_-2.755_CITYLINKMELBOURNEMELBOURNE"
   }, {
     "date" : "20170402",
@@ -96,6 +103,7 @@
     "income" : "EXPENSE",
     "term" : "ENTERTAINMENT",
     "term2" : "SPLIT",
+    "term3" : "null",
     "key" : "20170402_-39.9_DOUBLENINEPTYLTDMELBOURNEVIC"
   }, {
     "date" : "20170403",
@@ -108,6 +116,7 @@
     "income" : "EXPENSE",
     "term" : "PARKING",
     "term2" : "SPLIT",
+    "term3" : "null",
     "key" : "20170403_-6.05_WILSONPARKINGMEL215MELBOURNEVIC"
   }, {
     "date" : "20170403",
@@ -120,6 +129,7 @@
     "income" : "EXPENSE",
     "term" : "GROCERIES",
     "term2" : "SPLIT",
+    "term3" : "null",
     "key" : "20170403_-8.39_AMEXWOOLWORTHS3762COLLINSSMELBOURNE019"
   }, {
     "date" : "20170403",
@@ -132,6 +142,7 @@
     "income" : "EXPENSE",
     "term" : "CASH",
     "term2" : "JACO",
+    "term3" : "ATM",
     "key" : "20170403_-200.0_WdlATMCBAATM99KINGSTAVIC302001AUS"
   }, {
     "date" : "20170403",
@@ -144,6 +155,7 @@
     "income" : "EXPENSE",
     "term" : "GROCERIES",
     "term2" : "SPLIT",
+    "term3" : "null",
     "key" : "20170403_-15.345_WOOLWORTHS3183STHELDIAMONDCREE"
   }, {
     "date" : "20170403",
@@ -156,6 +168,7 @@
     "income" : "EXPENSE",
     "term" : "DINING",
     "term2" : "JACO",
+    "term3" : "null",
     "key" : "20170403_-4.0_DEMADHATTERCAFEDOCKLANDSVIC"
   }, {
     "date" : "20170404",
@@ -168,6 +181,7 @@
     "income" : "EXPENSE",
     "term" : "CHEMIST",
     "term2" : "SPLIT",
+    "term3" : "null",
     "key" : "20170404_-7.485_MYCHEMISTGREENSBOROUGVIC"
   }, {
     "date" : "20170404",
@@ -180,6 +194,7 @@
     "income" : "EXPENSE",
     "term" : "DINING",
     "term2" : "JACO",
+    "term3" : "null",
     "key" : "20170404_-4.0_DEMADHATTERCAFEDOCKLANDSVIC"
   }, {
     "date" : "20170404",
@@ -192,6 +207,7 @@
     "income" : "EXPENSE",
     "term" : "GROCERIES",
     "term2" : "SPLIT",
+    "term3" : "null",
     "key" : "20170404_-20.515_ALDISTORESGREENSBOROUG"
   }, {
     "date" : "20170404",
@@ -204,6 +220,7 @@
     "income" : "EXPENSE",
     "term" : "RETAIL",
     "term2" : "SPLIT",
+    "term3" : "null",
     "key" : "20170404_-3.5_THEREJECTSHOPGREENSBOROUGVIC"
   }, {
     "date" : "20170406",
@@ -216,6 +233,7 @@
     "income" : "EXPENSE",
     "term" : "KIDS",
     "term2" : "SPLIT",
+    "term3" : "null",
     "key" : "20170406_-8.5_DEBITSUCCESSBELGRAVIANOTTINGHILL"
   }, {
     "date" : "20170406",
@@ -228,6 +246,7 @@
     "income" : "EXPENSE",
     "term" : "DINING",
     "term2" : "JACO",
+    "term3" : "null",
     "key" : "20170406_-4.0_DEMADHATTERCAFEDOCKLANDSVIC"
   }, {
     "date" : "20170407",
@@ -240,6 +259,7 @@
     "income" : "EXPENSE",
     "term" : "PAYPAL",
     "term2" : "SPLIT",
+    "term3" : "null",
     "key" : "20170407_-0.995_PAYPAL*YANGLILI4029357733AUS"
   }, {
     "date" : "20170407",
@@ -252,6 +272,7 @@
     "income" : "EXPENSE",
     "term" : "PAYPAL",
     "term2" : "SPLIT",
+    "term3" : "null",
     "key" : "20170407_-1.115_PAYPAL*SONGYUXING4029357733AUS"
   }, {
     "date" : "20170407",
@@ -264,6 +285,7 @@
     "income" : "EXPENSE",
     "term" : "PAYPAL",
     "term2" : "SPLIT",
+    "term3" : "null",
     "key" : "20170407_-1.495_PAYPAL*YANGLILI4029357733AUS"
   }, {
     "date" : "20170407",
@@ -276,6 +298,7 @@
     "income" : "EXPENSE",
     "term" : "PAYPAL",
     "term2" : "SPLIT",
+    "term3" : "null",
     "key" : "20170407_-2.495_AMEXPAYPAL*WUHUAIRUN4029357733000"
   }, {
     "date" : "20170407",
@@ -288,6 +311,7 @@
     "income" : "EXPENSE",
     "term" : "PAYPAL",
     "term2" : "SPLIT",
+    "term3" : "null",
     "key" : "20170407_-2.5_PAYPAL*ZHANGJIANMI4029357733AUS"
   }, {
     "date" : "20170407",
@@ -300,6 +324,7 @@
     "income" : "EXPENSE",
     "term" : "PAYPAL",
     "term2" : "SPLIT",
+    "term3" : "null",
     "key" : "20170407_-2.845_PAYPAL*GUOQINGZHU4029357733AUS"
   }, {
     "date" : "20170407",
@@ -312,6 +337,7 @@
     "income" : "EXPENSE",
     "term" : "GROCERIES",
     "term2" : "SPLIT",
+    "term3" : "null",
     "key" : "20170407_-3.99_AMEXMONTY'SLICENCEDSUPERMARMONTMORENCY019"
   }, {
     "date" : "20170408",
@@ -324,6 +350,7 @@
     "income" : "EXPENSE",
     "term" : "UNMATCHED",
     "term2" : "SPLIT",
+    "term3" : "null",
     "key" : "20170408_-6.9_AMEXMELBOURNESTADIUMSLIMITEDOCKLANDS019"
   }, {
     "date" : "20170408",
@@ -336,6 +363,7 @@
     "income" : "EXPENSE",
     "term" : "ENTERTAINMENT",
     "term2" : "JACO",
+    "term3" : "null",
     "key" : "20170408_-17.4_MELBOURNESTADIUMLTDDOCKLANDS"
   }, {
     "date" : "20170408",
@@ -348,6 +376,7 @@
     "income" : "EXPENSE",
     "term" : "GROCERIES",
     "term2" : "SPLIT",
+    "term3" : "null",
     "key" : "20170408_-9.64_AMEXWOOLWORTHS3183STHELENASTHELENA019"
   }, {
     "date" : "20170408",
@@ -360,6 +389,7 @@
     "income" : "EXPENSE",
     "term" : "BUNNINGS",
     "term2" : "SPLIT",
+    "term3" : "null",
     "key" : "20170408_-17.82_AMEXBUNNINGSWAREHOUSEELTHAMELTHAM019"
   }, {
     "date" : "20170408",
@@ -372,6 +402,7 @@
     "income" : "EXPENSE",
     "term" : "UNMATCHED",
     "term2" : "SPLIT",
+    "term3" : "null",
     "key" : "20170408_-3.75_DELICUTDELISTHELENASTHELENAVIC"
   }, {
     "date" : "20170409",
@@ -384,6 +415,7 @@
     "income" : "EXPENSE",
     "term" : "DINING",
     "term2" : "SPLIT",
+    "term3" : "null",
     "key" : "20170409_-6.985_FrozenByAThousandMelbourneVIC"
   }, {
     "date" : "20170409",
@@ -396,6 +428,7 @@
     "income" : "EXPENSE",
     "term" : "PARKING",
     "term2" : "SPLIT",
+    "term3" : "null",
     "key" : "20170409_-10.0_QUEENVICTORIAMARKEMELBOURNEVIC"
   }, {
     "date" : "20170409",
@@ -408,6 +441,7 @@
     "income" : "EXPENSE",
     "term" : "UNMATCHED",
     "term2" : "SPLIT",
+    "term3" : "null",
     "key" : "20170409_-21.0_ILOVEPHOEXPRESSPMELBOURNEVIC"
   }, {
     "date" : "20170411",
@@ -420,6 +454,7 @@
     "income" : "EXPENSE",
     "term" : "GROCERIES",
     "term2" : "SPLIT",
+    "term3" : "COLES",
     "key" : "20170411_-9.845_AMEXCOLESGREENSBOROUGH657GREENSBOROUG019"
   }, {
     "date" : "20170411",
@@ -432,6 +467,7 @@
     "income" : "EXPENSE",
     "term" : "GROCERIES",
     "term2" : "SPLIT",
+    "term3" : "null",
     "key" : "20170411_-39.78_ALDISTORESGREENSBOROUG"
   }, {
     "date" : "20170412",
@@ -444,6 +480,7 @@
     "income" : "EXPENSE",
     "term" : "DINING",
     "term2" : "JACO",
+    "term3" : "null",
     "key" : "20170412_-4.0_AMEXDEMADHATTERCAFEDOCKLAND019"
   } ]
 }

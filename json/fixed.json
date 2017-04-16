@@ -12,6 +12,7 @@
     "income" : "EXPENSE",
     "term" : "TRANFEE",
     "term2" : "CURRENT",
+    "term3" : "null",
     "key" : "20170403_-0.05_AMEXINTNLTRANSACTIONFEE"
   }, {
     "date" : "20170403",
@@ -24,6 +25,7 @@
     "income" : "EXPENSE",
     "term" : "AMAZON",
     "term2" : "CURRENT",
+    "term3" : "null",
     "key" : "20170403_-2.63_AMEXAMAZONWEBSERVICESAWS.AMAZON.C107##04171.97USDOLLAR"
   }, {
     "date" : "20170403",
@@ -36,6 +38,7 @@
     "income" : "EXPENSE",
     "term" : "PRIVATEHEALTH",
     "term2" : "CURRENT",
+    "term3" : "null",
     "key" : "20170403_-346.45_HEALTHCOMAUPLABBOTSFORDVIC"
   }, {
     "date" : "20170403",
@@ -48,6 +51,7 @@
     "income" : "EXPENSE",
     "term" : "MYKI",
     "term2" : "CURRENT",
+    "term3" : "null",
     "key" : "20170403_-50.0_PUBLICTRANSPORTVICTDOCKLANDS"
   }, {
     "date" : "20170404",
@@ -60,6 +64,7 @@
     "income" : "EXPENSE",
     "term" : "PAYPAL",
     "term2" : "CURRENT",
+    "term3" : "null",
     "key" : "20170404_-11.99_AMEXPAYPAL*NETFLIX.COM35314369001019"
   }, {
     "date" : "20170404",
@@ -72,6 +77,7 @@
     "income" : "EXPENSE",
     "term" : "INSURANCE",
     "term2" : "CURRENT",
+    "term3" : "null",
     "key" : "20170404_-54.42_COMMONWEALTHINSURANCESYDNEYOLYMP"
   }, {
     "date" : "20170407",
@@ -84,6 +90,7 @@
     "income" : "EXPENSE",
     "term" : "CHILDCARE",
     "term2" : "CURRENT",
+    "term3" : "null",
     "key" : "20170407_-840.0_DirectDebit397339STFAITHSCCARESTFAITHSFEES"
   }, {
     "date" : "20170409",
@@ -96,6 +103,7 @@
     "income" : "EXPENSE",
     "term" : "FOXTEL",
     "term2" : "CURRENT",
+    "term3" : "null",
     "key" : "20170409_-26.0_FOXTELMANAGEMENTPTYNORTHRYDE"
   }, {
     "date" : "20170411",
@@ -108,6 +116,7 @@
     "income" : "EXPENSE",
     "term" : "INSURANCE",
     "term2" : "CURRENT",
+    "term3" : "null",
     "key" : "20170411_-84.07_COMMONWEALTHINSURANCESYDNEYOLYMP"
   }, {
     "date" : "20170413",
@@ -118,8 +127,9 @@
     "balance" : 0.0,
     "category" : "Cash out",
     "income" : "EXPENSE",
-    "term" : "UNMATCHED",
+    "term" : "MBC_EXPENSE",
     "term2" : "CURRENT",
+    "term3" : "MBC",
     "key" : "20170413_-1700.0_NETBANKTRANSFERPARRAMATTA"
   }, {
     "date" : "20170413",
@@ -132,6 +142,7 @@
     "income" : "EXPENSE",
     "term" : "CHILDCARE",
     "term2" : "CURRENT",
+    "term3" : "null",
     "key" : "20170413_-840.0_DirectDebit397339STFAITHSCCARESTFAITHSFEES"
   } ]
 }

@@ -18,10 +18,12 @@ public class Transaction {
 	private String income;
 	private String term;
 	private String term2;
+	private String term3;
+
 
 	private String key;
 	public Transaction(){}
-	public Transaction(String dateString, float amount, String description, float balance, String category, String term, String term2) {
+	public Transaction(String dateString, float amount, String description, float balance, String category, String term, String term2,String term3) {
 		super();
 		this.dateString = dateString;
 		this.amount = amount;
@@ -46,7 +48,8 @@ public class Transaction {
 		Format yyyyMM = new SimpleDateFormat("yyyyMM"); 
 		this.reportingPeriod = Integer.valueOf(yyyyMM.format(d));
 		this.term = term;
-	    this.term = term2;
+	    this.term2 = term2;
+	    this.term3 = term3;
 
 	}
 	public void setAmount(float amount) {
@@ -96,7 +99,13 @@ public class Transaction {
     public void setTerm2(String term2) {
         this.term2 = term2;
     }
-    public String getKey() {
+    public String getTerm3() {
+		return term3;
+	}
+	public void setTerm3(String term3) {
+		this.term3 = term3;
+	}
+	public String getKey() {
 		return date + "_" + amount + "_" + description.replace(" ", "");
 	}
 	@Override

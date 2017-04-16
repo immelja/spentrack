@@ -51,11 +51,14 @@ public class App {
 	private static String archiveFolder = "./archive/";
 	private static String transactionFile = "standard";
 	private static String json = ".json";
+	
+	private static int reportingPeriod = 201704;
 
 	public static void main(String[] args) throws Exception {
 		System.out.println("spentrack");
 		scanDownloads();
 		process();
+		term2ToDo();
 		// analyse();
 	}
 
@@ -172,7 +175,8 @@ public class App {
 
 	}
 
-	private static void term2ToDo(Map<String, Transaction> map) throws IOException {
+	private static void term2ToDo() throws IOException {
+		Map<String, Transaction> map = new TreeMap<String, Transaction>();
 
 		DateFormat df = new SimpleDateFormat("yyyyMM");
 
@@ -201,7 +205,11 @@ public class App {
 				bal = bal + transaction.getAmount();
 
 				// System.out.println(transaction.toString());
-				lines.add(transaction.getKey() + "|" + transaction.getTerm2());
+				lines.add(transaction.getKey() 
+						+ "|" + transaction.getTerm()
+						+ "|" + transaction.getTerm2()
+						+ "|" + transaction.getTerm3()
+						);
 
 			}
 		}
@@ -216,8 +224,6 @@ public class App {
 		Map<String, Transaction> fixed = new TreeMap<String, Transaction>();
 
 		Map<String, Transaction> current = new TreeMap<String, Transaction>();
-		Date d = new Date();
-		Format yyyyMM = new SimpleDateFormat("yyyyMM");
 
 		current = loadJson(archiveFolder + transactionFile + json);
 		//System.out.println("json size before doTerm2  " + current.size());
@@ -229,7 +235,9 @@ public class App {
 			//System.out.println(prop);
 			String[] parts = prop.split("\\|");
 			//System.out.println("matched part 0? " + current.get(parts[0]).getTerm2() + " " + parts[1]);
-			current.get(parts[0]).setTerm2(parts[1]);
+			current.get(parts[0]).setTerm(parts[1]);
+			current.get(parts[0]).setTerm2(parts[2]);
+			current.get(parts[0]).setTerm3(parts[3]);
 		}
 
 		writeJson(current, archiveFolder + transactionFile, "CURRENT");
@@ -237,7 +245,7 @@ public class App {
 		Iterator<Entry<String, Transaction>> iter = current.entrySet().iterator();
 		while (iter.hasNext()) {
 			Entry<String, Transaction> tran = iter.next();
-			if (tran.getValue().getReportingPeriod() == Integer.valueOf(yyyyMM.format(d))) {
+			if (tran.getValue().getReportingPeriod() == reportingPeriod) {
 
 				if (tran.getValue().getTerm2() != null && tran.getValue().getTerm2().equals("SPLIT")) {
 					float splitAmount = tran.getValue().getAmount() / 2;
@@ -363,7 +371,7 @@ public class App {
 	private static void addTransactions(File file) {
 		for (String[] tran : load(file)) {
 			Transaction newTran = new Transaction(tran[0], Float.valueOf(tran[1]), tran[2],
-					tran[3].isEmpty() ? 0 : Float.valueOf(tran[3]), tran[4], null, null);
+					tran[3].isEmpty() ? 0 : Float.valueOf(tran[3]), tran[4], null, null, null);
 			transactions.add(newTran);
 		}
 		// System.out.println(transactions.size());

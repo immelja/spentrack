@@ -1,6 +1,6 @@
 {
   "type" : "HEMLA",
-  "balance" : -763.345,
+  "balance" : -1034.575,
   "transactions" : [ {
     "date" : "20170401",
     "finYear" : 2017,
@@ -348,7 +348,7 @@
     "balance" : 0.0,
     "category" : "Entertainment",
     "income" : "EXPENSE",
-    "term" : "UNMATCHED",
+    "term" : "ENTERTAINMENT",
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170408_-6.9_AMEXMELBOURNESTADIUMSLIMITEDOCKLANDS019"
@@ -470,6 +470,19 @@
     "term3" : "null",
     "key" : "20170411_72.75_DirectCredit002221MCAREBENEFITS016035686CTNM"
   }, {
+    "date" : "20170412",
+    "finYear" : 2017,
+    "reportingPeriod" : 201704,
+    "amount" : -77.0,
+    "description" : "MARK TRELOAR/CARLY TRE   ELTHAM      VIC",
+    "balance" : 0.0,
+    "category" : "Health & medical",
+    "income" : "EXPENSE",
+    "term" : "CHIRO",
+    "term2" : "HEMLA",
+    "term3" : "null",
+    "key" : "20170412_-77.0_MARKTRELOAR/CARLYTREELTHAMVIC"
+  }, {
     "date" : "20170413",
     "finYear" : 2017,
     "reportingPeriod" : 201704,
@@ -495,5 +508,70 @@
     "term2" : "HEMLA",
     "term3" : "null",
     "key" : "20170413_-34.0_CBAOTHERCASHADVFEE"
+  }, {
+    "date" : "20170414",
+    "finYear" : 2017,
+    "reportingPeriod" : 201704,
+    "amount" : -22.45,
+    "description" : "AUSTRIASIA INDUSTRIE     DONCASTER   VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170414_-22.45_AUSTRIASIAINDUSTRIEDONCASTERVIC"
+  }, {
+    "date" : "20170416",
+    "finYear" : 2017,
+    "reportingPeriod" : 201704,
+    "amount" : -18.2,
+    "description" : "AMEX MCDONALDS CALDER SOUTHBOUNTH KEILOR  019",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "MCDONALDS",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170416_-18.2_AMEXMCDONALDSCALDERSOUTHBOUNTHKEILOR019"
+  }, {
+    "date" : "20170416",
+    "finYear" : 2017,
+    "reportingPeriod" : 201704,
+    "amount" : -34.9,
+    "description" : "LAVANDULA FARM HOUSE     SHEPHERDS FL  ",
+    "balance" : 0.0,
+    "category" : "Home & renovation",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170416_-34.9_LAVANDULAFARMHOUSESHEPHERDSFL"
+  }, {
+    "date" : "20170417",
+    "finYear" : 2017,
+    "reportingPeriod" : 201704,
+    "amount" : -97.615,
+    "description" : "AMEX CRYSTAL JADE REST 3      MELBOURNE   019",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170417_-97.615_AMEXCRYSTALJADEREST3MELBOURNE019"
+  }, {
+    "date" : "20170418",
+    "finYear" : 2017,
+    "reportingPeriod" : 201704,
+    "amount" : -21.065,
+    "description" : "AMEX COLES GREENSBOROUGH 657  GREENSBOROUG019",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170418_-21.065_AMEXCOLESGREENSBOROUGH657GREENSBOROUG019"
   } ]
 }

@@ -1,6 +1,6 @@
 {
   "type" : "JACO",
-  "balance" : -843.22504,
+  "balance" : -895.57,
   "transactions" : [ {
     "date" : "20170401",
     "finYear" : 2017,
@@ -473,6 +473,32 @@
     "date" : "20170412",
     "finYear" : 2017,
     "reportingPeriod" : 201704,
+    "amount" : -13.0,
+    "description" : "SUSHI&NORI BRISBANE      BOWEN HILLS QLD",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "JACO",
+    "term3" : "null",
+    "key" : "20170412_-13.0_SUSHI&NORIBRISBANEBOWENHILLSQLD"
+  }, {
+    "date" : "20170412",
+    "finYear" : 2017,
+    "reportingPeriod" : 201704,
+    "amount" : -7.0,
+    "description" : "VIC PROPERTY CERTS       MELBOURNE     ",
+    "balance" : 0.0,
+    "category" : "Bills & utilities",
+    "income" : "EXPENSE",
+    "term" : "HOME",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170412_-7.0_VICPROPERTYCERTSMELBOURNE"
+  }, {
+    "date" : "20170412",
+    "finYear" : 2017,
+    "reportingPeriod" : 201704,
     "amount" : -4.0,
     "description" : "AMEX DE MAD HATTER CAFE       DOCKLAND    019",
     "balance" : 0.0,
@@ -482,6 +508,32 @@
     "term2" : "JACO",
     "term3" : "null",
     "key" : "20170412_-4.0_AMEXDEMADHATTERCAFEDOCKLAND019"
+  }, {
+    "date" : "20170413",
+    "finYear" : 2017,
+    "reportingPeriod" : 201704,
+    "amount" : -8.5,
+    "description" : "DEBITSUCCESSBELGRAVIA    NOTTING HILL  ",
+    "balance" : 0.0,
+    "category" : "Entertainment",
+    "income" : "EXPENSE",
+    "term" : "KIDS",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170413_-8.5_DEBITSUCCESSBELGRAVIANOTTINGHILL"
+  }, {
+    "date" : "20170413",
+    "finYear" : 2017,
+    "reportingPeriod" : 201704,
+    "amount" : -4.0,
+    "description" : "DE MAD HATTER CAFE       DOCKLANDS   VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "JACO",
+    "term3" : "null",
+    "key" : "20170413_-4.0_DEMADHATTERCAFEDOCKLANDSVIC"
   }, {
     "date" : "20170414",
     "finYear" : 2017,
@@ -495,6 +547,32 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170414_-22.45_AUSTRIASIAINDUSTRIEDONCASTERVIC"
+  }, {
+    "date" : "20170415",
+    "finYear" : 2017,
+    "reportingPeriod" : 201704,
+    "amount" : -1.495,
+    "description" : "MY CHEMIST               GREENSBOROUGVIC",
+    "balance" : 0.0,
+    "category" : "Health & medical",
+    "income" : "EXPENSE",
+    "term" : "CHEMIST",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170415_-1.495_MYCHEMISTGREENSBOROUGVIC"
+  }, {
+    "date" : "20170415",
+    "finYear" : 2017,
+    "reportingPeriod" : 201704,
+    "amount" : -10.1,
+    "description" : "AMEX COLES GREENSBOROUGH 657  GREENSBOROUG019",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170415_-10.1_AMEXCOLESGREENSBOROUGH657GREENSBOROUG019"
   }, {
     "date" : "20170416",
     "finYear" : 2017,
@@ -521,6 +599,19 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170416_-34.9_LAVANDULAFARMHOUSESHEPHERDSFL"
+  }, {
+    "date" : "20170417",
+    "finYear" : 2017,
+    "reportingPeriod" : 201704,
+    "amount" : -8.25,
+    "description" : "MRS PARMA'S              MELBOURNE     ",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170417_-8.25_MRSPARMA'SMELBOURNE"
   }, {
     "date" : "20170417",
     "finYear" : 2017,

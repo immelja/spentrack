@@ -1,6 +1,6 @@
 {
   "type" : "FIXED",
-  "balance" : -7690.61,
+  "balance" : -6595.61,
   "transactions" : [ {
     "date" : "20170403",
     "finYear" : 2017,
@@ -119,32 +119,6 @@
     "term3" : "null",
     "key" : "20170411_-84.07_COMMONWEALTHINSURANCESYDNEYOLYMP"
   }, {
-    "date" : "20170412",
-    "finYear" : 2017,
-    "reportingPeriod" : 201704,
-    "amount" : -235.0,
-    "description" : "DELWP VIC GOV            EAST MELBOUR  ",
-    "balance" : 0.0,
-    "category" : "Bills & utilities",
-    "income" : "EXPENSE",
-    "term" : "MBC_EXPENSE",
-    "term2" : "CURRENT",
-    "term3" : "null",
-    "key" : "20170412_-235.0_DELWPVICGOVEASTMELBOUR"
-  }, {
-    "date" : "20170413",
-    "finYear" : 2017,
-    "reportingPeriod" : 201704,
-    "amount" : -1700.0,
-    "description" : "NETBANK TRANSFER         PARRAMATTA    ",
-    "balance" : 0.0,
-    "category" : "Cash out",
-    "income" : "EXPENSE",
-    "term" : "MBC_EXPENSE",
-    "term2" : "CURRENT",
-    "term3" : "MBC",
-    "key" : "20170413_-1700.0_NETBANKTRANSFERPARRAMATTA"
-  }, {
     "date" : "20170413",
     "finYear" : 2017,
     "reportingPeriod" : 201704,
@@ -170,5 +144,18 @@
     "term2" : "CURRENT",
     "term3" : "null",
     "key" : "20170418_-3500.0_LoanRepaymentLNREPAY870662518"
+  }, {
+    "date" : "20170421",
+    "finYear" : 2017,
+    "reportingPeriod" : 201704,
+    "amount" : -840.0,
+    "description" : "Direct Debit 397339 ST FAITHS CCARE ST FAITHS FEES",
+    "balance" : 9353.02,
+    "category" : "Home & renovation",
+    "income" : "EXPENSE",
+    "term" : "CHILDCARE",
+    "term2" : "CURRENT",
+    "term3" : "STFAITHS",
+    "key" : "20170421_-840.0_DirectDebit397339STFAITHSCCARESTFAITHSFEES"
   } ]
 }

@@ -1,6 +1,6 @@
 {
   "type" : "HEMLA",
-  "balance" : -1069.9199,
+  "balance" : -1116.44,
   "transactions" : [ {
     "date" : "20170401",
     "finYear" : 2017,
@@ -473,19 +473,6 @@
     "date" : "20170412",
     "finYear" : 2017,
     "reportingPeriod" : 201704,
-    "amount" : -7.0,
-    "description" : "VIC PROPERTY CERTS       MELBOURNE     ",
-    "balance" : 0.0,
-    "category" : "Bills & utilities",
-    "income" : "EXPENSE",
-    "term" : "HOME",
-    "term2" : "SPLIT",
-    "term3" : "null",
-    "key" : "20170412_-7.0_VICPROPERTYCERTSMELBOURNE"
-  }, {
-    "date" : "20170412",
-    "finYear" : 2017,
-    "reportingPeriod" : 201704,
     "amount" : -77.0,
     "description" : "MARK TRELOAR/CARLY TRE   ELTHAM      VIC",
     "balance" : 0.0,
@@ -574,6 +561,19 @@
     "term3" : "null",
     "key" : "20170415_-10.1_AMEXCOLESGREENSBOROUGH657GREENSBOROUG019"
   }, {
+    "date" : "20170415",
+    "finYear" : 2017,
+    "reportingPeriod" : 201704,
+    "amount" : -28.65,
+    "description" : "ALDI STORES              GREENSBOROUG  ",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "ALDI",
+    "key" : "20170415_-28.65_ALDISTORESGREENSBOROUG"
+  }, {
     "date" : "20170416",
     "finYear" : 2017,
     "reportingPeriod" : 201704,
@@ -599,6 +599,32 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170416_-34.9_LAVANDULAFARMHOUSESHEPHERDSFL"
+  }, {
+    "date" : "20170417",
+    "finYear" : 2017,
+    "reportingPeriod" : 201704,
+    "amount" : -0.22,
+    "description" : "INTNL TRANSACTION FEE                  ",
+    "balance" : 0.0,
+    "category" : "Fees & charges",
+    "income" : "EXPENSE",
+    "term" : "TRANFEE",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170417_-0.22_INTNLTRANSACTIONFEE"
+  }, {
+    "date" : "20170417",
+    "finYear" : 2017,
+    "reportingPeriod" : 201704,
+    "amount" : -7.415,
+    "description" : "VODACOM SERVICE PROV     MIDRAND     ZA  ##0417         149.00 RAND             ",
+    "balance" : 0.0,
+    "category" : "Bills & utilities",
+    "income" : "EXPENSE",
+    "term" : "PARENTS",
+    "term2" : "SPLIT",
+    "term3" : "VODACOM",
+    "key" : "20170417_-7.415_VODACOMSERVICEPROVMIDRANDZA##0417149.00RAND"
   }, {
     "date" : "20170417",
     "finYear" : 2017,
@@ -638,5 +664,31 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170418_-21.065_AMEXCOLESGREENSBOROUGH657GREENSBOROUG019"
+  }, {
+    "date" : "20170419",
+    "finYear" : 2017,
+    "reportingPeriod" : 201704,
+    "amount" : -15.09,
+    "description" : "AMEX MONTY FUELS              MONTMORENCY 019",
+    "balance" : 0.0,
+    "category" : "Auto & transport",
+    "income" : "EXPENSE",
+    "term" : "FUEL",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170419_-15.09_AMEXMONTYFUELSMONTMORENCY019"
+  }, {
+    "date" : "20170419",
+    "finYear" : 2017,
+    "reportingPeriod" : 201704,
+    "amount" : -2.145,
+    "description" : "AMEX WOOLWORTHS 3089 SOUTHERN DOCKLANDS   019",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "WOOLWORTHS",
+    "key" : "20170419_-2.145_AMEXWOOLWORTHS3089SOUTHERNDOCKLANDS019"
   } ]
 }

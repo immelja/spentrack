@@ -1,6 +1,6 @@
 {
   "type" : "HEMLA",
-  "balance" : -1116.44,
+  "balance" : -1216.44,
   "transactions" : [ {
     "date" : "20170401",
     "finYear" : 2017,
@@ -690,5 +690,18 @@
     "term2" : "SPLIT",
     "term3" : "WOOLWORTHS",
     "key" : "20170419_-2.145_AMEXWOOLWORTHS3089SOUTHERNDOCKLANDS019"
+  }, {
+    "date" : "20170422",
+    "finYear" : 2017,
+    "reportingPeriod" : 201704,
+    "amount" : -100.0,
+    "description" : "Wdl ATM CBA ATM  PRESTON SHOPS  VIC 316396   AUS",
+    "balance" : 9153.02,
+    "category" : "Cash out",
+    "income" : "EXPENSE",
+    "term" : "CASH",
+    "term2" : "SPLIT",
+    "term3" : "ATM",
+    "key" : "20170422_-100.0_WdlATMCBAATMPRESTONSHOPSVIC316396AUS"
   } ]
 }

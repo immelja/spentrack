@@ -48,7 +48,7 @@
   </div>
 
   <script type="text/javascript">
-    var who = "hemla";
+    var who = "jaco";
     var jaco,hemla,fixed,current;
     var bal =0,jacoBal = 0,hemlaBal = 0,fixedBal = 0,currentBal = 0;
     $(document).ready(function () {
@@ -78,12 +78,14 @@
             bal = bal + item.amount;
             fixedBal = fixedBal + item.amount;
           });
+          
+          console.log(jacoBal)
+          console.log('$' + Math.round(bal * 100)/100);
 
-         
-          $("#a2").text('  ' + hemla.type.toLowerCase());
-          $("#navBal").text('$' + Math.round(hemlaBal * 100)/100 + ' (' + '$' + Math.round(bal * 100)/100 + ')');
+          $("#a2").text('  ' + jaco.type.toLowerCase());
+          $("#navBal").text('$' + Math.round(jacoBal * 100)/100)
           $('#table').bootstrapTable({
-            data: hemla.transactions
+            data: jaco.transactions
           });
 
           $("#a1").on("click", function () {
@@ -101,7 +103,7 @@
             who = current.type.toLowerCase(); 
 
             $("#a2").text('  ' + current.type.toLowerCase());
-            $("#navBal").text('$' + Math.round(currentBal * 100)/100 + ' (' + '$' + Math.round(bal * 100)/100 + ')');
+            $("#navBal").text('$' + Math.round(currentBal * 100)/100);
             $('#table').bootstrapTable('load',{
               data: current.transactions
             });                

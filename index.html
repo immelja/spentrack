@@ -28,14 +28,13 @@
       <div class="navbar-header"> 
         <a id="a1" class="navbar-brand" href="#" ><span id = "a2" style="font-size:25px"></span></a>
         <p style="color:#03c12d; font-size:17px" id="navBal" class="navbar-text"></p> 
-      </div>
-      
+      </div> 
     </div>
   </nav>
 
-  
-
   <div class="container-fluid theme-showcase" role="main">
+  <div class="alert alert-warning" role="alert" id="remaining"></div>
+
     <table class="table table-striped table-condensed" id="table">
       <thead>
         <tr>
@@ -50,7 +49,8 @@
   <script type="text/javascript">
     var who = "hemla";
     var jaco,hemla,fixed,current;
-    var bal =0,jacoBal = 0,hemlaBal = 0,fixedBal = 0,currentBal = 0;
+    var bal =0,jacoBal = 0,hemlaBal = 0,fixedBal = 0,currentBal = 0,remaining = 0;
+    var income = 13327.87;
     $(document).ready(function () {
 
       $.when(
@@ -85,9 +85,12 @@
           $('#table').bootstrapTable({
             data: hemla.transactions
           });
+          var remaining = income + bal;
+          $("#remaining").text('remaining:  $' + Math.round(remaining * 100)/100);
+
 
           $("#a1").on("click", function () {
-            console.log(who);
+            //console.log(who);
             if(who === "jaco") {
               current = hemla; 
               currentBal = hemlaBal;

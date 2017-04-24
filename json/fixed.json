@@ -1,6 +1,6 @@
 {
   "type" : "FIXED",
-  "balance" : -6595.61,
+  "balance" : -6973.34,
   "transactions" : [ {
     "date" : "20170403",
     "finYear" : 2017,
@@ -144,6 +144,19 @@
     "term2" : "CURRENT",
     "term3" : "null",
     "key" : "20170418_-3500.0_LoanRepaymentLNREPAY870662518"
+  }, {
+    "date" : "20170420",
+    "finYear" : 2017,
+    "reportingPeriod" : 201704,
+    "amount" : -377.73,
+    "description" : "YARRA VALLEY WATER 1     MITCHAM       ",
+    "balance" : 0.0,
+    "category" : "Bills & utilities",
+    "income" : "EXPENSE",
+    "term" : "WATER",
+    "term2" : "CURRENT",
+    "term3" : "YVW",
+    "key" : "20170420_-377.73_YARRAVALLEYWATER1MITCHAM"
   }, {
     "date" : "20170421",
     "finYear" : 2017,

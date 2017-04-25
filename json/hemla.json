@@ -1,6 +1,6 @@
 {
   "type" : "HEMLA",
-  "balance" : -1337.85,
+  "balance" : -2304.0952,
   "transactions" : [ {
     "date" : "20170401",
     "finYear" : 2017,
@@ -387,7 +387,7 @@
     "balance" : 0.0,
     "category" : "",
     "income" : "EXPENSE",
-    "term" : "UNMATCHED",
+    "term" : "GROCERIES",
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170408_-3.75_DELICUTDELISTHELENASTHELENAVIC"
@@ -703,6 +703,19 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170420_-8.5_DEBITSUCCESSBELGRAVIANOTTINGHILL"
+  }, {
+    "date" : "20170420",
+    "finYear" : 2017,
+    "reportingPeriod" : 201704,
+    "amount" : -966.245,
+    "description" : "AMEX SINGAPOREAIR AUSTRALIA   AUSTRALIA   000",
+    "balance" : 0.0,
+    "category" : "Travel",
+    "income" : "EXPENSE",
+    "term" : "FLIGHTS",
+    "term2" : "SPLIT",
+    "term3" : "SINGAPOREAIRLINES",
+    "key" : "20170420_-966.245_AMEXSINGAPOREAIRAUSTRALIAAUSTRALIA000"
   }, {
     "date" : "20170420",
     "finYear" : 2017,

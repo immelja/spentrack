@@ -1,6 +1,6 @@
 {
   "type" : "JACO",
-  "balance" : -2150.6448,
+  "balance" : -2239.8396,
   "transactions" : [ {
     "date" : "20170401",
     "finYear" : 2017,
@@ -811,6 +811,19 @@
     "date" : "20170422",
     "finYear" : 2017,
     "reportingPeriod" : 201704,
+    "amount" : -11.95,
+    "description" : "ARC ASIAN GROCER         PRESTON     VIC",
+    "balance" : 0.0,
+    "category" : "",
+    "income" : "EXPENSE",
+    "term" : "ASIAN",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170422_-11.95_ARCASIANGROCERPRESTONVIC"
+  }, {
+    "date" : "20170422",
+    "finYear" : 2017,
+    "reportingPeriod" : 201704,
     "amount" : -15.79,
     "description" : "BOBS MARKETS RESERVQPS   RESERVOIR     ",
     "balance" : 0.0,
@@ -820,6 +833,19 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170422_-15.79_BOBSMARKETSRESERVQPSRESERVOIR"
+  }, {
+    "date" : "20170422",
+    "finYear" : 2017,
+    "reportingPeriod" : 201704,
+    "amount" : -22.0,
+    "description" : "JOES QUALITY CORNER      PRESTON     VIC",
+    "balance" : 0.0,
+    "category" : "",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170422_-22.0_JOESQUALITYCORNERPRESTONVIC"
   }, {
     "date" : "20170422",
     "finYear" : 2017,
@@ -850,6 +876,32 @@
     "date" : "20170423",
     "finYear" : 2017,
     "reportingPeriod" : 201704,
+    "amount" : -2.4,
+    "description" : "BAKERS DELIGHT           ST HELENA   VIC",
+    "balance" : 0.0,
+    "category" : "",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170423_-2.4_BAKERSDELIGHTSTHELENAVIC"
+  }, {
+    "date" : "20170423",
+    "finYear" : 2017,
+    "reportingPeriod" : 201704,
+    "amount" : -3.15,
+    "description" : "BAKERS DELIGHT           ST HELENA   VIC",
+    "balance" : 0.0,
+    "category" : "",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170423_-3.15_BAKERSDELIGHTSTHELENAVIC"
+  }, {
+    "date" : "20170423",
+    "finYear" : 2017,
+    "reportingPeriod" : 201704,
     "amount" : -4.25,
     "description" : "AMEX KMART GREENSBOROUGH 1044 GREENSBOROUG019",
     "balance" : 0.0,
@@ -859,5 +911,44 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170423_-4.25_AMEXKMARTGREENSBOROUGH1044GREENSBOROUG019"
+  }, {
+    "date" : "20170424",
+    "finYear" : 2017,
+    "reportingPeriod" : 201704,
+    "amount" : -14.495,
+    "description" : "AMEX AMART ALL SPORTS TAYLORS TAYLORS LAKE019",
+    "balance" : 0.0,
+    "category" : "",
+    "income" : "EXPENSE",
+    "term" : "RETAIL",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170424_-14.495_AMEXAMARTALLSPORTSTAYLORSTAYLORSLAKE019"
+  }, {
+    "date" : "20170425",
+    "finYear" : 2017,
+    "reportingPeriod" : 201704,
+    "amount" : -6.8,
+    "description" : "AUSTRALIAN GASTRONOQPS   PORT MELBOUR  ",
+    "balance" : 0.0,
+    "category" : "",
+    "income" : "EXPENSE",
+    "term" : "RETAIL",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170425_-6.8_AUSTRALIANGASTRONOQPSPORTMELBOUR"
+  }, {
+    "date" : "20170426",
+    "finYear" : 2017,
+    "reportingPeriod" : 201704,
+    "amount" : -28.4,
+    "description" : "POKED PTY LTD            MELBOURNE     ",
+    "balance" : 0.0,
+    "category" : "",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170426_-28.4_POKEDPTYLTDMELBOURNE"
   } ]
 }

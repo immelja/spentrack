@@ -52,7 +52,7 @@ public class App {
 	private static String transactionFile = "standard";
 	private static String json = ".json";
 	
-	private static int reportingPeriod = 201704;
+	private static int reportingPeriod = 201705;
 
 	public static void main(String[] args) throws Exception {
 		System.out.println("spentrack");
@@ -198,7 +198,7 @@ public class App {
 
 		for (Transaction transaction : transactions) {
 			// System.out.println(transaction);
-			if (transaction.getReportingPeriod() == 201704
+			if (transaction.getReportingPeriod() == reportingPeriod
 			// && transaction.getTerm2() == null
 			// &&transaction.getAmount() < 0
 			) {

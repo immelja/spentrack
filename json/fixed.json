@@ -1,6 +1,6 @@
 {
   "type" : "FIXED",
-  "balance" : -400.87,
+  "balance" : -1334.4299,
   "transactions" : [ {
     "date" : "20170501",
     "finYear" : 2017,
@@ -27,5 +27,44 @@
     "term2" : "CURRENT",
     "term3" : "null",
     "key" : "20170502_-54.42_COMMONWEALTHINSURANCESYDNEYOLYMP"
+  }, {
+    "date" : "20170503",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -81.57,
+    "description" : "AMEX PAYPAL*AGLENERGYLI       35314369001 019",
+    "balance" : 0.0,
+    "category" : "Business expenses",
+    "income" : "EXPENSE",
+    "term" : "GAS",
+    "term2" : "CURRENT",
+    "term3" : "null",
+    "key" : "20170503_-81.57_AMEXPAYPAL*AGLENERGYLI35314369001019"
+  }, {
+    "date" : "20170504",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -11.99,
+    "description" : "AMEX PAYPAL*NETFLIX.COM       35314369001 019",
+    "balance" : 0.0,
+    "category" : "Business expenses",
+    "income" : "EXPENSE",
+    "term" : "PAYPAL",
+    "term2" : "CURRENT",
+    "term3" : "null",
+    "key" : "20170504_-11.99_AMEXPAYPAL*NETFLIX.COM35314369001019"
+  }, {
+    "date" : "20170505",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -840.0,
+    "description" : "Direct Debit 397339 ST FAITHS CCARE ST FAITHS FEES",
+    "balance" : 10527.63,
+    "category" : "Home & renovation",
+    "income" : "EXPENSE",
+    "term" : "CHILDCARE",
+    "term2" : "CURRENT",
+    "term3" : "null",
+    "key" : "20170505_-840.0_DirectDebit397339STFAITHSCCARESTFAITHSFEES"
   } ]
 }

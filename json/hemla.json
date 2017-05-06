@@ -1,7 +1,20 @@
 {
   "type" : "HEMLA",
-  "balance" : -11.485001,
+  "balance" : -145.08,
   "transactions" : [ {
+    "date" : "20170502",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -0.08,
+    "description" : "AMEX INTNL TRANSACTION FEE                  ",
+    "balance" : 0.0,
+    "category" : "Fees & charges",
+    "income" : "EXPENSE",
+    "term" : "TRANFEE",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170502_-0.08_AMEXINTNLTRANSACTIONFEE"
+  }, {
     "date" : "20170502",
     "finYear" : 2017,
     "reportingPeriod" : 201705,
@@ -18,6 +31,32 @@
     "date" : "20170502",
     "finYear" : 2017,
     "reportingPeriod" : 201705,
+    "amount" : -89.545,
+    "description" : "ALDI STORES              GREENSBOROUG  ",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170502_-89.545_ALDISTORESGREENSBOROUG"
+  }, {
+    "date" : "20170502",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -19.99,
+    "description" : "PAYPAL *PROGADGETS       4029357733  AUS",
+    "balance" : 0.0,
+    "category" : "Home & renovation",
+    "income" : "EXPENSE",
+    "term" : "PAYPAL",
+    "term2" : "HEMLA",
+    "term3" : "null",
+    "key" : "20170502_-19.99_PAYPAL*PROGADGETS4029357733AUS"
+  }, {
+    "date" : "20170502",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
     "amount" : -4.5,
     "description" : "AMEX COLES GREENSBOROUGH 657  GREENSBOROUG019",
     "balance" : 0.0,
@@ -27,5 +66,18 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170502_-4.5_AMEXCOLESGREENSBOROUGH657GREENSBOROUG019"
+  }, {
+    "date" : "20170503",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -23.98,
+    "description" : "AMEX WOOLWORTHS 3183 ST HELENAST HELENA   019",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170503_-23.98_AMEXWOOLWORTHS3183STHELENASTHELENA019"
   } ]
 }

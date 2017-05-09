@@ -1,6 +1,6 @@
 {
   "type" : "FIXED",
-  "balance" : -1334.4299,
+  "balance" : -1404.8999,
   "transactions" : [ {
     "date" : "20170501",
     "finYear" : 2017,
@@ -66,5 +66,18 @@
     "term2" : "CURRENT",
     "term3" : "null",
     "key" : "20170505_-840.0_DirectDebit397339STFAITHSCCARESTFAITHSFEES"
+  }, {
+    "date" : "20170509",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -70.47,
+    "description" : "FOXTEL MANAGEMENT PTY    NORTH RYDE    ",
+    "balance" : 0.0,
+    "category" : "Bills & utilities",
+    "income" : "EXPENSE",
+    "term" : "FOXTEL",
+    "term2" : "CURRENT",
+    "term3" : "null",
+    "key" : "20170509_-70.47_FOXTELMANAGEMENTPTYNORTHRYDE"
   } ]
 }

@@ -1,6 +1,6 @@
 {
   "type" : "HEMLA",
-  "balance" : -145.08,
+  "balance" : -234.27501,
   "transactions" : [ {
     "date" : "20170502",
     "finYear" : 2017,
@@ -79,5 +79,109 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170503_-23.98_AMEXWOOLWORTHS3183STHELENASTHELENA019"
+  }, {
+    "date" : "20170504",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -8.5,
+    "description" : "DEBITSUCCESSBELGRAVIA    NOTTING HILL  ",
+    "balance" : 0.0,
+    "category" : "Entertainment",
+    "income" : "EXPENSE",
+    "term" : "KIDS",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170504_-8.5_DEBITSUCCESSBELGRAVIANOTTINGHILL"
+  }, {
+    "date" : "20170506",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -9.5,
+    "description" : "AMEX WOOLWORTHS 3183 ST HELENAST HELENA   019",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170506_-9.5_AMEXWOOLWORTHS3183STHELENASTHELENA019"
+  }, {
+    "date" : "20170506",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -18.28,
+    "description" : "AMEX WOOLWORTHS 3183 ST HELENAST HELENA   019",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170506_-18.28_AMEXWOOLWORTHS3183STHELENASTHELENA019"
+  }, {
+    "date" : "20170506",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -20.0,
+    "description" : "BERTIES BUTCHERS ST      ST HELENA     ",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170506_-20.0_BERTIESBUTCHERSSTSTHELENA"
+  }, {
+    "date" : "20170507",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -16.5,
+    "description" : "I LOVE PHO EXPRESS P     MELBOURNE   VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "UNMATCHED",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170507_-16.5_ILOVEPHOEXPRESSPMELBOURNEVIC"
+  }, {
+    "date" : "20170507",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -4.49,
+    "description" : "Frozen By A Thousand     Melbourne   VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170507_-4.49_FrozenByAThousandMelbourneVIC"
+  }, {
+    "date" : "20170508",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -8.0,
+    "description" : "COFFEE LEGEND PTY LT     MELBOURNE   VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170508_-8.0_COFFEELEGENDPTYLTMELBOURNEVIC"
+  }, {
+    "date" : "20170508",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -3.925,
+    "description" : "AMEX PAYPAL*UBERAUSTRAL       35314369001 015",
+    "balance" : 0.0,
+    "category" : "Business expenses",
+    "income" : "EXPENSE",
+    "term" : "PAYPAL",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170508_-3.925_AMEXPAYPAL*UBERAUSTRAL35314369001015"
   } ]
 }

@@ -1,6 +1,6 @@
 {
   "type" : "FIXED",
-  "balance" : -1404.8999,
+  "balance" : -1498.96,
   "transactions" : [ {
     "date" : "20170501",
     "finYear" : 2017,
@@ -67,6 +67,19 @@
     "term3" : "null",
     "key" : "20170505_-840.0_DirectDebit397339STFAITHSCCARESTFAITHSFEES"
   }, {
+    "date" : "20170507",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -10.0,
+    "description" : "MYKI MELBCTRL RS  MCE    MELBOURNE     ",
+    "balance" : 0.0,
+    "category" : "Auto & transport",
+    "income" : "EXPENSE",
+    "term" : "MYKI",
+    "term2" : "CURRENT",
+    "term3" : "null",
+    "key" : "20170507_-10.0_MYKIMELBCTRLRSMCEMELBOURNE"
+  }, {
     "date" : "20170509",
     "finYear" : 2017,
     "reportingPeriod" : 201705,
@@ -79,5 +92,18 @@
     "term2" : "CURRENT",
     "term3" : "null",
     "key" : "20170509_-70.47_FOXTELMANAGEMENTPTYNORTHRYDE"
+  }, {
+    "date" : "20170510",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -84.06,
+    "description" : "COMMONWEALTH INSURANCE   SYDNEY OLYMP  ",
+    "balance" : 0.0,
+    "category" : "Bills & utilities",
+    "income" : "EXPENSE",
+    "term" : "INSURANCE",
+    "term2" : "CURRENT",
+    "term3" : "null",
+    "key" : "20170510_-84.06_COMMONWEALTHINSURANCESYDNEYOLYMP"
   } ]
 }

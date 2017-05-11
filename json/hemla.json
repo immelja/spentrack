@@ -1,6 +1,6 @@
 {
   "type" : "HEMLA",
-  "balance" : -234.27501,
+  "balance" : -412.87503,
   "transactions" : [ {
     "date" : "20170502",
     "finYear" : 2017,
@@ -140,7 +140,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : "UNMATCHED",
+    "term" : "DINING",
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170507_-16.5_ILOVEPHOEXPRESSPMELBOURNEVIC"
@@ -183,5 +183,44 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170508_-3.925_AMEXPAYPAL*UBERAUSTRAL35314369001015"
+  }, {
+    "date" : "20170509",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -46.0,
+    "description" : "LA DI DA                 MELBOURNE   VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "HEMLA",
+    "term3" : "null",
+    "key" : "20170509_-46.0_LADIDAMELBOURNEVIC"
+  }, {
+    "date" : "20170509",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -67.5,
+    "description" : "LA DI DA                 MELBOURNE   VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "HEMLA",
+    "term3" : "null",
+    "key" : "20170509_-67.5_LADIDAMELBOURNEVIC"
+  }, {
+    "date" : "20170510",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -65.1,
+    "description" : "WWW.INGOGO               SYDNEY      NSW",
+    "balance" : 0.0,
+    "category" : "Auto & transport",
+    "income" : "EXPENSE",
+    "term" : "TAXI",
+    "term2" : "HEMLA",
+    "term3" : "null",
+    "key" : "20170510_-65.1_WWW.INGOGOSYDNEYNSW"
   } ]
 }

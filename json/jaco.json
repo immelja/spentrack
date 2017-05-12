@@ -1,6 +1,6 @@
 {
   "type" : "JACO",
-  "balance" : -250.925,
+  "balance" : -260.565,
   "transactions" : [ {
     "date" : "20170502",
     "finYear" : 2017,
@@ -235,5 +235,31 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170508_-3.925_AMEXPAYPAL*UBERAUSTRAL35314369001015"
+  }, {
+    "date" : "20170509",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -7.66,
+    "description" : "ALDI STORES              ELTHAM        ",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170509_-7.66_ALDISTORESELTHAM"
+  }, {
+    "date" : "20170512",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -1.98,
+    "description" : "INTEREST ON CASH ADV                   ",
+    "balance" : 0.0,
+    "category" : "Fees & charges",
+    "income" : "EXPENSE",
+    "term" : "CBA",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170512_-1.98_INTERESTONCASHADV"
   } ]
 }

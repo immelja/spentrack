@@ -1,6 +1,6 @@
 {
   "type" : "HEMLA",
-  "balance" : -412.87503,
+  "balance" : -422.515,
   "transactions" : [ {
     "date" : "20170502",
     "finYear" : 2017,
@@ -187,6 +187,19 @@
     "date" : "20170509",
     "finYear" : 2017,
     "reportingPeriod" : 201705,
+    "amount" : -7.66,
+    "description" : "ALDI STORES              ELTHAM        ",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170509_-7.66_ALDISTORESELTHAM"
+  }, {
+    "date" : "20170509",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
     "amount" : -46.0,
     "description" : "LA DI DA                 MELBOURNE   VIC",
     "balance" : 0.0,
@@ -222,5 +235,18 @@
     "term2" : "HEMLA",
     "term3" : "null",
     "key" : "20170510_-65.1_WWW.INGOGOSYDNEYNSW"
+  }, {
+    "date" : "20170512",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -1.98,
+    "description" : "INTEREST ON CASH ADV                   ",
+    "balance" : 0.0,
+    "category" : "Fees & charges",
+    "income" : "EXPENSE",
+    "term" : "CBA",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170512_-1.98_INTERESTONCASHADV"
   } ]
 }

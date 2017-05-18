@@ -1,6 +1,6 @@
 {
   "type" : "HEMLA",
-  "balance" : -612.37006,
+  "balance" : -627.6501,
   "transactions" : [ {
     "date" : "20170502",
     "finYear" : 2017,
@@ -547,5 +547,18 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170516_-1.5_AMEXCOLESGREENSBOROUGH657GREENSBOROUG019"
+  }, {
+    "date" : "20170516",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -15.28,
+    "description" : "AMEX COLES GREENSBOROUGH 657  GREENSBOROUG019",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170516_-15.28_AMEXCOLESGREENSBOROUGH657GREENSBOROUG019"
   } ]
 }

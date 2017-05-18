@@ -1,6 +1,6 @@
 {
   "type" : "JACO",
-  "balance" : -751.32007,
+  "balance" : -866.1001,
   "transactions" : [ {
     "date" : "20170502",
     "finYear" : 2017,
@@ -587,6 +587,19 @@
     "term3" : "null",
     "key" : "20170515_-4.9_A.C.N.614072936PTYMELBOURNE"
   }, {
+    "date" : "20170515",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -99.5,
+    "description" : "AMEX UNIQLO AUSTRALIA PTY LTD MELBOURNE   019",
+    "balance" : 0.0,
+    "category" : "Retail shopping",
+    "income" : "EXPENSE",
+    "term" : "RETAIL",
+    "term2" : "JACO",
+    "term3" : "null",
+    "key" : "20170515_-99.5_AMEXUNIQLOAUSTRALIAPTYLTDMELBOURNE019"
+  }, {
     "date" : "20170516",
     "finYear" : 2017,
     "reportingPeriod" : 201705,
@@ -599,5 +612,18 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170516_-1.5_AMEXCOLESGREENSBOROUGH657GREENSBOROUG019"
+  }, {
+    "date" : "20170516",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -15.28,
+    "description" : "AMEX COLES GREENSBOROUGH 657  GREENSBOROUG019",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170516_-15.28_AMEXCOLESGREENSBOROUGH657GREENSBOROUG019"
   } ]
 }

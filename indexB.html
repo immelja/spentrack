@@ -1,56 +1,121 @@
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
-	<!-- <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script> -->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.css" rel="stylesheet" type="text/css" />
-  <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
+  <!-- <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script> -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.css" rel="stylesheet" type="text/css" />
   <title>spentrack</title>
 
-	
+  
 </head>
 <style>
-	body { padding-top: 70px; }
-	.table-condensed{
-		font-size: 10px;
-	}
+  body { padding-top: 70px; }
+  .table-condensed{
+    font-size: 10px;
+  }
 
 
 
 </style>
 <body>
-	<!-- Fixed navbar -->
-	<nav class="navbar navbar-default navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">	
-				<a id="a1" class="navbar-brand" href="#" ><span id = "a2" style="font-size:25px"></span></a>
-				<p style="color:#03c12d; font-size:17px" id="navBal" class="navbar-text"></p> 
-			</div>
-			
-		</div>
-	</nav>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header"> 
+        <a id="a1" class="navbar-brand" href="#" ><span id = "a2" style="font-size:25px"></span></a>
+        <p style="color:#03c12d; font-size:17px" id="navBal" class="navbar-text"></p> 
+      </div> 
+    </div>
+  </nav>
 
-	
+  <div class="container-fluid theme-showcase" role="main">
+  <div class="alert alert-warning" role="alert" id="remaining"></div>
 
-	<div class="container-fluid theme-showcase" role="main">
-		<table class="table table-striped table-condensed" id="table">
-			<thead>
-				<tr>
-					<th data-field="date" data-sortable="true">date</th>
-					<th data-field="amount" data-formatter="priceFormatter" data-sortable="true">amount</th>                
-					<th data-field="description">description</th>
-				</tr>
-			</thead>
-		</table>
-	</div>
+    <table class="table table-striped table-condensed" id="table">
+      <thead>
+        <tr>
+          <th data-field="date" data-sortable="true">date</th>
+          <th data-field="amount" data-formatter="priceFormatter" data-sortable="true">amount</th>                
+          <th data-field="description">description</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
 
-	<script type="text/javascript">
-		var who = "jaco"
-		function priceFormatter(value) {
+  <script type="text/javascript">
+    var who = "hemla";
+    var jaco,hemla,fixed,current;
+    var bal =0,jacoBal = 0,hemlaBal = 0,fixedBal = 0,currentBal = 0,remaining = 0;
+    //var income = 13327.87;
+    var income = 11593.88;
+    $(document).ready(function () {
+
+      $.when(
+        $.getJSON('https://immelja.github.io/spentrack/json/jaco.json', function(data) {
+          jaco = data;
+        }),
+        $.getJSON('https://immelja.github.io/spentrack/json/fixed.json', function(data) {
+          fixed = data;
+        }),
+        $.getJSON('https://immelja.github.io/spentrack/json/hemla.json', function(data) {
+          hemla = data;
+        })
+        ).then(function() {
+
+
+          $.each( jaco.transactions, function( i, item ) {
+            bal = bal + item.amount;
+            jacoBal = jacoBal + item.amount;
+          });
+          $.each( hemla.transactions, function( i, item ) {
+            bal = bal + item.amount;
+            hemlaBal = hemlaBal + item.amount;
+          });
+          $.each( fixed.transactions, function( i, item ) {
+            bal = bal + item.amount;
+            fixedBal = fixedBal + item.amount;
+          });
+
+         
+          $("#a2").text('  ' + hemla.type.toLowerCase());
+          $("#navBal").text('$' + Math.round(hemlaBal * 100)/100 + ' (' + '$' + Math.round(bal * 100)/100 + ')');
+          $('#table').bootstrapTable({
+            data: hemla.transactions
+          });
+          var remaining = income + bal;
+          $("#remaining").text('remaining:  $' + Math.round(remaining * 100)/100);
+
+
+          $("#a1").on("click", function () {
+            //console.log(who);
+            if(who === "jaco") {
+              current = hemla; 
+              currentBal = hemlaBal;
+            } else if (who === "hemla") {
+              current = fixed; 
+              currentBal = fixedBal;
+            } else {
+              current = jaco; 
+              currentBal = jacoBal;
+            }  
+            who = current.type.toLowerCase(); 
+
+            $("#a2").text('  ' + current.type.toLowerCase());
+            $("#navBal").text('$' + Math.round(currentBal * 100)/100 + ' (' + '$' + Math.round(bal * 100)/100 + ')');
+            $('#table').bootstrapTable('load',{
+              data: current.transactions
+            });                
+          });
+        });
+      });
+
+
+
+    function priceFormatter(value) {
         // 16777215 == ffffff in decimal
         //var color = '#'+Math.floor(Math.random() * 6777215).toString(16);
         //var color = '#4286f4';
@@ -59,88 +124,74 @@
                '$' +
                value.toFixed(2) +
                '</div>';
-           }
-           function load(src) {
-           	console.log(src);
-           	$.getJSON( src )
-           	.done(function( data ) {
-           		console.log(data.type)
-           		var today = new Date();
-           		var yyyy = today.getFullYear();
-           		var mm = today.getMonth() + 1;
-           		if(mm<10){
-           			mm='0'+mm;
-           		} 
-           		var yyyymm = yyyy + '' + mm;
-           		var sum = 0
-           		current = $.grep(data.transactions, function(n,i) {
-           			return n.date.substring(0,6) == yyyymm;
-           		});
-           		$.each( current, function( i, item ) {
-           			sum = sum + item.amount
-           		});
+             }
+            //  function load(src) {
+            //   console.log(src);
+            //   $.getJSON( src )
+            //   .done(function( data ) {
+            //     console.log(data.type)
+            //     var today = new Date();
+            //     var yyyy = today.getFullYear();
+            //     var mm = today.getMonth() + 1;
+            //     if(mm<10){
+            //       mm='0'+mm;
+            //     } 
+            //     var yyyymm = yyyy + '' + mm;
+            //     var sum = 0
+            //     current = $.grep(data.transactions, function(n,i) {
+            //       return n.date.substring(0,6) == yyyymm;
+            //     });
+            //     $.each( current, function( i, item ) {
+            //       sum = sum + item.amount
+            //     });
 
-           		console.log(sum)
-           		who = data.type.toLowerCase();
-           		$("#a2").text('  ' + data.type.toLowerCase());
-           		$("#navBal").text('$' + Math.round(sum * 100)/100)
-           		$('#table').bootstrapTable('load',{
-                //Assigning data to table
-                data: current
-            });               
-           	});
-           }
+            //     console.log(sum)
+            //     who = data.type.toLowerCase();
+            //     $("#a2").text('  ' + data.type.toLowerCase());
+            //     $("#navBal").text('$' + Math.round(sum * 100)/100)
+            //     $('#table').bootstrapTable('load',{
+            //     //Assigning data to table
+            //     data: current
+            //   });               
+            //   });
+            // }
 
-           $(document).ready(function () {
-           	$.getJSON( "https://immelja.github.io/spentrack/json/hemla.json" )
-           	.done(function( data ) {
-           		console.log('INIT......')
-           		console.log(data.type)
-           		var today = new Date();
-           		var yyyy = today.getFullYear();
-           		var mm = today.getMonth() + 1;
-           		if(mm<10){
-           			mm='0'+mm;
-           		} 
-           		var yyyymm = yyyy + '' + mm;
-           		var sum = 0
-           		current = $.grep(data.transactions, function(n,i) {
-           			return n.date.substring(0,6) == yyyymm;
-           		});
-           		$.each( current, function( i, item ) {
-           			sum = sum + item.amount
-           		});
+            // $(document).ready(function () {
+            //   $.getJSON( "https://immelja.github.io/spentrack/json/hemla.json" )
+            //   .done(function( data ) {
+            //     console.log('INIT......')
+            //     console.log(data.type)
+            //     var today = new Date();
+            //     var yyyy = today.getFullYear();
+            //     var mm = today.getMonth() + 1;
+            //     if(mm<10){
+            //       mm='0'+mm;
+            //     } 
+            //     var yyyymm = yyyy + '' + mm;
+            //     var sum = 0
+            //     current = $.grep(data.transactions, function(n,i) {
+            //       return n.date.substring(0,6) == yyyymm;
+            //     });
+            //     $.each( current, function( i, item ) {
+            //       sum = sum + item.amount
+            //     });
 
-           		console.log(sum)
-           		who = data.type.toLowerCase();
-           		$("#a2").text('  ' + data.type.toLowerCase());
-           		$("#navBal").text('$' + Math.round(sum * 100)/100)
-           		$('#table').bootstrapTable({
-                //Assigning data to table
-                data: current
-            });               
-           	});
+            //     console.log(sum)
+            //     who = data.type.toLowerCase();
+            //     $("#a2").text('  ' + data.type.toLowerCase());
+            //     $("#navBal").text('$' + Math.round(sum * 100)/100)
+            //     $('#table').bootstrapTable({
+            //     //Assigning data to table
+            //     data: current
+            //   });               
+            //   });
 
-           	$("#jaco").on("click", function () {
-           		load('https://immelja.github.io/spentrack/json/jaco.json');
-           	});
+              
 
-           	$("#hemla").on("click", function () {
-           		load('https://immelja.github.io/spentrack/json/hemla.json');
-           	});
+              
+            // });
 
-           	$("#a1").on("click", function () {
-           		console.log(who);
-           		if(who === "jaco")
-           			load('https://immelja.github.io/spentrack/json/hemla.json');
-           		else if (who === "hemla")
-           			load('https://immelja.github.io/spentrack/json/fixed.json');
-              else
-                load('https://immelja.github.io/spentrack/json/jaco.json');
-           	});
-           	
 
-           });
-       </script>   
-   </body>
-   </html>
+          </script>   
+        </body>
+        </html>

@@ -1,6 +1,6 @@
 {
   "type" : "HEMLA",
-  "balance" : -776.7601,
+  "balance" : -1216.5151,
   "transactions" : [ {
     "date" : "20170502",
     "finYear" : 2017,
@@ -651,5 +651,57 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170517_-33.625_AMEXKMARTGREENSBOROUGH1044GREENSBOROUG019"
+  }, {
+    "date" : "20170518",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -8.5,
+    "description" : "DEBITSUCCESSBELGRAVIA    NOTTING HILL  ",
+    "balance" : 0.0,
+    "category" : "Entertainment",
+    "income" : "EXPENSE",
+    "term" : "KIDS",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170518_-8.5_DEBITSUCCESSBELGRAVIANOTTINGHILL"
+  }, {
+    "date" : "20170518",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -4.03,
+    "description" : "Babylons51000002300255   Cape Town   ZAF ##0517          80.00 RAND             ",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "TRAVEL",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170518_-4.03_Babylons51000002300255CapeTownZAF##051780.00RAND"
+  }, {
+    "date" : "20170519",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -413.725,
+    "description" : "AMEX TELSTRA EASYPAY DD2CC    ADELAIDE    017",
+    "balance" : 0.0,
+    "category" : "Bills & utilities",
+    "income" : "EXPENSE",
+    "term" : "TELSTRA",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170519_-413.725_AMEXTELSTRAEASYPAYDD2CCADELAIDE017"
+  }, {
+    "date" : "20170521",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -13.5,
+    "description" : "AMEX KMART GREENSBOROUGH 1044 GREENSBOROUG019",
+    "balance" : 0.0,
+    "category" : "Retail shopping",
+    "income" : "EXPENSE",
+    "term" : "RETAIL",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170521_-13.5_AMEXKMARTGREENSBOROUGH1044GREENSBOROUG019"
   } ]
 }

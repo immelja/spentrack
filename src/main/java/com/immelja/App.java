@@ -137,8 +137,8 @@ public class App {
 	private static void analyse() {
 		Map<String, Transaction> map = new TreeMap<String, Transaction>();
 		map = loadJson(archiveFolder + transactionFile + json);
-		// avgReportingPeriod(map);
-		// avgFinYear(map);
+		avgReportingPeriod(map);
+		avgFinYear(map);
 		avgToDate(map);
 
 	}

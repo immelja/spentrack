@@ -1,6 +1,6 @@
 {
   "type" : "JACO",
-  "balance" : -2026.3502,
+  "balance" : -2064.7402,
   "transactions" : [ {
     "date" : "20170502",
     "finYear" : 2017,
@@ -1132,5 +1132,44 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170523_-8.085_POSTNETDURBANVILLEZAF##0517159.00RAND"
+  }, {
+    "date" : "20170524",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -1.08,
+    "description" : "INTNL TRANSACTION FEE                  ",
+    "balance" : 0.0,
+    "category" : "Fees & charges",
+    "income" : "EXPENSE",
+    "term" : "TRANFEE",
+    "term2" : "JACO",
+    "term3" : "null",
+    "key" : "20170524_-1.08_INTNLTRANSACTIONFEE"
+  }, {
+    "date" : "20170524",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -36.06,
+    "description" : "The Goatshed Restau      Paarl           ##0517         350.00 RAND             ",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "TRAVEL",
+    "term2" : "JACO",
+    "term3" : "null",
+    "key" : "20170524_-36.06_TheGoatshedRestauPaarl##0517350.00RAND"
+  }, {
+    "date" : "20170525",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -1.25,
+    "description" : "AMEX WOOLWORTHS 3183 ST HELENAST HELENA   019",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170525_-1.25_AMEXWOOLWORTHS3183STHELENASTHELENA019"
   } ]
 }

@@ -1,6 +1,6 @@
 {
   "type" : "FIXED",
-  "balance" : -7515.29,
+  "balance" : -8355.29,
   "transactions" : [ {
     "date" : "20170501",
     "finYear" : 2017,
@@ -209,5 +209,18 @@
     "term2" : "CURRENT",
     "term3" : "null",
     "key" : "20170523_-69.95_IINETLIMITEDPERTH"
+  }, {
+    "date" : "20170526",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -840.0,
+    "description" : "Direct Debit 397339 ST FAITHS CCARE ST FAITHS FEES",
+    "balance" : 10610.07,
+    "category" : "Home & renovation",
+    "income" : "EXPENSE",
+    "term" : "CHILDCARE",
+    "term2" : "CURRENT",
+    "term3" : "null",
+    "key" : "20170526_-840.0_DirectDebit397339STFAITHSCCARESTFAITHSFEES"
   } ]
 }

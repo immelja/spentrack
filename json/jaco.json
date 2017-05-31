@@ -1,6 +1,6 @@
 {
   "type" : "JACO",
-  "balance" : -2064.7402,
+  "balance" : -2242.9102,
   "transactions" : [ {
     "date" : "20170502",
     "finYear" : 2017,
@@ -1162,6 +1162,19 @@
     "date" : "20170525",
     "finYear" : 2017,
     "reportingPeriod" : 201705,
+    "amount" : -8.5,
+    "description" : "DEBITSUCCESSBELGRAVIA    NOTTING HILL  ",
+    "balance" : 0.0,
+    "category" : "Entertainment",
+    "income" : "EXPENSE",
+    "term" : "KIDS",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170525_-8.5_DEBITSUCCESSBELGRAVIANOTTINGHILL"
+  }, {
+    "date" : "20170525",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
     "amount" : -1.25,
     "description" : "AMEX WOOLWORTHS 3183 ST HELENAST HELENA   019",
     "balance" : 0.0,
@@ -1171,5 +1184,83 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170525_-1.25_AMEXWOOLWORTHS3183STHELENASTHELENA019"
+  }, {
+    "date" : "20170526",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -1.41,
+    "description" : "INTNL TRANSACTION FEE                  ",
+    "balance" : 0.0,
+    "category" : "Fees & charges",
+    "income" : "EXPENSE",
+    "term" : "TRANFEE",
+    "term2" : "JACO",
+    "term3" : "null",
+    "key" : "20170526_-1.41_INTNLTRANSACTIONFEE"
+  }, {
+    "date" : "20170526",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -46.96,
+    "description" : "GROOT PHESANTEKRAAL      DURBANVILLE ZA  ##0517         450.00 RAND             ",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "TRAVEL",
+    "term2" : "JACO",
+    "term3" : "null",
+    "key" : "20170526_-46.96_GROOTPHESANTEKRAALDURBANVILLEZA##0517450.00RAND"
+  }, {
+    "date" : "20170528",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -0.3,
+    "description" : "INTNL TRANSACTION FEE                  ",
+    "balance" : 0.0,
+    "category" : "Fees & charges",
+    "income" : "EXPENSE",
+    "term" : "TRANFEE",
+    "term2" : "JACO",
+    "term3" : "null",
+    "key" : "20170528_-0.3_INTNLTRANSACTIONFEE"
+  }, {
+    "date" : "20170528",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -4.995,
+    "description" : "GOOGLE *Music            g.co/payhelpGBR ## GBR MERCHANT                        ",
+    "balance" : 0.0,
+    "category" : "Business expenses",
+    "income" : "EXPENSE",
+    "term" : "GOOGLE",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170528_-4.995_GOOGLE*Musicg.co/payhelpGBR##GBRMERCHANT"
+  }, {
+    "date" : "20170529",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -105.005,
+    "description" : "IMT 10011729758 Delyno Johannes du Toit REF K037149673460 ZAR 1880.00000 Rate:8.9520",
+    "balance" : 10400.06,
+    "category" : "Transfer",
+    "income" : "EXPENSE",
+    "term" : "RETAIL",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170529_-105.005_IMT10011729758DelynoJohannesduToitREFK037149673460ZAR1880.00000Rate:8.9520"
+  }, {
+    "date" : "20170529",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -11.0,
+    "description" : "Transfer Fee",
+    "balance" : 10378.06,
+    "category" : "Fees & charges",
+    "income" : "EXPENSE",
+    "term" : "RETAIL",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170529_-11.0_TransferFee"
   } ]
 }

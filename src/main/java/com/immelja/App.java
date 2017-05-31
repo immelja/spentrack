@@ -59,7 +59,7 @@ public class App {
 		scanDownloads();
 		process();
 		term2ToDo();
-		// analyse();
+		analyse();
 	}
 
 	private static void avgToDate(Map<String, Transaction> map) {

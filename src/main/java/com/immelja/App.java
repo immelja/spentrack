@@ -133,6 +133,26 @@ public class App {
 			System.out.println(entry);
 		}
 	}
+	
+	private static void avgFinYearTerm(Map<String, Transaction> map,String income,String term) {
+		System.out.println("******* finyear term ******* " + term);
+		Map<Integer, Float> finYearBalances = new TreeMap<Integer, Float>();
+		float bal = 0;
+		for (Transaction trn : map.values()) {
+		  if(trn.getIncome() == income&&trn.getTerm() == term) {
+			if (!finYearBalances.containsKey(trn.getFinYear())) {
+				bal = 0;
+			} else {
+				bal = finYearBalances.get(trn.getFinYear()).longValue();
+			}
+			finYearBalances.put(trn.getFinYear(), bal + trn.getAmount());
+		  }
+		}
+
+		for (Map.Entry<Integer, Float> entry : finYearBalances.entrySet()) {
+			System.out.println(entry);
+		}
+	}
 
 	private static void analyse() {
 		Map<String, Transaction> map = new TreeMap<String, Transaction>();
@@ -140,6 +160,7 @@ public class App {
 		avgReportingPeriod(map);
 		avgFinYear(map);
 		avgToDate(map);
+		avgFinYearTerm(map,"INCOME","CENTRELINK");
 
 	}
 

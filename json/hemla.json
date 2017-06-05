@@ -1,6 +1,6 @@
 {
   "type" : "HEMLA",
-  "balance" : -1398.3801,
+  "balance" : -1452.55,
   "transactions" : [ {
     "date" : "20170502",
     "finYear" : 2017,
@@ -859,5 +859,44 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170529_-11.0_TransferFee"
+  }, {
+    "date" : "20170530",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -25.58,
+    "description" : "AMEX COLES GREENSBOROUGH 657  GREENSBOROUG019",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170530_-25.58_AMEXCOLESGREENSBOROUGH657GREENSBOROUG019"
+  }, {
+    "date" : "20170530",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -25.59,
+    "description" : "WORKWEAR DEPOT BROOKLY   DURBAN          ##0617         498.00 RAND             ",
+    "balance" : 0.0,
+    "category" : "Business expenses",
+    "income" : "EXPENSE",
+    "term" : "RETAIL",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170530_-25.59_WORKWEARDEPOTBROOKLYDURBAN##0617498.00RAND"
+  }, {
+    "date" : "20170530",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -3.0,
+    "description" : "AMEX GREENSBOROUGH POST SHOP  GREENSBOROUG019",
+    "balance" : 0.0,
+    "category" : "Bills & utilities",
+    "income" : "EXPENSE",
+    "term" : "FINES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170530_-3.0_AMEXGREENSBOROUGHPOSTSHOPGREENSBOROUG019"
   } ]
 }

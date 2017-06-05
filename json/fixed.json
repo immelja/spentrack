@@ -1,5 +1,57 @@
 {
   "type" : "FIXED",
-  "balance" : 0.0,
-  "transactions" : [ ]
+  "balance" : -1252.86,
+  "transactions" : [ {
+    "date" : "20170601",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -346.45,
+    "description" : "HEALTH COM AU PL         ABBOTSFORD  VIC",
+    "balance" : 0.0,
+    "category" : "Bills & utilities",
+    "income" : "EXPENSE",
+    "term" : "PRIVATEHEALTH",
+    "term2" : "CURRENT",
+    "term3" : "null",
+    "key" : "20170601_-346.45_HEALTHCOMAUPLABBOTSFORDVIC"
+  }, {
+    "date" : "20170602",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -54.42,
+    "description" : "COMMONWEALTH INSURANCE   SYDNEY OLYMP  ",
+    "balance" : 0.0,
+    "category" : "Bills & utilities",
+    "income" : "EXPENSE",
+    "term" : "INSURANCE",
+    "term2" : "CURRENT",
+    "term3" : "null",
+    "key" : "20170602_-54.42_COMMONWEALTHINSURANCESYDNEYOLYMP"
+  }, {
+    "date" : "20170602",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -840.0,
+    "description" : "Direct Debit 397339 ST FAITHS CCARE ST FAITHS FEES",
+    "balance" : 10645.37,
+    "category" : "Home & renovation",
+    "income" : "EXPENSE",
+    "term" : "CHILDCARE",
+    "term2" : "CURRENT",
+    "term3" : "null",
+    "key" : "20170602_-840.0_DirectDebit397339STFAITHSCCARESTFAITHSFEES"
+  }, {
+    "date" : "20170604",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -11.99,
+    "description" : "AMEX PAYPAL*NETFLIX.COM       35314369001 000",
+    "balance" : 0.0,
+    "category" : "Business expenses",
+    "income" : "EXPENSE",
+    "term" : "PAYPAL",
+    "term2" : "CURRENT",
+    "term3" : "null",
+    "key" : "20170604_-11.99_AMEXPAYPAL*NETFLIX.COM35314369001000"
+  } ]
 }

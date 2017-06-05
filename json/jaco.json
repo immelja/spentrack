@@ -1,6 +1,6 @@
 {
   "type" : "JACO",
-  "balance" : -2501.3804,
+  "balance" : -2517.8403,
   "transactions" : [ {
     "date" : "20170502",
     "finYear" : 2017,
@@ -1275,6 +1275,19 @@
     "term2" : "JACO",
     "term3" : "null",
     "key" : "20170529_-0.49_INTNLTRANSACTIONFEE"
+  }, {
+    "date" : "20170529",
+    "finYear" : 2017,
+    "reportingPeriod" : 201705,
+    "amount" : -16.46,
+    "description" : "Spar Sonstraal2 Spar     DURBANVILLE     ##0617         159.45 RAND             ",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "TRAVEL",
+    "term2" : "JACO",
+    "term3" : "null",
+    "key" : "20170529_-16.46_SparSonstraal2SparDURBANVILLE##0617159.45RAND"
   }, {
     "date" : "20170529",
     "finYear" : 2017,

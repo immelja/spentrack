@@ -1,6 +1,6 @@
 {
   "type" : "HEMLA",
-  "balance" : -160.18,
+  "balance" : -464.415,
   "transactions" : [ {
     "date" : "20170601",
     "finYear" : 2017,
@@ -14,6 +14,19 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170601_-8.5_DEBITSUCCESSBELGRAVIANOTTINGHILL"
+  }, {
+    "date" : "20170602",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -67.76,
+    "description" : "ALDI STORES              GREENSBOROUG  ",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170602_-67.76_ALDISTORESGREENSBOROUG"
   }, {
     "date" : "20170602",
     "finYear" : 2017,
@@ -44,6 +57,19 @@
     "date" : "20170604",
     "finYear" : 2017,
     "reportingPeriod" : 201706,
+    "amount" : -5.0,
+    "description" : "A1 BAKERY                BRUNSWICK   VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170604_-5.0_A1BAKERYBRUNSWICKVIC"
+  }, {
+    "date" : "20170604",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
     "amount" : -9.975,
     "description" : "ST HELENA PHARMACY QPS   ST HELENA     ",
     "balance" : 0.0,
@@ -57,6 +83,19 @@
     "date" : "20170604",
     "finYear" : 2017,
     "reportingPeriod" : 201706,
+    "amount" : -13.225,
+    "description" : "CERES Market Coffee      Brunswick EaVIC",
+    "balance" : 0.0,
+    "category" : "Gifts & donations",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170604_-13.225_CERESMarketCoffeeBrunswickEaVIC"
+  }, {
+    "date" : "20170604",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
     "amount" : -14.975,
     "description" : "ST HELENA PHARMACY QPS   ST HELENA     ",
     "balance" : 0.0,
@@ -66,6 +105,19 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170604_-14.975_STHELENAPHARMACYQPSSTHELENA"
+  }, {
+    "date" : "20170604",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -18.75,
+    "description" : "A1 BAKERY                BRUNSWICK   VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170604_-18.75_A1BAKERYBRUNSWICKVIC"
   }, {
     "date" : "20170604",
     "finYear" : 2017,
@@ -92,5 +144,31 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170605_-100.0_WdlATMCBAATM99KINGSTBVIC302002AUS"
+  }, {
+    "date" : "20170606",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -12.0,
+    "description" : "AMEX LATITUDE MELBOURNE OPERATHEIDELBERG W019",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170606_-12.0_AMEXLATITUDEMELBOURNEOPERATHEIDELBERGW019"
+  }, {
+    "date" : "20170608",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -187.5,
+    "description" : "Transfer to CBA A/c CommBank app Hall hire 18Jun17",
+    "balance" : 11177.67,
+    "category" : "Transfer",
+    "income" : "EXPENSE",
+    "term" : "KIDS",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170608_-187.5_TransfertoCBAA/cCommBankappHallhire18Jun17"
   } ]
 }

@@ -1,6 +1,6 @@
 {
   "type" : "JACO",
-  "balance" : -171.31999,
+  "balance" : -538.385,
   "transactions" : [ {
     "date" : "20170601",
     "finYear" : 2017,
@@ -18,6 +18,19 @@
     "date" : "20170601",
     "finYear" : 2017,
     "reportingPeriod" : 201706,
+    "amount" : -0.85,
+    "description" : "INTNL TRANSACTION FEE                  ",
+    "balance" : 0.0,
+    "category" : "Fees & charges",
+    "income" : "EXPENSE",
+    "term" : "TRANFEE",
+    "term2" : "JACO",
+    "term3" : "null",
+    "key" : "20170601_-0.85_INTNLTRANSACTIONFEE"
+  }, {
+    "date" : "20170601",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
     "amount" : -8.5,
     "description" : "DEBITSUCCESSBELGRAVIA    NOTTING HILL  ",
     "balance" : 0.0,
@@ -27,6 +40,19 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170601_-8.5_DEBITSUCCESSBELGRAVIANOTTINGHILL"
+  }, {
+    "date" : "20170601",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -28.44,
+    "description" : "ROCOMAMA OKAVANGO        BRACKENFELL ZA  ##0617         270.00 RAND             ",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "TRAVEL",
+    "term2" : "JACO",
+    "term3" : "null",
+    "key" : "20170601_-28.44_ROCOMAMAOKAVANGOBRACKENFELLZA##0617270.00RAND"
   }, {
     "date" : "20170601",
     "finYear" : 2017,
@@ -44,6 +70,32 @@
     "date" : "20170602",
     "finYear" : 2017,
     "reportingPeriod" : 201706,
+    "amount" : -0.7,
+    "description" : "INTNL TRANSACTION FEE                  ",
+    "balance" : 0.0,
+    "category" : "Fees & charges",
+    "income" : "EXPENSE",
+    "term" : "TRANFEE",
+    "term2" : "JACO",
+    "term3" : "null",
+    "key" : "20170602_-0.7_INTNLTRANSACTIONFEE"
+  }, {
+    "date" : "20170602",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -67.76,
+    "description" : "ALDI STORES              GREENSBOROUG  ",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170602_-67.76_ALDISTORESGREENSBOROUG"
+  }, {
+    "date" : "20170602",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
     "amount" : -7.5,
     "description" : "AMEX KMART GREENSBOROUGH 1044 GREENSBOROUG019",
     "balance" : 0.0,
@@ -53,6 +105,19 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170602_-7.5_AMEXKMARTGREENSBOROUGH1044GREENSBOROUG019"
+  }, {
+    "date" : "20170602",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -23.19,
+    "description" : "WIMPY                    CAPE TOWN INZA  ##0617         220.00 RAND             ",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "TRAVEL",
+    "term2" : "JACO",
+    "term3" : "null",
+    "key" : "20170602_-23.19_WIMPYCAPETOWNINZA##0617220.00RAND"
   }, {
     "date" : "20170602",
     "finYear" : 2017,
@@ -83,6 +148,19 @@
     "date" : "20170603",
     "finYear" : 2017,
     "reportingPeriod" : 201706,
+    "amount" : -0.16,
+    "description" : "INTNL TRANSACTION FEE                  ",
+    "balance" : 0.0,
+    "category" : "Fees & charges",
+    "income" : "EXPENSE",
+    "term" : "TRANFEE",
+    "term2" : "JACO",
+    "term3" : "null",
+    "key" : "20170603_-0.16_INTNLTRANSACTIONFEE"
+  }, {
+    "date" : "20170603",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
     "amount" : -1.46,
     "description" : "AMEX AMAZON WEB SERVICES      AWS.AMAZON.C107 ##0617           1.06 US DOLLAR        ",
     "balance" : 0.0,
@@ -92,6 +170,32 @@
     "term2" : "JACO",
     "term3" : "null",
     "key" : "20170603_-1.46_AMEXAMAZONWEBSERVICESAWS.AMAZON.C107##06171.06USDOLLAR"
+  }, {
+    "date" : "20170603",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -5.49,
+    "description" : "PALMS FOOD INT'L -T3KP   SINGAPORE   SGP ##0617           5.61 SINGAPORE DOLLAR ",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "TRAVEL",
+    "term2" : "JACO",
+    "term3" : "null",
+    "key" : "20170603_-5.49_PALMSFOODINT'L-T3KPSINGAPORESGP##06175.61SINGAPOREDOLLAR"
+  }, {
+    "date" : "20170604",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -5.0,
+    "description" : "A1 BAKERY                BRUNSWICK   VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170604_-5.0_A1BAKERYBRUNSWICKVIC"
   }, {
     "date" : "20170604",
     "finYear" : 2017,
@@ -109,6 +213,19 @@
     "date" : "20170604",
     "finYear" : 2017,
     "reportingPeriod" : 201706,
+    "amount" : -13.225,
+    "description" : "CERES Market Coffee      Brunswick EaVIC",
+    "balance" : 0.0,
+    "category" : "Gifts & donations",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170604_-13.225_CERESMarketCoffeeBrunswickEaVIC"
+  }, {
+    "date" : "20170604",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
     "amount" : -14.975,
     "description" : "ST HELENA PHARMACY QPS   ST HELENA     ",
     "balance" : 0.0,
@@ -118,6 +235,19 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170604_-14.975_STHELENAPHARMACYQPSSTHELENA"
+  }, {
+    "date" : "20170604",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -18.75,
+    "description" : "A1 BAKERY                BRUNSWICK   VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170604_-18.75_A1BAKERYBRUNSWICKVIC"
   }, {
     "date" : "20170604",
     "finYear" : 2017,
@@ -144,5 +274,44 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170605_-100.0_WdlATMCBAATM99KINGSTBVIC302002AUS"
+  }, {
+    "date" : "20170605",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -4.0,
+    "description" : "DE MAD HATTER CAFE       DOCKLANDS   VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "JACO",
+    "term3" : "null",
+    "key" : "20170605_-4.0_DEMADHATTERCAFEDOCKLANDSVIC"
+  }, {
+    "date" : "20170606",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -12.0,
+    "description" : "AMEX LATITUDE MELBOURNE OPERATHEIDELBERG W019",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170606_-12.0_AMEXLATITUDEMELBOURNEOPERATHEIDELBERGW019"
+  }, {
+    "date" : "20170608",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -187.5,
+    "description" : "Transfer to CBA A/c CommBank app Hall hire 18Jun17",
+    "balance" : 11177.67,
+    "category" : "Transfer",
+    "income" : "EXPENSE",
+    "term" : "KIDS",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170608_-187.5_TransfertoCBAA/cCommBankappHallhire18Jun17"
   } ]
 }

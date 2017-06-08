@@ -139,7 +139,9 @@ public class App {
 		Map<Integer, Float> finYearBalances = new TreeMap<Integer, Float>();
 		float bal = 0;
 		for (Transaction trn : map.values()) {
-		  if(trn.getIncome() == income&&trn.getTerm() == term) {
+			
+
+		  if(trn.getIncome().equals(income)&&trn.getTerm().equals(term)) {
 			if (!finYearBalances.containsKey(trn.getFinYear())) {
 				bal = 0;
 			} else {

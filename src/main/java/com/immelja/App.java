@@ -222,8 +222,8 @@ public class App {
 		for (Transaction transaction : transactions) {
 			// System.out.println(transaction);
 			if (transaction.getReportingPeriod() == reportingPeriod
-			// && transaction.getTerm2() == null
-			// &&transaction.getAmount() < 0
+			&& transaction.getTerm2() == null
+			&&transaction.getAmount() < 0
 			) {
 				bal = bal + transaction.getAmount();
 

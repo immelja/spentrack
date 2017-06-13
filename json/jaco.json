@@ -1,6 +1,6 @@
 {
   "type" : "JACO",
-  "balance" : -934.3851,
+  "balance" : -1156.925,
   "transactions" : [ {
     "date" : "20170601",
     "finYear" : 2017,
@@ -49,7 +49,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : "TRAVEL",
+    "term" : null,
     "term2" : "JACO",
     "term3" : "null",
     "key" : "20170601_-28.44_ROCOMAMAOKAVANGOBRACKENFELLZA##0617270.00RAND"
@@ -62,7 +62,7 @@
     "balance" : 0.0,
     "category" : "Groceries & household",
     "income" : "EXPENSE",
-    "term" : "TRAVEL",
+    "term" : null,
     "term2" : "JACO",
     "term3" : "null",
     "key" : "20170601_-9.37_SparSonstraal2SparDURBANVILLE##061788.97RAND"
@@ -114,7 +114,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : "TRAVEL",
+    "term" : null,
     "term2" : "JACO",
     "term3" : "null",
     "key" : "20170602_-23.19_WIMPYCAPETOWNINZA##0617220.00RAND"
@@ -179,7 +179,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : "TRAVEL",
+    "term" : null,
     "term2" : "JACO",
     "term3" : "null",
     "key" : "20170603_-5.49_PALMSFOODINT'L-T3KPSINGAPORESGP##06175.61SINGAPOREDOLLAR"
@@ -218,7 +218,7 @@
     "balance" : 0.0,
     "category" : "Gifts & donations",
     "income" : "EXPENSE",
-    "term" : "DINING",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170604_-13.225_CERESMarketCoffeeBrunswickEaVIC"
@@ -322,7 +322,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : "DINING",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170606_-12.0_AMEXLATITUDEMELBOURNEOPERATHEIDELBERGW019"
@@ -348,7 +348,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : "DINING",
+    "term" : null,
     "term2" : "JACO",
     "term3" : "null",
     "key" : "20170607_-10.45_SUBWAY104EXHIBITIOMELBOURNEVIC"
@@ -374,7 +374,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : "DINING",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170608_-6.45_MYCAFFYPTYLTDMELBOURNEVIC"
@@ -387,7 +387,7 @@
     "balance" : 0.0,
     "category" : "Auto & transport",
     "income" : "EXPENSE",
-    "term" : "PARKING",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170608_-7.0_PETERMACCALLUMCANQPSMELBOURNE"
@@ -426,7 +426,7 @@
     "balance" : 0.0,
     "category" : "Auto & transport",
     "income" : "EXPENSE",
-    "term" : "PARKING",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170608_-9.5_QVCARPARKMELBOURNEMELBOURNE"
@@ -439,7 +439,7 @@
     "balance" : 11177.67,
     "category" : "Transfer",
     "income" : "EXPENSE",
-    "term" : "KIDS",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170608_-187.5_TransfertoCBAA/cCommBankappHallhire18Jun17"
@@ -465,7 +465,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : "DINING",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170608_-20.0_TWOHUNGRYWAITERSPMELBOURNEVIC"
@@ -478,7 +478,7 @@
     "balance" : 0.0,
     "category" : "Entertainment",
     "income" : "EXPENSE",
-    "term" : "ENTERTAINMENT",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170608_-20.3_TRYBOOK-BASEMENTCOMEDSOUTHYARRAVIC"
@@ -530,7 +530,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : "RETAIL",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170609_-5.975_SARAHMEEHOLDINGSQPSGREENSBOROUG"
@@ -595,7 +595,7 @@
     "balance" : 0.0,
     "category" : "Retail shopping",
     "income" : "EXPENSE",
-    "term" : "RETAIL",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170609_-17.75_GREENSBOROUGHPAVSGREENSBOROUGVIC"
@@ -634,7 +634,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : "RETAIL",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170609_-2.25_CSQCBDPTYLTDMELBOURNE"
@@ -686,7 +686,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : "DINING",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170609_-4.3_CENTREVIEWCAFEGREENSBOROUGVIC"
@@ -699,7 +699,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : "DINING",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170609_-4.5_DEGANIGREENSBOROUGHGREENSBOROUGVIC"
@@ -712,7 +712,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : "DINING",
+    "term" : "UNMATCHED",
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170610_-9.0_EUROEXHIBITIONPTYMELBOURNE"
@@ -733,6 +733,32 @@
     "date" : "20170610",
     "finYear" : 2017,
     "reportingPeriod" : 201706,
+    "amount" : -16.0,
+    "description" : "DENNYS KITCHEN           GEELONG     VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170610_-16.0_DENNYSKITCHENGEELONGVIC"
+  }, {
+    "date" : "20170610",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -19.745,
+    "description" : "Chin Chin Go Go Bar      Melbourne   VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170610_-19.745_ChinChinGoGoBarMelbourneVIC"
+  }, {
+    "date" : "20170610",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
     "amount" : -21.335,
     "description" : "AMEX PAYPAL*UBER AU           35314369001 000",
     "balance" : 0.0,
@@ -742,6 +768,32 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170610_-21.335_AMEXPAYPAL*UBERAU35314369001000"
+  }, {
+    "date" : "20170610",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -48.095,
+    "description" : "Chin Chin Go Go Bar      Melbourne   VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170610_-48.095_ChinChinGoGoBarMelbourneVIC"
+  }, {
+    "date" : "20170610",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -49.0,
+    "description" : "FANCY HANKS              MELBOURNE   VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170610_-49.0_FANCYHANKSMELBOURNEVIC"
   }, {
     "date" : "20170611",
     "finYear" : 2017,
@@ -759,6 +811,32 @@
     "date" : "20170611",
     "finYear" : 2017,
     "reportingPeriod" : 201706,
+    "amount" : -7.5,
+    "description" : "THE LOUNGE               MELBOURNE   VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170611_-7.5_THELOUNGEMELBOURNEVIC"
+  }, {
+    "date" : "20170611",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -8.0,
+    "description" : "AMEX WOOLWORTHS 3183 ST HELENAST HELENA   019",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170611_-8.0_AMEXWOOLWORTHS3183STHELENASTHELENA019"
+  }, {
+    "date" : "20170611",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
     "amount" : -9.5,
     "description" : "AMEX KMART GREENSBOROUGH 1044 GREENSBOROUG019",
     "balance" : 0.0,
@@ -769,6 +847,19 @@
     "term3" : "null",
     "key" : "20170611_-9.5_AMEXKMARTGREENSBOROUGH1044GREENSBOROUG019"
   }, {
+    "date" : "20170611",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -10.25,
+    "description" : "STALACTITES              MELBOURNE   VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170611_-10.25_STALACTITESMELBOURNEVIC"
+  }, {
     "date" : "20170612",
     "finYear" : 2017,
     "reportingPeriod" : 201706,
@@ -777,9 +868,61 @@
     "balance" : 0.0,
     "category" : "Auto & transport",
     "income" : "EXPENSE",
-    "term" : "PARKING",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170612_-6.0_QVCARPARKMELBOURNEMELBOURNE"
+  }, {
+    "date" : "20170612",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -8.165,
+    "description" : "Frozen By A Thousand     Melbourne   VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170612_-8.165_FrozenByAThousandMelbourneVIC"
+  }, {
+    "date" : "20170612",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -11.705,
+    "description" : "AMEX WOOLWORTHS 3183 ST HELENAST HELENA   019",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170612_-11.705_AMEXWOOLWORTHS3183STHELENASTHELENA019"
+  }, {
+    "date" : "20170612",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -2.05,
+    "description" : "PETER ROWLAND            MELBOURNE   VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170612_-2.05_PETERROWLANDMELBOURNEVIC"
+  }, {
+    "date" : "20170613",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -42.03,
+    "description" : "COMMONWEALTH INSURANCE   SYDNEY OLYMP  ",
+    "balance" : 0.0,
+    "category" : "Bills & utilities",
+    "income" : "EXPENSE",
+    "term" : "INSURANCE",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170613_-42.03_COMMONWEALTHINSURANCESYDNEYOLYMP"
   } ]
 }

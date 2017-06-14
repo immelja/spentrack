@@ -530,7 +530,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : "DINING",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170610_-16.0_DENNYSKITCHENGEELONGVIC"
@@ -543,7 +543,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : "DINING",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170610_-19.745_ChinChinGoGoBarMelbourneVIC"
@@ -569,7 +569,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : "DINING",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170610_-48.095_ChinChinGoGoBarMelbourneVIC"
@@ -582,7 +582,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : "DINING",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170610_-49.0_FANCYHANKSMELBOURNEVIC"
@@ -608,7 +608,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : "DINING",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170611_-7.5_THELOUNGEMELBOURNEVIC"
@@ -647,7 +647,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : "DINING",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170611_-10.25_STALACTITESMELBOURNEVIC"
@@ -699,7 +699,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : "DINING",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170612_-2.05_PETERROWLANDMELBOURNEVIC"

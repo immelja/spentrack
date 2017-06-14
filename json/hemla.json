@@ -1,6 +1,6 @@
 {
   "type" : "HEMLA",
-  "balance" : -1043.3151,
+  "balance" : -1108.515,
   "transactions" : [ {
     "date" : "20170601",
     "finYear" : 2017,
@@ -512,6 +512,19 @@
     "date" : "20170610",
     "finYear" : 2017,
     "reportingPeriod" : 201706,
+    "amount" : -15.0,
+    "description" : "NATIONAL WOOL MUSEUM     GEELONG     VIC",
+    "balance" : 0.0,
+    "category" : "Entertainment",
+    "income" : "EXPENSE",
+    "term" : "ENTERTAINMENT",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170610_-15.0_NATIONALWOOLMUSEUMGEELONGVIC"
+  }, {
+    "date" : "20170610",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
     "amount" : -15.475,
     "description" : "AMEX PAYPAL*UBER AU           35314369001 000",
     "balance" : 0.0,
@@ -707,6 +720,45 @@
     "date" : "20170613",
     "finYear" : 2017,
     "reportingPeriod" : 201706,
+    "amount" : -10.225,
+    "description" : "AMEX COLES GREENSBOROUGH 657  GREENSBOROUG019",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170613_-10.225_AMEXCOLESGREENSBOROUGH657GREENSBOROUG019"
+  }, {
+    "date" : "20170613",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -11.5,
+    "description" : "AMEX WOOLWORTHS 3183 ST HELENAST HELENA   019",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170613_-11.5_AMEXWOOLWORTHS3183STHELENASTHELENA019"
+  }, {
+    "date" : "20170613",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -27.5,
+    "description" : "AMEX KMART GREENSBOROUGH 1044 GREENSBOROUG019",
+    "balance" : 0.0,
+    "category" : "Retail shopping",
+    "income" : "EXPENSE",
+    "term" : "RETAIL",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170613_-27.5_AMEXKMARTGREENSBOROUGH1044GREENSBOROUG019"
+  }, {
+    "date" : "20170613",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
     "amount" : -42.03,
     "description" : "COMMONWEALTH INSURANCE   SYDNEY OLYMP  ",
     "balance" : 0.0,
@@ -716,5 +768,18 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170613_-42.03_COMMONWEALTHINSURANCESYDNEYOLYMP"
+  }, {
+    "date" : "20170614",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -0.975,
+    "description" : "INTEREST ON CASH ADV                   ",
+    "balance" : 0.0,
+    "category" : "Fees & charges",
+    "income" : "EXPENSE",
+    "term" : "CBA",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170614_-0.975_INTERESTONCASHADV"
   } ]
 }

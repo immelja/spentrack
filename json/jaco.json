@@ -725,7 +725,7 @@
     "balance" : 0.0,
     "category" : "Entertainment",
     "income" : "EXPENSE",
-    "term" : "ENTERTAINMENT",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170610_-15.0_NATIONALWOOLMUSEUMGEELONGVIC"

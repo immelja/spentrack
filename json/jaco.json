@@ -1,6 +1,6 @@
 {
   "type" : "JACO",
-  "balance" : -1226.125,
+  "balance" : -1303.865,
   "transactions" : [ {
     "date" : "20170601",
     "finYear" : 2017,
@@ -925,6 +925,32 @@
     "term3" : "null",
     "key" : "20170612_-2.05_PETERROWLANDMELBOURNEVIC"
   }, {
+    "date" : "20170612",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -25.0,
+    "description" : "ACMI                     MELBOURNE   VIC",
+    "balance" : 0.0,
+    "category" : "Bills & utilities",
+    "income" : "EXPENSE",
+    "term" : "ENTERTAINMENT",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170612_-25.0_ACMIMELBOURNEVIC"
+  }, {
+    "date" : "20170613",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -5.5,
+    "description" : "THE REJECT SHOP          GREENSBOROUGVIC",
+    "balance" : 0.0,
+    "category" : "Retail shopping",
+    "income" : "EXPENSE",
+    "term" : "RETAIL",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170613_-5.5_THEREJECTSHOPGREENSBOROUGVIC"
+  }, {
     "date" : "20170613",
     "finYear" : 2017,
     "reportingPeriod" : 201706,
@@ -1002,5 +1028,44 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170614_-0.975_INTERESTONCASHADV"
+  }, {
+    "date" : "20170614",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -18.64,
+    "description" : "AMEX WOOLWORTHS 3183 ST HELENAST HELENA   019",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170614_-18.64_AMEXWOOLWORTHS3183STHELENASTHELENA019"
+  }, {
+    "date" : "20170614",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -4.0,
+    "description" : "DE MAD HATTER CAFE       DOCKLANDS   VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "JACO",
+    "term3" : "null",
+    "key" : "20170614_-4.0_DEMADHATTERCAFEDOCKLANDSVIC"
+  }, {
+    "date" : "20170615",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -24.6,
+    "description" : "BEACHSIDE CAFE PTY L     BEAUMARIS     ",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170615_-24.6_BEACHSIDECAFEPTYLBEAUMARIS"
   } ]
 }

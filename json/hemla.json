@@ -725,7 +725,7 @@
     "balance" : 0.0,
     "category" : "Bills & utilities",
     "income" : "EXPENSE",
-    "term" : "ENTERTAINMENT",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170612_-25.0_ACMIMELBOURNEVIC"
@@ -829,7 +829,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : "DINING",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170615_-24.6_BEACHSIDECAFEPTYLBEAUMARIS"

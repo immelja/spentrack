@@ -1,6 +1,6 @@
 {
   "type" : "FIXED",
-  "balance" : -5847.47,
+  "balance" : -6737.47,
   "transactions" : [ {
     "date" : "20170601",
     "finYear" : 2017,
@@ -93,6 +93,19 @@
     "term3" : "null",
     "key" : "20170609_-840.0_DirectDebit397339STFAITHSCCARESTFAITHSFEES"
   }, {
+    "date" : "20170614",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -50.0,
+    "description" : "PUBLIC TRANSPORT VICT    DOCKLANDS     ",
+    "balance" : 0.0,
+    "category" : "Auto & transport",
+    "income" : "EXPENSE",
+    "term" : "MYKI",
+    "term2" : "CURRENT",
+    "term3" : "null",
+    "key" : "20170614_-50.0_PUBLICTRANSPORTVICTDOCKLANDS"
+  }, {
     "date" : "20170615",
     "finYear" : 2017,
     "reportingPeriod" : 201706,
@@ -105,5 +118,18 @@
     "term2" : "CURRENT",
     "term3" : "null",
     "key" : "20170615_-3500.0_LoanRepaymentLNREPAY870662518"
+  }, {
+    "date" : "20170616",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -840.0,
+    "description" : "Direct Debit 397339 ST FAITHS CCARE ST FAITHS FEES",
+    "balance" : 6549.05,
+    "category" : "Home & renovation",
+    "income" : "EXPENSE",
+    "term" : "CHILDCARE",
+    "term2" : "CURRENT",
+    "term3" : "null",
+    "key" : "20170616_-840.0_DirectDebit397339STFAITHSCCARESTFAITHSFEES"
   } ]
 }

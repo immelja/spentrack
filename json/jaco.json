@@ -1076,7 +1076,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : "RETAIL",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170614_-2.975_ROZZISGREENSBOROUGVIC"

@@ -842,7 +842,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : "RETAIL",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170614_-2.975_ROZZISGREENSBOROUGVIC"
@@ -933,7 +933,7 @@
     "balance" : 7389.05,
     "category" : "Transfer",
     "income" : "EXPENSE",
-    "term" : "ENTERTAINMENT",
+    "term" : null,
     "term2" : "HEMLA",
     "term3" : "null",
     "key" : "20170616_-180.0_CommBankappTFRto61432633915SIAconcertticket"

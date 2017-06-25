@@ -1,6 +1,6 @@
 {
   "type" : "HEMLA",
-  "balance" : -1912.6549,
+  "balance" : -2045.2249,
   "transactions" : [ {
     "date" : "20170601",
     "finYear" : 2017,
@@ -1149,6 +1149,19 @@
     "date" : "20170620",
     "finYear" : 2017,
     "reportingPeriod" : 201706,
+    "amount" : -6.985,
+    "description" : "MY CHEMIST               GREENSBOROUGVIC",
+    "balance" : 0.0,
+    "category" : "Health & medical",
+    "income" : "EXPENSE",
+    "term" : "CHEMIST",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170620_-6.985_MYCHEMISTGREENSBOROUGVIC"
+  }, {
+    "date" : "20170620",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
     "amount" : -7.0,
     "description" : "THE BARBER SHAK          GREENSBOROUG  ",
     "balance" : 0.0,
@@ -1158,6 +1171,19 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170620_-7.0_THEBARBERSHAKGREENSBOROUG"
+  }, {
+    "date" : "20170620",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -8.95,
+    "description" : "AMEX HOYTS 8 GREENSBOROUGH    GREENSBOROUG019",
+    "balance" : 0.0,
+    "category" : "Entertainment",
+    "income" : "EXPENSE",
+    "term" : "ENTERTAINMENT",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170620_-8.95_AMEXHOYTS8GREENSBOROUGHGREENSBOROUG019"
   }, {
     "date" : "20170620",
     "finYear" : 2017,
@@ -1175,6 +1201,19 @@
     "date" : "20170620",
     "finYear" : 2017,
     "reportingPeriod" : 201706,
+    "amount" : -2.4,
+    "description" : "BAKERS DELIGHT           ST HELENA   VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "UNMATCHED",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170620_-2.4_BAKERSDELIGHTSTHELENAVIC"
+  }, {
+    "date" : "20170620",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
     "amount" : -4.495,
     "description" : "AMEX COLES GREENSBOROUGH 657  GREENSBOROUG019",
     "balance" : 0.0,
@@ -1184,6 +1223,19 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170620_-4.495_AMEXCOLESGREENSBOROUGH657GREENSBOROUG019"
+  }, {
+    "date" : "20170620",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -47.585,
+    "description" : "ALDI STORES              GREENSBOROUG  ",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170620_-47.585_ALDISTORESGREENSBOROUG"
   }, {
     "date" : "20170621",
     "finYear" : 2017,
@@ -1197,5 +1249,70 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170621_-100.0_WdlATMCBAATM99KINGSTAVIC302001AUS"
+  }, {
+    "date" : "20170621",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -14.5,
+    "description" : "GODFATHER'S PIZZA        BRIAR HILL  VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170621_-14.5_GODFATHER'SPIZZABRIARHILLVIC"
+  }, {
+    "date" : "20170621",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -2.3,
+    "description" : "PAYPAL *AUSTRALIANP      4029357733  AUS",
+    "balance" : 0.0,
+    "category" : "Home & renovation",
+    "income" : "EXPENSE",
+    "term" : "PAYPAL",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170621_-2.3_PAYPAL*AUSTRALIANP4029357733AUS"
+  }, {
+    "date" : "20170622",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -9.345,
+    "description" : "AMEX WOOLWORTHS 3183 ST HELENAST HELENA   019",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170622_-9.345_AMEXWOOLWORTHS3183STHELENASTHELENA019"
+  }, {
+    "date" : "20170622",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -15.005,
+    "description" : "AMEX WW PETROL 3560 ST HELENA ST HELENA   019",
+    "balance" : 0.0,
+    "category" : "Auto & transport",
+    "income" : "EXPENSE",
+    "term" : "FUEL",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170622_-15.005_AMEXWWPETROL3560STHELENASTHELENA019"
+  }, {
+    "date" : "20170622",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -25.5,
+    "description" : "LORD GANESHA PTY LTD     SPOTSWOOD   VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170622_-25.5_LORDGANESHAPTYLTDSPOTSWOODVIC"
   } ]
 }

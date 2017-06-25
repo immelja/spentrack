@@ -1037,7 +1037,7 @@
     "balance" : 0.0,
     "category" : "Home & renovation",
     "income" : "EXPENSE",
-    "term" : "GROCERIES",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170617_-34.5_GORANINDUSTRIESPTYPRESTONVIC"
@@ -1141,7 +1141,7 @@
     "balance" : 0.0,
     "category" : "Home & renovation",
     "income" : "EXPENSE",
-    "term" : "RETAIL",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170620_-6.0_CLEARITOUTBAYSWATERVIC"

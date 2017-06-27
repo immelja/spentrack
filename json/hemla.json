@@ -1180,7 +1180,7 @@
     "balance" : 0.0,
     "category" : "Entertainment",
     "income" : "EXPENSE",
-    "term" : "ENTERTAINMENT",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170620_-8.95_AMEXHOYTS8GREENSBOROUGHGREENSBOROUG019"
@@ -1258,7 +1258,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : "DINING",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170621_-14.5_GODFATHER'SPIZZABRIARHILLVIC"
@@ -1310,7 +1310,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : "DINING",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170622_-25.5_LORDGANESHAPTYLTDSPOTSWOODVIC"

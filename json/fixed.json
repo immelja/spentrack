@@ -1,6 +1,6 @@
 {
   "type" : "FIXED",
-  "balance" : -7577.47,
+  "balance" : -7720.4204,
   "transactions" : [ {
     "date" : "20170601",
     "finYear" : 2017,
@@ -131,6 +131,32 @@
     "term2" : "CURRENT",
     "term3" : "null",
     "key" : "20170616_-840.0_DirectDebit397339STFAITHSCCARESTFAITHSFEES"
+  }, {
+    "date" : "20170623",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -69.95,
+    "description" : "IINET LIMITED            PERTH         ",
+    "balance" : 0.0,
+    "category" : "Bills & utilities",
+    "income" : "EXPENSE",
+    "term" : "IINET",
+    "term2" : "CURRENT",
+    "term3" : "null",
+    "key" : "20170623_-69.95_IINETLIMITEDPERTH"
+  }, {
+    "date" : "20170623",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -73.0,
+    "description" : "AMEX OPTUS BILLING AUTOPAY    MACQUARIE PA015",
+    "balance" : 0.0,
+    "category" : "Bills & utilities",
+    "income" : "EXPENSE",
+    "term" : "OPTUS",
+    "term2" : "CURRENT",
+    "term3" : "null",
+    "key" : "20170623_-73.0_AMEXOPTUSBILLINGAUTOPAYMACQUARIEPA015"
   }, {
     "date" : "20170623",
     "finYear" : 2017,

@@ -1,6 +1,6 @@
 {
   "type" : "JACO",
-  "balance" : -1994.8348,
+  "balance" : -2156.0198,
   "transactions" : [ {
     "date" : "20170601",
     "finYear" : 2017,
@@ -1526,6 +1526,19 @@
     "date" : "20170622",
     "finYear" : 2017,
     "reportingPeriod" : 201706,
+    "amount" : -8.5,
+    "description" : "DEBITSUCCESSBELGRAVIA    NOTTING HILL  ",
+    "balance" : 0.0,
+    "category" : "Entertainment",
+    "income" : "EXPENSE",
+    "term" : "KIDS",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170622_-8.5_DEBITSUCCESSBELGRAVIANOTTINGHILL"
+  }, {
+    "date" : "20170622",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
     "amount" : -9.345,
     "description" : "AMEX WOOLWORTHS 3183 ST HELENAST HELENA   019",
     "balance" : 0.0,
@@ -1561,5 +1574,83 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170622_-25.5_LORDGANESHAPTYLTDSPOTSWOODVIC"
+  }, {
+    "date" : "20170623",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -6.36,
+    "description" : "AMEX TARGET 179 GREENSBOROUGH GREENSBOROUG019",
+    "balance" : 0.0,
+    "category" : "Retail shopping",
+    "income" : "EXPENSE",
+    "term" : "RETAIL",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170623_-6.36_AMEXTARGET179GREENSBOROUGHGREENSBOROUG019"
+  }, {
+    "date" : "20170623",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -119.0,
+    "description" : "AMEX OAKRIDGE WINES PTY LTD   COLDSTREAM  019",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170623_-119.0_AMEXOAKRIDGEWINESPTYLTDCOLDSTREAM019"
+  }, {
+    "date" : "20170623",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -3.3,
+    "description" : "JENNIFER YUE SUN & J     GREENSBOROUGVIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "RETAIL",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170623_-3.3_JENNIFERYUESUN&JGREENSBOROUGVIC"
+  }, {
+    "date" : "20170624",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -12.38,
+    "description" : "AMEX WOOLWORTHS 3183 ST HELENAST HELENA   019",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170624_-12.38_AMEXWOOLWORTHS3183STHELENASTHELENA019"
+  }, {
+    "date" : "20170626",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -5.65,
+    "description" : "AMEX COLES GREENSBOROUGH 657  GREENSBOROUG019",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170626_-5.65_AMEXCOLESGREENSBOROUGH657GREENSBOROUG019"
+  }, {
+    "date" : "20170626",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -5.995,
+    "description" : "MY CHEMIST               GREENSBOROUGVIC",
+    "balance" : 0.0,
+    "category" : "Health & medical",
+    "income" : "EXPENSE",
+    "term" : "CHEMIST",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170626_-5.995_MYCHEMISTGREENSBOROUGVIC"
   } ]
 }

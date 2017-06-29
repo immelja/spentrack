@@ -1596,7 +1596,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : "DINING",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170623_-119.0_AMEXOAKRIDGEWINESPTYLTDCOLDSTREAM019"
@@ -1609,7 +1609,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : "RETAIL",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170623_-3.3_JENNIFERYUESUN&JGREENSBOROUGVIC"

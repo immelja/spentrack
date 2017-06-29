@@ -1,6 +1,6 @@
 {
   "type" : "JACO",
-  "balance" : -2156.0198,
+  "balance" : -2355.9646,
   "transactions" : [ {
     "date" : "20170601",
     "finYear" : 2017,
@@ -1627,6 +1627,19 @@
     "term3" : "null",
     "key" : "20170624_-12.38_AMEXWOOLWORTHS3183STHELENASTHELENA019"
   }, {
+    "date" : "20170625",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -91.0,
+    "description" : "A BOY NAMED SUE          ST ANDREWS  VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170625_-91.0_ABOYNAMEDSUESTANDREWSVIC"
+  }, {
     "date" : "20170626",
     "finYear" : 2017,
     "reportingPeriod" : 201706,
@@ -1652,5 +1665,70 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170626_-5.995_MYCHEMISTGREENSBOROUGVIC"
+  }, {
+    "date" : "20170626",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -44.2,
+    "description" : "MISS MARIE CAFE          ROSANNA     VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170626_-44.2_MISSMARIECAFEROSANNAVIC"
+  }, {
+    "date" : "20170627",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -14.645,
+    "description" : "MELBOURNE AIRPORT        TULLAMARINE   ",
+    "balance" : 0.0,
+    "category" : "Travel",
+    "income" : "EXPENSE",
+    "term" : "PARKING",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170627_-14.645_MELBOURNEAIRPORTTULLAMARINE"
+  }, {
+    "date" : "20170627",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -43.9,
+    "description" : "Max's Burger Bar         Montmorency VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170627_-43.9_Max'sBurgerBarMontmorencyVIC"
+  }, {
+    "date" : "20170628",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -4.0,
+    "description" : "DE MAD HATTER CAFE       DOCKLANDS   VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "JACO",
+    "term3" : "null",
+    "key" : "20170628_-4.0_DEMADHATTERCAFEDOCKLANDSVIC"
+  }, {
+    "date" : "20170628",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -2.2,
+    "description" : "AMEX WOOLWORTHS 3762 COLLINS SMELBOURNE   019",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170628_-2.2_AMEXWOOLWORTHS3762COLLINSSMELBOURNE019"
   } ]
 }

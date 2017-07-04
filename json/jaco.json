@@ -1635,7 +1635,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : "DINING",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170625_-91.0_ABOYNAMEDSUESTANDREWSVIC"

@@ -1,6 +1,6 @@
 {
   "type" : "FIXED",
-  "balance" : -7847.1006,
+  "balance" : -8687.101,
   "transactions" : [ {
     "date" : "20170601",
     "finYear" : 2017,
@@ -183,5 +183,18 @@
     "term2" : "CURRENT",
     "term3" : "null",
     "key" : "20170626_-126.68_AMEXPowershopAustraliaPowersMelbourne019"
+  }, {
+    "date" : "20170630",
+    "finYear" : 2017,
+    "reportingPeriod" : 201706,
+    "amount" : -840.0,
+    "description" : "Direct Debit 397339 ST FAITHS CCARE ST FAITHS FEES",
+    "balance" : 6138.45,
+    "category" : "Home & renovation",
+    "income" : "EXPENSE",
+    "term" : "CHILDCARE",
+    "term2" : "CURRENT",
+    "term3" : "null",
+    "key" : "20170630_-840.0_DirectDebit397339STFAITHSCCARESTFAITHSFEES"
   } ]
 }

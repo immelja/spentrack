@@ -1,5 +1,96 @@
 {
   "type" : "JACO",
-  "balance" : 0.0,
-  "transactions" : [ ]
+  "balance" : -160.695,
+  "transactions" : [ {
+    "date" : "20170701",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -6.75,
+    "description" : "CERES Grocery            Brunswick EaVIC",
+    "balance" : 0.0,
+    "category" : "Gifts & donations",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170701_-6.75_CERESGroceryBrunswickEaVIC"
+  }, {
+    "date" : "20170701",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -7.5,
+    "description" : "OZ FRESH POULTRY PTY L   PRESTON       ",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170701_-7.5_OZFRESHPOULTRYPTYLPRESTON"
+  }, {
+    "date" : "20170701",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -28.71,
+    "description" : "AMEX WOOLWORTHS 3183 ST HELENAST HELENA   019",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170701_-28.71_AMEXWOOLWORTHS3183STHELENASTHELENA019"
+  }, {
+    "date" : "20170703",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -6.55,
+    "description" : "AMEX MONTY'S LICENCED SUPERMARMONTMORENCY 019",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170703_-6.55_AMEXMONTY'SLICENCEDSUPERMARMONTMORENCY019"
+  }, {
+    "date" : "20170703",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -8.975,
+    "description" : "AMEX ST HELENA PHARMACY       ST HELENA   019",
+    "balance" : 0.0,
+    "category" : "Health & medical",
+    "income" : "EXPENSE",
+    "term" : "CHEMIST",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170703_-8.975_AMEXSTHELENAPHARMACYSTHELENA019"
+  }, {
+    "date" : "20170703",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -100.0,
+    "description" : "Wdl ATM CBA ATM  99 KING ST A   VIC 302001   AUS",
+    "balance" : 5938.45,
+    "category" : "Cash out",
+    "income" : "EXPENSE",
+    "term" : "CASH",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170703_-100.0_WdlATMCBAATM99KINGSTAVIC302001AUS"
+  }, {
+    "date" : "20170703",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -2.21,
+    "description" : "AMEX WOOLWORTHS 3183 ST HELENAST HELENA   019",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170703_-2.21_AMEXWOOLWORTHS3183STHELENASTHELENA019"
+  } ]
 }

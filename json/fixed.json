@@ -1,5 +1,18 @@
 {
   "type" : "FIXED",
-  "balance" : 0.0,
-  "transactions" : [ ]
+  "balance" : -54.42,
+  "transactions" : [ {
+    "date" : "20170704",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -54.42,
+    "description" : "COMMONWEALTH INSURANCE   SYDNEY OLYMP  ",
+    "balance" : 0.0,
+    "category" : "Bills & utilities",
+    "income" : "EXPENSE",
+    "term" : "INSURANCE",
+    "term2" : "CURRENT",
+    "term3" : "null",
+    "key" : "20170704_-54.42_COMMONWEALTHINSURANCESYDNEYOLYMP"
+  } ]
 }

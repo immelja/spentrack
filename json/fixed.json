@@ -1,7 +1,20 @@
 {
   "type" : "FIXED",
-  "balance" : -54.42,
+  "balance" : -400.87,
   "transactions" : [ {
+    "date" : "20170703",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -346.45,
+    "description" : "HEALTH COM AU PL         ABBOTSFORD  VIC",
+    "balance" : 0.0,
+    "category" : "Bills & utilities",
+    "income" : "EXPENSE",
+    "term" : "PRIVATEHEALTH",
+    "term2" : "CURRENT",
+    "term3" : "null",
+    "key" : "20170703_-346.45_HEALTHCOMAUPLABBOTSFORDVIC"
+  }, {
     "date" : "20170704",
     "finYear" : 2018,
     "reportingPeriod" : 201707,

@@ -1,6 +1,6 @@
 {
   "type" : "JACO",
-  "balance" : -160.695,
+  "balance" : -216.71,
   "transactions" : [ {
     "date" : "20170701",
     "finYear" : 2018,
@@ -31,6 +31,32 @@
     "date" : "20170701",
     "finYear" : 2018,
     "reportingPeriod" : 201707,
+    "amount" : -8.55,
+    "description" : "WEIDLICH FOOD STORE      ELTHAM NORTHVIC",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170701_-8.55_WEIDLICHFOODSTOREELTHAMNORTHVIC"
+  }, {
+    "date" : "20170701",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -11.25,
+    "description" : "JOES QUALITY CORNER      PRESTON     VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "UNMATCHED",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170701_-11.25_JOESQUALITYCORNERPRESTONVIC"
+  }, {
+    "date" : "20170701",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
     "amount" : -28.71,
     "description" : "AMEX WOOLWORTHS 3183 ST HELENAST HELENA   019",
     "balance" : 0.0,
@@ -40,6 +66,19 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170701_-28.71_AMEXWOOLWORTHS3183STHELENASTHELENA019"
+  }, {
+    "date" : "20170703",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -1.39,
+    "description" : "AMEX AMAZON WEB SERVICES      AWS.AMAZON.C107 ##0717           1.06 US DOLLAR        ",
+    "balance" : 0.0,
+    "category" : "Business expenses",
+    "income" : "EXPENSE",
+    "term" : "AMAZON",
+    "term2" : "JACO",
+    "term3" : "null",
+    "key" : "20170703_-1.39_AMEXAMAZONWEBSERVICESAWS.AMAZON.C107##07171.06USDOLLAR"
   }, {
     "date" : "20170703",
     "finYear" : 2018,
@@ -83,6 +122,19 @@
     "date" : "20170703",
     "finYear" : 2018,
     "reportingPeriod" : 201707,
+    "amount" : -4.0,
+    "description" : "DE MAD HATTER CAFE       DOCKLANDS   VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "JACO",
+    "term3" : "null",
+    "key" : "20170703_-4.0_DEMADHATTERCAFEDOCKLANDSVIC"
+  }, {
+    "date" : "20170703",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
     "amount" : -2.21,
     "description" : "AMEX WOOLWORTHS 3183 ST HELENAST HELENA   019",
     "balance" : 0.0,
@@ -92,5 +144,44 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170703_-2.21_AMEXWOOLWORTHS3183STHELENASTHELENA019"
+  }, {
+    "date" : "20170704",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -5.995,
+    "description" : "AMEX PAYPAL*NETFLIX.COM       35314369001 000",
+    "balance" : 0.0,
+    "category" : "Business expenses",
+    "income" : "EXPENSE",
+    "term" : "PAYPAL",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170704_-5.995_AMEXPAYPAL*NETFLIX.COM35314369001000"
+  }, {
+    "date" : "20170704",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -20.375,
+    "description" : "AMEX KMART GREENSBOROUGH 1044 GREENSBOROUG019",
+    "balance" : 0.0,
+    "category" : "Retail shopping",
+    "income" : "EXPENSE",
+    "term" : "RETAIL",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170704_-20.375_AMEXKMARTGREENSBOROUGH1044GREENSBOROUG019"
+  }, {
+    "date" : "20170704",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -4.455,
+    "description" : "AMEX WOOLWORTHS 3762 COLLINS SMELBOURNE   019",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170704_-4.455_AMEXWOOLWORTHS3762COLLINSSMELBOURNE019"
   } ]
 }

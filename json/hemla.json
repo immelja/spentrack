@@ -10,7 +10,7 @@
     "balance" : 0.0,
     "category" : "Gifts & donations",
     "income" : "EXPENSE",
-    "term" : "GROCERIES",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170701_-6.75_CERESGroceryBrunswickEaVIC"
@@ -23,7 +23,7 @@
     "balance" : 0.0,
     "category" : "Groceries & household",
     "income" : "EXPENSE",
-    "term" : "GROCERIES",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170701_-7.5_OZFRESHPOULTRYPTYLPRESTON"

@@ -1,6 +1,6 @@
 {
   "type" : "JACO",
-  "balance" : -233.84502,
+  "balance" : -243.39001,
   "transactions" : [ {
     "date" : "20170701",
     "finYear" : 2018,
@@ -148,6 +148,19 @@
     "date" : "20170704",
     "finYear" : 2018,
     "reportingPeriod" : 201707,
+    "amount" : -5.545,
+    "description" : "ALDI STORES              GREENSBOROUG  ",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170704_-5.545_ALDISTORESGREENSBOROUG"
+  }, {
+    "date" : "20170704",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
     "amount" : -5.995,
     "description" : "AMEX PAYPAL*NETFLIX.COM       35314369001 000",
     "balance" : 0.0,
@@ -209,5 +222,18 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170705_-15.505_AMEXCOLESEXPRESSGREENSBOROUGREENSBOROUG019"
+  }, {
+    "date" : "20170706",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -4.0,
+    "description" : "AMEX DE MAD HATTER CAFE       DOCKLAND    019",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "JACO",
+    "term3" : "null",
+    "key" : "20170706_-4.0_AMEXDEMADHATTERCAFEDOCKLAND019"
   } ]
 }

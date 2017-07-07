@@ -1,6 +1,6 @@
 {
   "type" : "FIXED",
-  "balance" : -400.87,
+  "balance" : -1320.87,
   "transactions" : [ {
     "date" : "20170703",
     "finYear" : 2018,
@@ -27,5 +27,18 @@
     "term2" : "CURRENT",
     "term3" : "null",
     "key" : "20170704_-54.42_COMMONWEALTHINSURANCESYDNEYOLYMP"
+  }, {
+    "date" : "20170707",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -920.0,
+    "description" : "Direct Debit 397339 ST FAITHS CCARE ST FAITHS FEES",
+    "balance" : 2009.14,
+    "category" : "Home & renovation",
+    "income" : "EXPENSE",
+    "term" : "CHILDCARE",
+    "term2" : "CURRENT",
+    "term3" : "null",
+    "key" : "20170707_-920.0_DirectDebit397339STFAITHSCCARESTFAITHSFEES"
   } ]
 }

@@ -1,6 +1,6 @@
 {
   "type" : "JACO",
-  "balance" : -243.39001,
+  "balance" : -316.18002,
   "transactions" : [ {
     "date" : "20170701",
     "finYear" : 2018,
@@ -223,6 +223,32 @@
     "term3" : "null",
     "key" : "20170705_-15.505_AMEXCOLESEXPRESSGREENSBOROUGREENSBOROUG019"
   }, {
+    "date" : "20170705",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -4.4,
+    "description" : "COFFEE HQ T SM CAF P     MELBOURNE     ",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170705_-4.4_COFFEEHQTSMCAFPMELBOURNE"
+  }, {
+    "date" : "20170706",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -8.75,
+    "description" : "DEBITSUCCESSBELGRAVIA    NOTTING HILL  ",
+    "balance" : 0.0,
+    "category" : "Entertainment",
+    "income" : "EXPENSE",
+    "term" : "KIDS",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170706_-8.75_DEBITSUCCESSBELGRAVIANOTTINGHILL"
+  }, {
     "date" : "20170706",
     "finYear" : 2018,
     "reportingPeriod" : 201707,
@@ -235,5 +261,57 @@
     "term2" : "JACO",
     "term3" : "null",
     "key" : "20170706_-4.0_AMEXDEMADHATTERCAFEDOCKLAND019"
+  }, {
+    "date" : "20170707",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -5.0,
+    "description" : "AMEX KMART GREENSBOROUGH 1044 GREENSBOROUG019",
+    "balance" : 0.0,
+    "category" : "Retail shopping",
+    "income" : "EXPENSE",
+    "term" : "RETAIL",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170707_-5.0_AMEXKMARTGREENSBOROUGH1044GREENSBOROUG019"
+  }, {
+    "date" : "20170708",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -5.12,
+    "description" : "CARE PARK PTY LTD        MELBOURNE   AUS",
+    "balance" : 0.0,
+    "category" : "Auto & transport",
+    "income" : "EXPENSE",
+    "term" : "PARKING",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170708_-5.12_CAREPARKPTYLTDMELBOURNEAUS"
+  }, {
+    "date" : "20170708",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -10.95,
+    "description" : "THE GROOVE TRAIN HAR     DOCKLANDS     ",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170708_-10.95_THEGROOVETRAINHARDOCKLANDS"
+  }, {
+    "date" : "20170709",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -38.57,
+    "description" : "AMEX WOOLWORTHS 3183 ST HELENAST HELENA   019",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170709_-38.57_AMEXWOOLWORTHS3183STHELENASTHELENA019"
   } ]
 }

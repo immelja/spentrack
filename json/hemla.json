@@ -218,7 +218,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : "DINING",
+    "term" : "UNMATCHED",
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170705_-4.4_COFFEEHQTSMCAFPMELBOURNE"
@@ -257,7 +257,7 @@
     "balance" : 0.0,
     "category" : "Auto & transport",
     "income" : "EXPENSE",
-    "term" : "PARKING",
+    "term" : "UNMATCHED",
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170708_-5.12_CAREPARKPTYLTDMELBOURNEAUS"
@@ -270,7 +270,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : "DINING",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170708_-10.95_THEGROOVETRAINHARDOCKLANDS"
@@ -283,7 +283,7 @@
     "balance" : 0.0,
     "category" : "Business expenses",
     "income" : "EXPENSE",
-    "term" : "RETAIL",
+    "term" : null,
     "term2" : "HEMLA",
     "term3" : "null",
     "key" : "20170709_-38.67_AMEXOFFICEWORKSBUNDOORA315BUNDOORA019"

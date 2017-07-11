@@ -1,6 +1,6 @@
 {
   "type" : "FIXED",
-  "balance" : -1517.17,
+  "balance" : -1601.23,
   "transactions" : [ {
     "date" : "20170703",
     "finYear" : 2018,
@@ -66,5 +66,18 @@
     "term2" : "CURRENT",
     "term3" : "null",
     "key" : "20170709_-146.3_FOXTELMANAGEMENTPTYNORTHRYDE"
+  }, {
+    "date" : "20170711",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -84.06,
+    "description" : "COMMONWEALTH INSURANCE   SYDNEY OLYMP  ",
+    "balance" : 0.0,
+    "category" : "Bills & utilities",
+    "income" : "EXPENSE",
+    "term" : "INSURANCE",
+    "term2" : "CURRENT",
+    "term3" : "null",
+    "key" : "20170711_-84.06_COMMONWEALTHINSURANCESYDNEYOLYMP"
   } ]
 }

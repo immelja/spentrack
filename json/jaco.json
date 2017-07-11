@@ -1,6 +1,6 @@
 {
   "type" : "JACO",
-  "balance" : -316.18002,
+  "balance" : -326.67502,
   "transactions" : [ {
     "date" : "20170701",
     "finYear" : 2018,
@@ -304,6 +304,32 @@
     "date" : "20170709",
     "finYear" : 2018,
     "reportingPeriod" : 201707,
+    "amount" : -1.995,
+    "description" : "MY CHEMIST               GREENSBOROUGVIC",
+    "balance" : 0.0,
+    "category" : "Health & medical",
+    "income" : "EXPENSE",
+    "term" : "CHEMIST",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170709_-1.995_MYCHEMISTGREENSBOROUGVIC"
+  }, {
+    "date" : "20170709",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -3.5,
+    "description" : "THE REJECT SHOP          GREENSBOROUGVIC",
+    "balance" : 0.0,
+    "category" : "Retail shopping",
+    "income" : "EXPENSE",
+    "term" : "RETAIL",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170709_-3.5_THEREJECTSHOPGREENSBOROUGVIC"
+  }, {
+    "date" : "20170709",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
     "amount" : -38.57,
     "description" : "AMEX WOOLWORTHS 3183 ST HELENAST HELENA   019",
     "balance" : 0.0,
@@ -313,5 +339,18 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170709_-38.57_AMEXWOOLWORTHS3183STHELENASTHELENA019"
+  }, {
+    "date" : "20170711",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -5.0,
+    "description" : "DAVID JONES LIMITED      MELBOURNE     ",
+    "balance" : 0.0,
+    "category" : "Retail shopping",
+    "income" : "EXPENSE",
+    "term" : "RETAIL",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170711_-5.0_DAVIDJONESLIMITEDMELBOURNE"
   } ]
 }

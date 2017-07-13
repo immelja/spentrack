@@ -1,6 +1,6 @@
 {
   "type" : "JACO",
-  "balance" : -326.67502,
+  "balance" : -365.34506,
   "transactions" : [ {
     "date" : "20170701",
     "finYear" : 2018,
@@ -278,6 +278,19 @@
     "date" : "20170708",
     "finYear" : 2018,
     "reportingPeriod" : 201707,
+    "amount" : -5.0,
+    "description" : "ZAYNAB PTY LTD           DOCKLANDS   VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "RETAIL",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170708_-5.0_ZAYNABPTYLTDDOCKLANDSVIC"
+  }, {
+    "date" : "20170708",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
     "amount" : -5.12,
     "description" : "CARE PARK PTY LTD        MELBOURNE   AUS",
     "balance" : 0.0,
@@ -304,6 +317,19 @@
     "date" : "20170709",
     "finYear" : 2018,
     "reportingPeriod" : 201707,
+    "amount" : -5.01,
+    "description" : "ALDI STORES              BUNDOORA      ",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170709_-5.01_ALDISTORESBUNDOORA"
+  }, {
+    "date" : "20170709",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
     "amount" : -1.995,
     "description" : "MY CHEMIST               GREENSBOROUGVIC",
     "balance" : 0.0,
@@ -313,6 +339,19 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170709_-1.995_MYCHEMISTGREENSBOROUGVIC"
+  }, {
+    "date" : "20170709",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -2.95,
+    "description" : "BAKERS DELIGHT           ST HELENA   VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170709_-2.95_BAKERSDELIGHTSTHELENAVIC"
   }, {
     "date" : "20170709",
     "finYear" : 2018,
@@ -352,5 +391,57 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170711_-5.0_DAVIDJONESLIMITEDMELBOURNE"
+  }, {
+    "date" : "20170711",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -20.0,
+    "description" : "CAPTAIN CLIPPERS         MELBOURNE   VIC",
+    "balance" : 0.0,
+    "category" : "Fitness & beauty",
+    "income" : "EXPENSE",
+    "term" : "HAIR",
+    "term2" : "JACO",
+    "term3" : "null",
+    "key" : "20170711_-20.0_CAPTAINCLIPPERSMELBOURNEVIC"
+  }, {
+    "date" : "20170711",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -1.5,
+    "description" : "AMEX COLES GREENSBOROUGH 657  GREENSBOROUG019",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170711_-1.5_AMEXCOLESGREENSBOROUGH657GREENSBOROUG019"
+  }, {
+    "date" : "20170711",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -4.2,
+    "description" : "THE REJECT SHOP          GREENSBOROUGVIC",
+    "balance" : 0.0,
+    "category" : "Retail shopping",
+    "income" : "EXPENSE",
+    "term" : "RETAIL",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170711_-4.2_THEREJECTSHOPGREENSBOROUGVIC"
+  }, {
+    "date" : "20170713",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -0.01,
+    "description" : "INTEREST ON CASH ADV                   ",
+    "balance" : 0.0,
+    "category" : "Fees & charges",
+    "income" : "EXPENSE",
+    "term" : "CBA",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170713_-0.01_INTERESTONCASHADV"
   } ]
 }

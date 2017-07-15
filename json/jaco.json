@@ -1,6 +1,6 @@
 {
   "type" : "JACO",
-  "balance" : -365.34506,
+  "balance" : -366.32007,
   "transactions" : [ {
     "date" : "20170701",
     "finYear" : 2018,
@@ -443,5 +443,18 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170713_-0.01_INTERESTONCASHADV"
+  }, {
+    "date" : "20170713",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -0.975,
+    "description" : "AMEX WOOLWORTHS 3762 COLLINS SMELBOURNE   019",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170713_-0.975_AMEXWOOLWORTHS3762COLLINSSMELBOURNE019"
   } ]
 }

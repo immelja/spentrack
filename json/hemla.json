@@ -1,6 +1,6 @@
 {
   "type" : "HEMLA",
-  "balance" : -387.80008,
+  "balance" : -349.13007,
   "transactions" : [ {
     "date" : "20170701",
     "finYear" : 2018,
@@ -313,19 +313,6 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170709_-1.995_MYCHEMISTGREENSBOROUGVIC"
-  }, {
-    "date" : "20170709",
-    "finYear" : 2018,
-    "reportingPeriod" : 201707,
-    "amount" : -38.67,
-    "description" : "AMEX OFFICEWORKS BUNDOORA 315 BUNDOORA    019",
-    "balance" : 0.0,
-    "category" : "Business expenses",
-    "income" : "EXPENSE",
-    "term" : null,
-    "term2" : "HEMLA",
-    "term3" : "null",
-    "key" : "20170709_-38.67_AMEXOFFICEWORKSBUNDOORA315BUNDOORA019"
   }, {
     "date" : "20170709",
     "finYear" : 2018,

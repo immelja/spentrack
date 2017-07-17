@@ -1,6 +1,6 @@
 {
   "type" : "FIXED",
-  "balance" : -2521.23,
+  "balance" : -6021.23,
   "transactions" : [ {
     "date" : "20170703",
     "finYear" : 2018,
@@ -92,5 +92,18 @@
     "term2" : "CURRENT",
     "term3" : "null",
     "key" : "20170714_-920.0_DirectDebit397339STFAITHSCCARESTFAITHSFEES"
+  }, {
+    "date" : "20170717",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -3500.0,
+    "description" : "Loan Repayment LN REPAY 870662518",
+    "balance" : 6621.13,
+    "category" : "Loans",
+    "income" : "EXPENSE",
+    "term" : "MORTGAGE",
+    "term2" : "CURRENT",
+    "term3" : "null",
+    "key" : "20170717_-3500.0_LoanRepaymentLNREPAY870662518"
   } ]
 }

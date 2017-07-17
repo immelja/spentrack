@@ -1,6 +1,6 @@
 {
   "type" : "JACO",
-  "balance" : -366.32007,
+  "balance" : -394.64008,
   "transactions" : [ {
     "date" : "20170701",
     "finYear" : 2018,
@@ -456,5 +456,44 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170713_-0.975_AMEXWOOLWORTHS3762COLLINSSMELBOURNE019"
+  }, {
+    "date" : "20170713",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -8.75,
+    "description" : "DEBITSUCCESSBELGRAVIA    NOTTING HILL  ",
+    "balance" : 0.0,
+    "category" : "Entertainment",
+    "income" : "EXPENSE",
+    "term" : "KIDS",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170713_-8.75_DEBITSUCCESSBELGRAVIANOTTINGHILL"
+  }, {
+    "date" : "20170713",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -2.95,
+    "description" : "BAKERS DELIGHT           ST HELENA   VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170713_-2.95_BAKERSDELIGHTSTHELENAVIC"
+  }, {
+    "date" : "20170715",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -16.62,
+    "description" : "AMEX WOOLWORTHS 3183 ST HELENAST HELENA   019",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170715_-16.62_AMEXWOOLWORTHS3183STHELENASTHELENA019"
   } ]
 }

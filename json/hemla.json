@@ -1,6 +1,6 @@
 {
   "type" : "HEMLA",
-  "balance" : -484.50006,
+  "balance" : -555.54504,
   "transactions" : [ {
     "date" : "20170701",
     "finYear" : 2018,
@@ -457,6 +457,19 @@
     "term3" : "null",
     "key" : "20170715_-16.62_AMEXWOOLWORTHS3183STHELENASTHELENA019"
   }, {
+    "date" : "20170715",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -2.95,
+    "description" : "BAKERS DELIGHT           ST HELENA   VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170715_-2.95_BAKERSDELIGHTSTHELENAVIC"
+  }, {
     "date" : "20170716",
     "finYear" : 2018,
     "reportingPeriod" : 201707,
@@ -469,6 +482,32 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170716_-6.15_DEGANIGREENSBOROUGHGREENSBOROUGVIC"
+  }, {
+    "date" : "20170716",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -61.975,
+    "description" : "ALDI STORES              ELTHAM        ",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170716_-61.975_ALDISTORESELTHAM"
+  }, {
+    "date" : "20170716",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -2.77,
+    "description" : "FARMER JOE S MARKET      ELTHAM        ",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170716_-2.77_FARMERJOESMARKETELTHAM"
   }, {
     "date" : "20170717",
     "finYear" : 2018,
@@ -495,5 +534,18 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170718_-100.0_WdlATMCBAATM99KINGSTBVIC302002AUS"
+  }, {
+    "date" : "20170719",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -3.35,
+    "description" : "AMEX WOOLWORTHS 3183 ST HELENAST HELENA   019",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170719_-3.35_AMEXWOOLWORTHS3183STHELENASTHELENA019"
   } ]
 }

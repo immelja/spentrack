@@ -465,7 +465,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : "GROCERIES",
+    "term" : "UNMATCHED",
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170715_-2.95_BAKERSDELIGHTSTHELENAVIC"
@@ -504,7 +504,7 @@
     "balance" : 0.0,
     "category" : "Groceries & household",
     "income" : "EXPENSE",
-    "term" : "GROCERIES",
+    "term" : "UNMATCHED",
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170716_-2.77_FARMERJOESMARKETELTHAM"

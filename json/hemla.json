@@ -1,6 +1,6 @@
 {
   "type" : "HEMLA",
-  "balance" : -777.7651,
+  "balance" : -890.0251,
   "transactions" : [ {
     "date" : "20170701",
     "finYear" : 2018,
@@ -564,6 +564,19 @@
     "date" : "20170719",
     "finYear" : 2018,
     "reportingPeriod" : 201707,
+    "amount" : -2.95,
+    "description" : "BAKERS DELIGHT           ST HELENA   VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170719_-2.95_BAKERSDELIGHTSTHELENAVIC"
+  }, {
+    "date" : "20170719",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
     "amount" : -3.35,
     "description" : "AMEX WOOLWORTHS 3183 ST HELENAST HELENA   019",
     "balance" : 0.0,
@@ -590,6 +603,19 @@
     "date" : "20170720",
     "finYear" : 2018,
     "reportingPeriod" : 201707,
+    "amount" : -8.75,
+    "description" : "DBS*WaterMarc Swim Sch   GreensborougVIC",
+    "balance" : 0.0,
+    "category" : "Entertainment",
+    "income" : "EXPENSE",
+    "term" : "SWIMMING",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170720_-8.75_DBS*WaterMarcSwimSchGreensborougVIC"
+  }, {
+    "date" : "20170720",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
     "amount" : -1.96,
     "description" : "AMEX WOOLWORTHS 3762 COLLINS SMELBOURNE   019",
     "balance" : 0.0,
@@ -599,5 +625,57 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170720_-1.96_AMEXWOOLWORTHS3762COLLINSSMELBOURNE019"
+  }, {
+    "date" : "20170721",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -23.49,
+    "description" : "AMEX DAN MURPHYS 3372 ELTHAM  ELTHAM      019",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DANMURPHY",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170721_-23.49_AMEXDANMURPHYS3372ELTHAMELTHAM019"
+  }, {
+    "date" : "20170722",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -6.62,
+    "description" : "AMEX COLES GREENSBOROUGH 657  GREENSBOROUG019",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170722_-6.62_AMEXCOLESGREENSBOROUGH657GREENSBOROUG019"
+  }, {
+    "date" : "20170722",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -13.0,
+    "description" : "AEGEAN DELICATESSEN      PRESTON       ",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170722_-13.0_AEGEANDELICATESSENPRESTON"
+  }, {
+    "date" : "20170723",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -57.45,
+    "description" : "VOLUMES                  ELTHAM        ",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170723_-57.45_VOLUMESELTHAM"
   } ]
 }

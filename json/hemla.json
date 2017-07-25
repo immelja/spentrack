@@ -569,7 +569,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : "GROCERIES",
+    "term" : "UNMATCHED",
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170719_-2.95_BAKERSDELIGHTSTHELENAVIC"
@@ -608,7 +608,7 @@
     "balance" : 0.0,
     "category" : "Entertainment",
     "income" : "EXPENSE",
-    "term" : "SWIMMING",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170720_-8.75_DBS*WaterMarcSwimSchGreensborougVIC"
@@ -673,7 +673,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : "DINING",
+    "term" : null,
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170723_-57.45_VOLUMESELTHAM"

@@ -1,6 +1,6 @@
 {
   "type" : "JACO",
-  "balance" : -702.9551,
+  "balance" : -741.67004,
   "transactions" : [ {
     "date" : "20170701",
     "finYear" : 2018,
@@ -717,6 +717,19 @@
     "term3" : "null",
     "key" : "20170722_-13.0_AEGEANDELICATESSENPRESTON"
   }, {
+    "date" : "20170722",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -16.48,
+    "description" : "CHEMIST WAREHOUSE        GREENSBOROUGVIC",
+    "balance" : 0.0,
+    "category" : "Health & medical",
+    "income" : "EXPENSE",
+    "term" : "CHEMIST",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170722_-16.48_CHEMISTWAREHOUSEGREENSBOROUGVIC"
+  }, {
     "date" : "20170723",
     "finYear" : 2018,
     "reportingPeriod" : 201707,
@@ -729,5 +742,44 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170723_-57.45_VOLUMESELTHAM"
+  }, {
+    "date" : "20170724",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -6.125,
+    "description" : "WELL SQUARED PTY LTD     ELTHAM      VIC",
+    "balance" : 0.0,
+    "category" : "Health & medical",
+    "income" : "EXPENSE",
+    "term" : "CHIRO",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170724_-6.125_WELLSQUAREDPTYLTDELTHAMVIC"
+  }, {
+    "date" : "20170724",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -12.11,
+    "description" : "AMEX WOOLWORTHS 3183 ST HELENAST HELENA   019",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170724_-12.11_AMEXWOOLWORTHS3183STHELENASTHELENA019"
+  }, {
+    "date" : "20170724",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -4.0,
+    "description" : "DE MAD HATTER CAFE       DOCKLANDS   VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "JACO",
+    "term3" : "null",
+    "key" : "20170724_-4.0_DEMADHATTERCAFEDOCKLANDSVIC"
   } ]
 }

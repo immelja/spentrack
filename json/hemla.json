@@ -1,6 +1,6 @@
 {
   "type" : "HEMLA",
-  "balance" : -924.74005,
+  "balance" : -1015.0201,
   "transactions" : [ {
     "date" : "20170701",
     "finYear" : 2018,
@@ -629,6 +629,19 @@
     "date" : "20170721",
     "finYear" : 2018,
     "reportingPeriod" : 201707,
+    "amount" : -16.755,
+    "description" : "ALDI STORES              ELTHAM        ",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170721_-16.755_ALDISTORESELTHAM"
+  }, {
+    "date" : "20170721",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
     "amount" : -23.49,
     "description" : "AMEX DAN MURPHYS 3372 ELTHAM  ELTHAM      019",
     "balance" : 0.0,
@@ -678,6 +691,32 @@
     "term3" : "null",
     "key" : "20170722_-16.48_CHEMISTWAREHOUSEGREENSBOROUGVIC"
   }, {
+    "date" : "20170722",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -29.18,
+    "description" : "ARC ASIAN GROCER         PRESTON     VIC",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "ASIAN",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170722_-29.18_ARCASIANGROCERPRESTONVIC"
+  }, {
+    "date" : "20170722",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -35.345,
+    "description" : "ALDI STORES              BUNDOORA      ",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170722_-35.345_ALDISTORESBUNDOORA"
+  }, {
     "date" : "20170723",
     "finYear" : 2018,
     "reportingPeriod" : 201707,
@@ -716,5 +755,18 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170724_-12.11_AMEXWOOLWORTHS3183STHELENASTHELENA019"
+  }, {
+    "date" : "20170726",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -9.0,
+    "description" : "BABY BLACK-ESPRESSO BA   BACCHUS MARS  ",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "HEMLA",
+    "term3" : "null",
+    "key" : "20170726_-9.0_BABYBLACK-ESPRESSOBABACCHUSMARS"
   } ]
 }

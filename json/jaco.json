@@ -1,6 +1,6 @@
 {
   "type" : "JACO",
-  "balance" : -741.67004,
+  "balance" : -826.95,
   "transactions" : [ {
     "date" : "20170701",
     "finYear" : 2018,
@@ -681,6 +681,19 @@
     "date" : "20170721",
     "finYear" : 2018,
     "reportingPeriod" : 201707,
+    "amount" : -16.755,
+    "description" : "ALDI STORES              ELTHAM        ",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170721_-16.755_ALDISTORESELTHAM"
+  }, {
+    "date" : "20170721",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
     "amount" : -23.49,
     "description" : "AMEX DAN MURPHYS 3372 ELTHAM  ELTHAM      019",
     "balance" : 0.0,
@@ -729,6 +742,32 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170722_-16.48_CHEMISTWAREHOUSEGREENSBOROUGVIC"
+  }, {
+    "date" : "20170722",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -29.18,
+    "description" : "ARC ASIAN GROCER         PRESTON     VIC",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "ASIAN",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170722_-29.18_ARCASIANGROCERPRESTONVIC"
+  }, {
+    "date" : "20170722",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -35.345,
+    "description" : "ALDI STORES              BUNDOORA      ",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170722_-35.345_ALDISTORESBUNDOORA"
   }, {
     "date" : "20170723",
     "finYear" : 2018,
@@ -781,5 +820,18 @@
     "term2" : "JACO",
     "term3" : "null",
     "key" : "20170724_-4.0_DEMADHATTERCAFEDOCKLANDSVIC"
+  }, {
+    "date" : "20170725",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -4.0,
+    "description" : "DE MAD HATTER CAFE       DOCKLANDS   VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "JACO",
+    "term3" : "null",
+    "key" : "20170725_-4.0_DEMADHATTERCAFEDOCKLANDSVIC"
   } ]
 }

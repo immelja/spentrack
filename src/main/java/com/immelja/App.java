@@ -140,7 +140,7 @@ public class App {
 		float bal = 0;
 		for (Transaction trn : map.values()) {
 			
-
+//System.out.println(trn.toString());
 		  if(trn.getIncome().equals(income)&&trn.getTerm().equals(term)) {
 			if (!finYearBalances.containsKey(trn.getFinYear())) {
 				bal = 0;
@@ -347,6 +347,8 @@ public class App {
 			tran.getValue().setTerm(getMatch(tran.getValue().getDescription()));
 
 			if (tran.getValue().getTerm() == null)
+				//System.out.println(tran.toString());
+			    tran.getValue().setTerm("UNMATCHED");
 				set.add(tran.getValue().getDescription());
 		}
 

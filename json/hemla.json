@@ -10,7 +10,7 @@
     "balance" : 0.0,
     "category" : "Gifts & donations",
     "income" : "EXPENSE",
-    "term" : null,
+    "term" : "UNMATCHED",
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170701_-6.75_CERESGroceryBrunswickEaVIC"
@@ -23,7 +23,7 @@
     "balance" : 0.0,
     "category" : "Groceries & household",
     "income" : "EXPENSE",
-    "term" : null,
+    "term" : "UNMATCHED",
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170701_-7.5_OZFRESHPOULTRYPTYLPRESTON"
@@ -36,7 +36,7 @@
     "balance" : 0.0,
     "category" : "Groceries & household",
     "income" : "EXPENSE",
-    "term" : null,
+    "term" : "UNMATCHED",
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170701_-8.55_WEIDLICHFOODSTOREELTHAMNORTHVIC"
@@ -75,7 +75,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : null,
+    "term" : "UNMATCHED",
     "term2" : "HEMLA",
     "term3" : "null",
     "key" : "20170703_-12.2_THECORNERCAFEWOODLASTRATHMOREVIC"
@@ -257,7 +257,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : null,
+    "term" : "UNMATCHED",
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170708_-5.0_ZAYNABPTYLTDDOCKLANDSVIC"
@@ -283,7 +283,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : null,
+    "term" : "UNMATCHED",
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170708_-10.95_THEGROOVETRAINHARDOCKLANDS"
@@ -478,7 +478,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : null,
+    "term" : "UNMATCHED",
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170716_-6.15_DEGANIGREENSBOROUGHGREENSBOROUGVIC"
@@ -608,7 +608,7 @@
     "balance" : 0.0,
     "category" : "Entertainment",
     "income" : "EXPENSE",
-    "term" : null,
+    "term" : "UNMATCHED",
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170720_-8.75_DBS*WaterMarcSwimSchGreensborougVIC"
@@ -725,7 +725,7 @@
     "balance" : 0.0,
     "category" : "Food & dining",
     "income" : "EXPENSE",
-    "term" : null,
+    "term" : "UNMATCHED",
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170723_-57.45_VOLUMESELTHAM"

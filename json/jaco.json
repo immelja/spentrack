@@ -1,6 +1,6 @@
 {
   "type" : "JACO",
-  "balance" : -826.95,
+  "balance" : -868.705,
   "transactions" : [ {
     "date" : "20170701",
     "finYear" : 2018,
@@ -833,5 +833,57 @@
     "term2" : "JACO",
     "term3" : "null",
     "key" : "20170725_-4.0_DEMADHATTERCAFEDOCKLANDSVIC"
+  }, {
+    "date" : "20170729",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -20.0,
+    "description" : "HAKATA GENSUKE QV        MELBOURNE   VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170729_-20.0_HAKATAGENSUKEQVMELBOURNEVIC"
+  }, {
+    "date" : "20170730",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -10.495,
+    "description" : "THE REJECT SHOP          GREENSBOROUGVIC",
+    "balance" : 0.0,
+    "category" : "Retail shopping",
+    "income" : "EXPENSE",
+    "term" : "RETAIL",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170730_-10.495_THEREJECTSHOPGREENSBOROUGVIC"
+  }, {
+    "date" : "20170731",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -7.26,
+    "description" : "AMEX WOOLWORTHS 3762 COLLINS SMELBOURNE   019",
+    "balance" : 0.0,
+    "category" : "Groceries & household",
+    "income" : "EXPENSE",
+    "term" : "GROCERIES",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170731_-7.26_AMEXWOOLWORTHS3762COLLINSSMELBOURNE019"
+  }, {
+    "date" : "20170731",
+    "finYear" : 2018,
+    "reportingPeriod" : 201707,
+    "amount" : -4.0,
+    "description" : "DE MAD HATTER CAFE       DOCKLANDS   VIC",
+    "balance" : 0.0,
+    "category" : "Food & dining",
+    "income" : "EXPENSE",
+    "term" : "DINING",
+    "term2" : "JACO",
+    "term3" : "null",
+    "key" : "20170731_-4.0_DEMADHATTERCAFEDOCKLANDSVIC"
   } ]
 }

@@ -52,7 +52,7 @@ public class App {
 	private static String transactionFile = "standard";
 	private static String json = ".json";
 	
-	private static int reportingPeriod = 201707;
+	private static int reportingPeriod = 201708;
 
 	public static void main(String[] args) throws Exception {
 		System.out.println("spentrack");

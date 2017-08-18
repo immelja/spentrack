@@ -1,6 +1,6 @@
 {
   "type" : "FIXED",
-  "balance" : -1828.86,
+  "balance" : -2863.8599,
   "transactions" : [ {
     "date" : "20170802",
     "finYear" : 2018,
@@ -79,5 +79,31 @@
     "term2" : "CURRENT",
     "term3" : "null",
     "key" : "20170809_-99.0_FOXTELMANAGEMENTPTYNORTHRYDE"
+  }, {
+    "date" : "20170817",
+    "finYear" : 2018,
+    "reportingPeriod" : 201708,
+    "amount" : -115.0,
+    "description" : "AMEX TELSTRA EASYPAY DD2CC    ADELAIDE    017",
+    "balance" : 0.0,
+    "category" : "Bills & utilities",
+    "income" : "EXPENSE",
+    "term" : "TELSTRA",
+    "term2" : "CURRENT",
+    "term3" : "null",
+    "key" : "20170817_-115.0_AMEXTELSTRAEASYPAYDD2CCADELAIDE017"
+  }, {
+    "date" : "20170818",
+    "finYear" : 2018,
+    "reportingPeriod" : 201708,
+    "amount" : -920.0,
+    "description" : "Direct Debit 397339 ST FAITHS CCARE ST FAITHS FEES",
+    "balance" : 8872.67,
+    "category" : "Home & renovation",
+    "income" : "EXPENSE",
+    "term" : "CHILDCARE",
+    "term2" : "CURRENT",
+    "term3" : "null",
+    "key" : "20170818_-920.0_DirectDebit397339STFAITHSCCARESTFAITHSFEES"
   } ]
 }

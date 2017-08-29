@@ -1,6 +1,6 @@
 {
   "type" : "JACO",
-  "balance" : -424.77,
+  "balance" : -546.47,
   "transactions" : [ {
     "date" : "20170801",
     "finYear" : 2018,
@@ -261,5 +261,83 @@
     "term2" : "SPLIT",
     "term3" : "null",
     "key" : "20170817_-4.12_AMEXWOOLWORTHS3762COLLINSSMELBOURNE019"
+  }, {
+    "date" : "20170824",
+    "finYear" : 2018,
+    "reportingPeriod" : 201708,
+    "amount" : -8.75,
+    "description" : "DBS*WaterMarc Swim Sch   GreensborougVIC",
+    "balance" : 0.0,
+    "category" : "Entertainment",
+    "income" : "EXPENSE",
+    "term" : "UNMATCHED",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170824_-8.75_DBS*WaterMarcSwimSchGreensborougVIC"
+  }, {
+    "date" : "20170825",
+    "finYear" : 2018,
+    "reportingPeriod" : 201708,
+    "amount" : -16.95,
+    "description" : "AMEX PAYPAL*MENULOGPTYL       35314369001 000",
+    "balance" : 0.0,
+    "category" : "Business expenses",
+    "income" : "EXPENSE",
+    "term" : "PAYPAL",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170825_-16.95_AMEXPAYPAL*MENULOGPTYL35314369001000"
+  }, {
+    "date" : "20170826",
+    "finYear" : 2018,
+    "reportingPeriod" : 201708,
+    "amount" : -75.0,
+    "description" : "Wdl ATM Redi ATM BBL- Hurstbridge           VIAU",
+    "balance" : 9606.46,
+    "category" : "Cash out",
+    "income" : "EXPENSE",
+    "term" : "CASH",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170826_-75.0_WdlATMRediATMBBL-HurstbridgeVIAU"
+  }, {
+    "date" : "20170826",
+    "finYear" : 2018,
+    "reportingPeriod" : 201708,
+    "amount" : -1.0,
+    "description" : "Non CBA ATM Withdrawal Fee",
+    "balance" : 9604.46,
+    "category" : "Fees & charges",
+    "income" : "EXPENSE",
+    "term" : "CASH",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170826_-1.0_NonCBAATMWithdrawalFee"
+  }, {
+    "date" : "20170828",
+    "finYear" : 2018,
+    "reportingPeriod" : 201708,
+    "amount" : -7.0,
+    "description" : "BEST & LESS FOREST H     FOREST HILL   ",
+    "balance" : 0.0,
+    "category" : "Retail shopping",
+    "income" : "EXPENSE",
+    "term" : "UNMATCHED",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170828_-7.0_BEST&LESSFORESTHFORESTHILL"
+  }, {
+    "date" : "20170828",
+    "finYear" : 2018,
+    "reportingPeriod" : 201708,
+    "amount" : -13.0,
+    "description" : "AMEX BIG W 0379 FOREST HILL   FOREST HILL 019",
+    "balance" : 0.0,
+    "category" : "Retail shopping",
+    "income" : "EXPENSE",
+    "term" : "RETAIL",
+    "term2" : "SPLIT",
+    "term3" : "null",
+    "key" : "20170828_-13.0_AMEXBIGW0379FORESTHILLFORESTHILL019"
   } ]
 }

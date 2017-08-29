@@ -1,6 +1,6 @@
 {
   "type" : "FIXED",
-  "balance" : -2863.8599,
+  "balance" : -3010.3398,
   "transactions" : [ {
     "date" : "20170802",
     "finYear" : 2018,
@@ -105,5 +105,18 @@
     "term2" : "CURRENT",
     "term3" : "null",
     "key" : "20170818_-920.0_DirectDebit397339STFAITHSCCARESTFAITHSFEES"
+  }, {
+    "date" : "20170824",
+    "finYear" : 2018,
+    "reportingPeriod" : 201708,
+    "amount" : -146.48,
+    "description" : "AMEX PowershopAustralia PowersMelbourne   019",
+    "balance" : 0.0,
+    "category" : "Bills & utilities",
+    "income" : "EXPENSE",
+    "term" : "ELECTRICITY",
+    "term2" : "CURRENT",
+    "term3" : "null",
+    "key" : "20170824_-146.48_AMEXPowershopAustraliaPowersMelbourne019"
   } ]
 }

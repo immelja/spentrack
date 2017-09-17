@@ -204,7 +204,7 @@ public class App {
 		DateFormat df = new SimpleDateFormat("yyyyMM");
 
 		map = loadJson(archiveFolder + transactionFile + json);
-		// System.out.println(map.size());
+		System.out.println(map.size());
 		// Iterator<Entry<String, Transaction>> iter =
 		// map.entrySet().iterator();
 		float bal = 0;
@@ -220,7 +220,7 @@ public class App {
 		});
 
 		for (Transaction transaction : transactions) {
-			// System.out.println(transaction);
+			System.out.println(transaction);
 			if (transaction.getReportingPeriod() == reportingPeriod
 			&& transaction.getTerm2() == null
 			&&transaction.getAmount() < 0

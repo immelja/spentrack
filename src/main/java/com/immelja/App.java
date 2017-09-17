@@ -352,9 +352,9 @@ public class App {
 				set.add(tran.getValue().getDescription());
 		}
 
-		for (String setItem : set) {
-			System.out.println(setItem + ",UNMATCHED");
-		}
+		// for (String setItem : set) {
+		// 	System.out.println(setItem + ",UNMATCHED");
+		// }
 		System.out.println("UNMATCHED:: " + set.size());
 	}
 

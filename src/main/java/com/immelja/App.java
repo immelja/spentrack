@@ -134,6 +134,31 @@ public class App {
 		}
 	}
 	
+	private static void avgThisMonth(Map<String, Transaction> map) {
+		System.out.println("******* thismonth *******");
+		Map<Integer, Float> finYearBalances = new TreeMap<Integer, Float>();
+		float bal = 0;
+		for (Transaction trn : map.values()) {
+			if (trn.getReportingPeriod() == 201710) {
+				bal = bal + trn.getAmount();
+				System.out.println(trn.getAmount());
+			}
+			
+//			if (!finYearBalances.containsKey(trn.getFinYear())) {
+//				bal = 0;
+//			} else {
+//				bal = finYearBalances.get(trn.getFinYear()).longValue();
+//			}
+//			finYearBalances.put(trn.getFinYear(), bal + trn.getAmount());
+		}
+		System.out.println(bal);
+
+
+//		for (Map.Entry<Integer, Float> entry : finYearBalances.entrySet()) {
+//			System.out.println(entry);
+//		}
+	}
+	
 	private static void avgFinYearTerm(Map<String, Transaction> map,String income,String term) {
 		System.out.println("******* finyear term ******* " + term);
 		Map<Integer, Float> finYearBalances = new TreeMap<Integer, Float>();
@@ -163,6 +188,7 @@ public class App {
 		avgFinYear(map);
 		avgToDate(map);
 		avgFinYearTerm(map,"INCOME","CENTRELINK");
+		avgThisMonth(map);
 
 	}
 
